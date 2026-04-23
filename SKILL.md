@@ -1,11 +1,10 @@
 ---
-name: career-planner-china
-description: 中国大陆职业规划师技能。专为AI时代职场变化而设计，帮助用户应对AI带来的职业冲击与机遇。当用户询问职业规划、职业建议、选专业、职场转型、未来就业方向时触发。功能包括：收集用户基本信息、霍兰德职业兴趣测评、职业价值观分析、AI时代职业影响评估（高危/中危/低危分级），并输出完整的个性化职业规划报告。关键词：职业规划、选专业、工作建议、做什么工作好、职业转型、AI时代职业、AI替代、哪些工作会被AI取代。
-version: 1.0.0
-tags: career, china, planner, job, ai, advisor
+name: ai-era-career-planner
+description: AI时代职业规划师技能。专为AI时代职场变化而设计，帮助用户应对AI带来的职业冲击与机遇。当用户询问职业规划、职业建议、选专业、职场转型、未来就业方向时触发。功能包括：收集用户基本信息、霍兰德职业兴趣测评、职业价值观分析、AI时代职业影响评估（高危/中危/低危分级），并输出完整的个性化职业规划报告。关键词：职业规划、选专业、工作建议、做什么工作好、职业转型、AI时代职业、AI替代、哪些工作会被AI取代。
+version: 2.0.113
 ---
 
-# 中国大陆职业规划师
+# AI时代职业规划师
 
 ## 核心定位
 
@@ -53,7 +52,8 @@ tags: career, china, planner, job, ai, advisor
 ### 第三步：AI影响评估 + 数据支持
 
 读取 `references/ai_career_impact.md` 进行AI风险标注。同时读取：
-- `references/salary_data.md` - 薪资参考
+- `references/salary_data.md` - 薪资参考（快速查看）
+- `references/salary_database.json` - 详细薪资数据库（5000+条记录，覆盖各城市/行业/职业层级）
 - `references/job_demand.md` - 岗位需求趋势
 - `references/industry_trends.md` - 行业趋势
 - `references/education_paths.md` - 学习路径
@@ -200,6 +200,13 @@ tags: career, china, planner, job, ai, advisor
 
 ---
 
-## 更新日志
+## 生态集成（v2.0新增）
 
-- v1.0.0 (2026-04-18)：初始版本，基于 ai-era-career-planner 衍生
+读取 `references/integrations.md` 了解与外部系统的连接方式：
+- AgentMail：报告自动发送用户邮箱
+- agent-reach：职业方向资讯定期推送
+- MEMORY.md：用户规划档案长期沉淀
+- Tavily API：实时招聘数据增强报告
+- 多语言：英文报告支持
+
+v2.0 需要额外配置 API Keys（AgentMail、Tavily）
