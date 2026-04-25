@@ -1,10 +1,18 @@
 {
   "meta": {
     "version": "1.0.0",
-    "updated_at": "2026-04-22T17:06:58+08:00",
+    "updated_at": "2026-04-25T13:53:19+08:00",
     "source": "综合整理：国家统计局2024年度数据、智联招聘2024年度薪酬报告、前程无忧2024薪酬指南、猎聘2024年度薪酬报告、BOSS直聘2024薪酬数据",
-    "total_records": 5376,
-    "description": "中国各城市、各行业、各职业层级的薪资数据库，覆盖一线至三线城市，供职业规划参考使用"
+    "total_records": 5378,
+    "description": "中国各城市、各行业、各职业层级的薪资数据库，覆盖一线至三线城市，供职业规划参考使用",
+    "last_scrape": "2026-04-25",
+    "sources": [
+      {
+        "type": "tavily_search",
+        "records_added": 2,
+        "scraped_at": "2026-04-25T13:53:19.371019"
+      }
+    ]
   },
   "cities": {
     "tier1": [
@@ -69952,6 +69960,36 @@
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
       "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+    },
+    {
+      "city": "未知",
+      "occupation": "算法",
+      "salary_min": 41666,
+      "salary_max": 83333,
+      "salary_unit": "月薪",
+      "level": "mid",
+      "source": "tavily_search",
+      "scraped_at": "2026-04-25",
+      "city_tier": "tier3",
+      "industry": "互联网/IT",
+      "annual_note": "",
+      "data_source": "Tavily搜索采集",
+      "source_url": ""
+    },
+    {
+      "city": "未知",
+      "occupation": "工程师",
+      "salary_min": 41666,
+      "salary_max": 83333,
+      "salary_unit": "月薪",
+      "level": "mid",
+      "source": "tavily_search",
+      "scraped_at": "2026-04-25",
+      "city_tier": "tier3",
+      "industry": "互联网/IT",
+      "annual_note": "",
+      "data_source": "Tavily搜索采集",
+      "source_url": ""
     }
   ]
 }
