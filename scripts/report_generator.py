@@ -69,7 +69,7 @@ if __name__ == '__main__':
     import argparse
     p = argparse.ArgumentParser()
     p.add_argument('--data', default='{}')
-    p.add_argument('--output-dir', default='/tmp')
+    p.add_argument('--output-dir', default='.')
     args = p.parse_args()
     data = json.loads(args.data)
     md = generate_report(data)

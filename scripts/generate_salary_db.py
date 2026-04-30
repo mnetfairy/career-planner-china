@@ -4,7 +4,12 @@
 目标：约500-600条记录，覆盖主要城市和行业
 """
 import json
+import os
 from datetime import datetime
+
+# 获取脚本所在目录的父目录（skill root）
+_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+_SKILL_ROOT = os.path.dirname(_SCRIPT_DIR)
 
 # 主要城市（精简版）
 TIER1_CITIES = ["北京", "上海", "广州", "深圳"]
@@ -174,7 +179,7 @@ def main():
         "records": records
     }
     
-    output_path = "/home/walter/.openclaw/workspace/skills/ai-era-career-planner/references/salary_database.json"
+    output_path = os.path.join(_SKILL_ROOT, "references", "salary_database.json")
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(db, f, ensure_ascii=False, indent=2)
     
