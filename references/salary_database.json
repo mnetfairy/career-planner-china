@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "1.0.0",
-    "updated_at": "2026-05-05T04:00:52+08:00",
+    "updated_at": "2026-05-06T04:00:57+08:00",
     "source": "综合整理：国家统计局2024年度数据、智联招聘2024年度薪酬报告、前程无忧2024薪酬指南、猎聘2024年度薪酬报告、BOSS直聘2024薪酬数据",
-    "total_records": 5385,
+    "total_records": 5388,
     "description": "中国各城市、各行业、各职业层级的薪资数据库，覆盖一线至三线城市，供职业规划参考使用",
-    "last_scrape": "2026-05-05",
+    "last_scrape": "2026-05-06",
     "sources": [
       {
         "type": "tavily_search",
@@ -46,6 +46,11 @@
         "type": "tavily_search",
         "records_added": 0,
         "scraped_at": "2026-05-05T04:00:52.867326"
+      },
+      {
+        "type": "tavily_search",
+        "records_added": 3,
+        "scraped_at": "2026-05-06T04:00:57.296755"
       }
     ]
   },
@@ -70125,6 +70130,51 @@
       "level": "mid",
       "source": "tavily_search",
       "scraped_at": "2026-05-04",
+      "city_tier": "tier3",
+      "industry": "互联网/IT",
+      "annual_note": "",
+      "data_source": "Tavily搜索采集",
+      "source_url": ""
+    },
+    {
+      "city": "未知",
+      "occupation": "程序员",
+      "salary_min": 8333,
+      "salary_max": 15000,
+      "salary_unit": "月薪",
+      "level": "mid",
+      "source": "tavily_search",
+      "scraped_at": "2026-05-06",
+      "city_tier": "tier3",
+      "industry": "互联网/IT",
+      "annual_note": "",
+      "data_source": "Tavily搜索采集",
+      "source_url": ""
+    },
+    {
+      "city": "未知",
+      "occupation": "前端",
+      "salary_min": 8333,
+      "salary_max": 15000,
+      "salary_unit": "月薪",
+      "level": "mid",
+      "source": "tavily_search",
+      "scraped_at": "2026-05-06",
+      "city_tier": "tier3",
+      "industry": "互联网/IT",
+      "annual_note": "",
+      "data_source": "Tavily搜索采集",
+      "source_url": ""
+    },
+    {
+      "city": "未知",
+      "occupation": "工程师",
+      "salary_min": 8333,
+      "salary_max": 15000,
+      "salary_unit": "月薪",
+      "level": "mid",
+      "source": "tavily_search",
+      "scraped_at": "2026-05-06",
       "city_tier": "tier3",
       "industry": "互联网/IT",
       "annual_note": "",
