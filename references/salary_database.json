@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "2.2.139",
-    "updated_at": "2026-06-25T16:13:50.878239+00:00",
+    "version": "2.2.140",
+    "updated_at": "2026-06-25T16:18:44.429797+00:00",
     "source": "综合整理：国家统计局2024年度数据、智联招聘2024年度薪酬报告、前程无忧2024薪酬指南、猎聘2024年度薪酬报告、BOSS直聘2024薪酬数据",
     "total_records": 5385,
     "description": "中国各城市、各行业、各职业层级的薪资数据库，覆盖一线至三线城市，供职业规划参考使用",
@@ -128,7 +128,7 @@
       "annual_note": "",
       "data_source": "https://cn.indeed.com/career/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
       "source_url": "https://cn.indeed.com/career/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
-      "scraped_at": "2026-06-25T16:08:38.708997+00:00"
+      "scraped_at": "2026-06-25T16:17:51.380950+00:00"
     },
     {
       "city_tier": "tier1",
@@ -181,7 +181,7 @@
       "annual_note": "",
       "data_source": "https://cn.indeed.com/career/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
       "source_url": "https://cn.indeed.com/career/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
-      "scraped_at": "2026-06-25T16:08:51.362394+00:00"
+      "scraped_at": "2026-06-25T16:18:01.330126+00:00"
     },
     {
       "city_tier": "tier1",
@@ -234,7 +234,7 @@
       "annual_note": "",
       "data_source": "https://cn.indeed.com/career/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
       "source_url": "https://cn.indeed.com/career/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
-      "scraped_at": "2026-06-25T16:09:04.402399+00:00"
+      "scraped_at": "2026-06-25T16:18:21.403025+00:00"
     },
     {
       "city_tier": "tier1",
@@ -287,7 +287,7 @@
       "annual_note": "",
       "data_source": "https://cn.indeed.com/career/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
       "source_url": "https://cn.indeed.com/career/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
-      "scraped_at": "2026-06-25T16:09:17.521567+00:00"
+      "scraped_at": "2026-06-25T16:18:39.650072+00:00"
     },
     {
       "city_tier": "tier1",
@@ -5956,7 +5956,7 @@
       "annual_note": "",
       "data_source": "https://m.jobui.com/salary/beijing-webqianduankaifagongchengshi",
       "source_url": "https://m.jobui.com/salary/beijing-webqianduankaifagongchengshi",
-      "scraped_at": "2026-06-25T16:08:34.240630+00:00"
+      "scraped_at": "2026-06-25T16:17:48.579948+00:00"
     },
     {
       "city_tier": "tier1",
@@ -6009,7 +6009,7 @@
       "annual_note": "",
       "data_source": "https://cn.indeed.com/career/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
       "source_url": "https://cn.indeed.com/career/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
-      "scraped_at": "2026-06-25T16:08:49.074560+00:00"
+      "scraped_at": "2026-06-25T16:17:59.009770+00:00"
     },
     {
       "city_tier": "tier1",
@@ -6062,7 +6062,7 @@
       "annual_note": "",
       "data_source": "https://cn.indeed.com/career/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
       "source_url": "https://cn.indeed.com/career/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
-      "scraped_at": "2026-06-25T16:09:01.580571+00:00"
+      "scraped_at": "2026-06-25T16:18:15.130780+00:00"
     },
     {
       "city_tier": "tier1",
@@ -6115,7 +6115,7 @@
       "annual_note": "",
       "data_source": "https://cn.indeed.com/career/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
       "source_url": "https://cn.indeed.com/career/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
-      "scraped_at": "2026-06-25T16:09:15.076442+00:00"
+      "scraped_at": "2026-06-25T16:18:32.203889+00:00"
     },
     {
       "city_tier": "tier1",
@@ -11784,7 +11784,7 @@
       "annual_note": "",
       "data_source": "https://m.jobui.com/salary/beijing-aisuanfagongchengshi",
       "source_url": "https://m.jobui.com/salary/beijing-aisuanfagongchengshi",
-      "scraped_at": "2026-06-25T16:08:45.652860+00:00"
+      "scraped_at": "2026-06-25T16:17:56.090638+00:00"
     },
     {
       "city_tier": "tier1",
@@ -11837,7 +11837,7 @@
       "annual_note": "",
       "data_source": "https://cn.indeed.com/career/%E7%AE%97%E6%B3%95%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
       "source_url": "https://cn.indeed.com/career/%E7%AE%97%E6%B3%95%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
-      "scraped_at": "2026-06-25T16:08:58.257467+00:00"
+      "scraped_at": "2026-06-25T16:18:09.571179+00:00"
     },
     {
       "city_tier": "tier1",
@@ -11890,7 +11890,7 @@
       "annual_note": "",
       "data_source": "https://m.jobui.com/salary/beijing-suanfagongchengshi",
       "source_url": "https://m.jobui.com/salary/beijing-suanfagongchengshi",
-      "scraped_at": "2026-06-25T16:09:12.190088+00:00"
+      "scraped_at": "2026-06-25T16:18:29.282107+00:00"
     },
     {
       "city_tier": "tier1",
@@ -70149,7 +70149,7 @@
       "annual_note": "",
       "data_source": "https://m.jobui.com/salary/beijing-quanzhankaifagongchengshi",
       "source_url": "https://m.jobui.com/salary/beijing-quanzhankaifagongchengshi",
-      "scraped_at": "2026-06-25T16:08:55.569317+00:00"
+      "scraped_at": "2026-06-25T16:18:04.868968+00:00"
     },
     {
       "city_tier": "tier1",
@@ -70163,7 +70163,7 @@
       "annual_note": "",
       "data_source": "https://www.zhipin.com/zhaopin/29c30644d602fdce1H180t-5EA~~",
       "source_url": "https://www.zhipin.com/zhaopin/29c30644d602fdce1H180t-5EA~~",
-      "scraped_at": "2026-06-25T16:09:07.679624+00:00"
+      "scraped_at": "2026-06-25T16:18:26.156206+00:00"
     },
     {
       "city_tier": "tier1",
@@ -70177,7 +70177,7 @@
       "annual_note": "",
       "data_source": "https://m.jobui.com/salary/beijing-quanzhankaifagongchengshi",
       "source_url": "https://m.jobui.com/salary/beijing-quanzhankaifagongchengshi",
-      "scraped_at": "2026-06-25T16:09:23.285719+00:00"
+      "scraped_at": "2026-06-25T16:18:43.331241+00:00"
     },
     {
       "city_tier": "tier1",
@@ -70191,7 +70191,7 @@
       "annual_note": "",
       "data_source": "https://m.jobui.com/salary/quanguo-quanzhangongchengshi",
       "source_url": "https://m.jobui.com/salary/quanguo-quanzhangongchengshi",
-      "scraped_at": "2026-06-25T16:08:42.309479+00:00"
+      "scraped_at": "2026-06-25T16:17:53.824119+00:00"
     }
   ]
 }
