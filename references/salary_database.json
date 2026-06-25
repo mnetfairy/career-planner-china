@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "2.2.135",
-    "updated_at": "2026-06-25T16:03:21.003060+00:00",
+    "version": "2.2.137",
+    "updated_at": "2026-06-25T16:09:24.376997+00:00",
     "source": "综合整理：国家统计局2024年度数据、智联招聘2024年度薪酬报告、前程无忧2024薪酬指南、猎聘2024年度薪酬报告、BOSS直聘2024薪酬数据",
     "total_records": 5385,
     "description": "中国各城市、各行业、各职业层级的薪资数据库，覆盖一线至三线城市，供职业规划参考使用",
@@ -122,12 +122,13 @@
       "industry": "互联网/IT",
       "occupation": "后端开发工程师",
       "level": "mid",
-      "salary_min": 21600,
-      "salary_max": 38720,
+      "salary_min": 26329,
+      "salary_max": 26329,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "data_source": "https://cn.indeed.com/career/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
+      "source_url": "https://cn.indeed.com/career/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
+      "scraped_at": "2026-06-25T16:08:38.708997+00:00"
     },
     {
       "city_tier": "tier1",
@@ -174,12 +175,13 @@
       "industry": "金融/银行/保险",
       "occupation": "后端开发工程师",
       "level": "mid",
-      "salary_min": 23760,
-      "salary_max": 42592,
+      "salary_min": 26329,
+      "salary_max": 26329,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "data_source": "https://cn.indeed.com/career/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
+      "source_url": "https://cn.indeed.com/career/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
+      "scraped_at": "2026-06-25T16:08:51.362394+00:00"
     },
     {
       "city_tier": "tier1",
@@ -226,12 +228,13 @@
       "industry": "医疗/健康",
       "occupation": "后端开发工程师",
       "level": "mid",
-      "salary_min": 20520,
-      "salary_max": 36784,
+      "salary_min": 26329,
+      "salary_max": 26329,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "data_source": "https://cn.indeed.com/career/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
+      "source_url": "https://cn.indeed.com/career/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
+      "scraped_at": "2026-06-25T16:09:04.402399+00:00"
     },
     {
       "city_tier": "tier1",
@@ -278,12 +281,13 @@
       "industry": "教育培训",
       "occupation": "后端开发工程师",
       "level": "mid",
-      "salary_min": 16200,
-      "salary_max": 29040,
+      "salary_min": 26329,
+      "salary_max": 26329,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "data_source": "https://cn.indeed.com/career/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
+      "source_url": "https://cn.indeed.com/career/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
+      "scraped_at": "2026-06-25T16:09:17.521567+00:00"
     },
     {
       "city_tier": "tier1",
@@ -5946,12 +5950,13 @@
       "industry": "互联网/IT",
       "occupation": "前端开发工程师",
       "level": "mid",
-      "salary_min": 18720,
-      "salary_max": 35200,
+      "salary_min": 15000,
+      "salary_max": 50000,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "data_source": "https://m.jobui.com/salary/beijing-webqianduankaifagongchengshi",
+      "source_url": "https://m.jobui.com/salary/beijing-webqianduankaifagongchengshi",
+      "scraped_at": "2026-06-25T16:08:34.240630+00:00"
     },
     {
       "city_tier": "tier1",
@@ -5998,12 +6003,13 @@
       "industry": "金融/银行/保险",
       "occupation": "前端开发工程师",
       "level": "mid",
-      "salary_min": 20592,
-      "salary_max": 38720,
+      "salary_min": 12957,
+      "salary_max": 12957,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "data_source": "https://cn.indeed.com/career/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
+      "source_url": "https://cn.indeed.com/career/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
+      "scraped_at": "2026-06-25T16:08:49.074560+00:00"
     },
     {
       "city_tier": "tier1",
@@ -6050,12 +6056,13 @@
       "industry": "医疗/健康",
       "occupation": "前端开发工程师",
       "level": "mid",
-      "salary_min": 17784,
-      "salary_max": 33440,
+      "salary_min": 12957,
+      "salary_max": 12957,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "data_source": "https://cn.indeed.com/career/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
+      "source_url": "https://cn.indeed.com/career/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
+      "scraped_at": "2026-06-25T16:09:01.580571+00:00"
     },
     {
       "city_tier": "tier1",
@@ -6102,12 +6109,13 @@
       "industry": "教育培训",
       "occupation": "前端开发工程师",
       "level": "mid",
-      "salary_min": 14040,
-      "salary_max": 26400,
+      "salary_min": 12957,
+      "salary_max": 12957,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "data_source": "https://cn.indeed.com/career/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
+      "source_url": "https://cn.indeed.com/career/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
+      "scraped_at": "2026-06-25T16:09:15.076442+00:00"
     },
     {
       "city_tier": "tier1",
@@ -11770,12 +11778,13 @@
       "industry": "互联网/IT",
       "occupation": "算法工程师",
       "level": "mid",
-      "salary_min": 25920,
-      "salary_max": 49280,
+      "salary_min": 20000,
+      "salary_max": 50000,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "data_source": "https://m.jobui.com/salary/beijing-aisuanfagongchengshi",
+      "source_url": "https://m.jobui.com/salary/beijing-aisuanfagongchengshi",
+      "scraped_at": "2026-06-25T16:08:45.652860+00:00"
     },
     {
       "city_tier": "tier1",
@@ -11822,12 +11831,13 @@
       "industry": "金融/银行/保险",
       "occupation": "算法工程师",
       "level": "mid",
-      "salary_min": 28512,
-      "salary_max": 54208,
+      "salary_min": 28499,
+      "salary_max": 28499,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "data_source": "https://cn.indeed.com/career/%E7%AE%97%E6%B3%95%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
+      "source_url": "https://cn.indeed.com/career/%E7%AE%97%E6%B3%95%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
+      "scraped_at": "2026-06-25T16:08:58.257467+00:00"
     },
     {
       "city_tier": "tier1",
@@ -11874,12 +11884,13 @@
       "industry": "医疗/健康",
       "occupation": "算法工程师",
       "level": "mid",
-      "salary_min": 24624,
-      "salary_max": 46816,
+      "salary_min": 30000,
+      "salary_max": 50000,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "data_source": "https://m.jobui.com/salary/beijing-suanfagongchengshi",
+      "source_url": "https://m.jobui.com/salary/beijing-suanfagongchengshi",
+      "scraped_at": "2026-06-25T16:09:12.190088+00:00"
     },
     {
       "city_tier": "tier1",
@@ -70132,13 +70143,13 @@
       "industry": "金融/银行/保险",
       "occupation": "全栈开发工程师",
       "level": "mid",
-      "salary_min": 2000,
-      "salary_max": 3000,
+      "salary_min": 20000,
+      "salary_max": 50000,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "https://ese.xmu.edu.cn/info/1250/31061.htm",
-      "source_url": "https://ese.xmu.edu.cn/info/1250/31061.htm",
-      "scraped_at": "2026-05-19T05:00:11.026726+00:00"
+      "data_source": "https://m.jobui.com/salary/beijing-quanzhankaifagongchengshi",
+      "source_url": "https://m.jobui.com/salary/beijing-quanzhankaifagongchengshi",
+      "scraped_at": "2026-06-25T16:08:55.569317+00:00"
     },
     {
       "city_tier": "tier1",
@@ -70146,13 +70157,13 @@
       "industry": "医疗/健康",
       "occupation": "全栈开发工程师",
       "level": "mid",
-      "salary_min": 2006,
-      "salary_max": 2023,
+      "salary_min": 20000,
+      "salary_max": 30000,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "http://bj.bendibao.com/job/zw332/list14.html?src=amap",
-      "source_url": "http://bj.bendibao.com/job/zw332/list14.html?src=amap",
-      "scraped_at": "2026-05-19T05:00:21.287448+00:00"
+      "data_source": "https://www.zhipin.com/zhaopin/29c30644d602fdce1H180t-5EA~~",
+      "source_url": "https://www.zhipin.com/zhaopin/29c30644d602fdce1H180t-5EA~~",
+      "scraped_at": "2026-06-25T16:09:07.679624+00:00"
     },
     {
       "city_tier": "tier1",
@@ -70161,12 +70172,12 @@
       "occupation": "全栈开发工程师",
       "level": "mid",
       "salary_min": 20000,
-      "salary_max": 30000,
+      "salary_max": 50000,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "https://www.bwie.net/jiuyezhongxin/jiuyexinwen/2679.html",
-      "source_url": "https://www.bwie.net/jiuyezhongxin/jiuyexinwen/2679.html",
-      "scraped_at": "2026-05-19T05:00:31.600550+00:00"
+      "data_source": "https://m.jobui.com/salary/beijing-quanzhankaifagongchengshi",
+      "source_url": "https://m.jobui.com/salary/beijing-quanzhankaifagongchengshi",
+      "scraped_at": "2026-06-25T16:09:23.285719+00:00"
     },
     {
       "city_tier": "tier1",
@@ -70174,13 +70185,13 @@
       "industry": "互联网/IT",
       "occupation": "全栈开发工程师",
       "level": "mid",
-      "salary_min": 5000,
-      "salary_max": 10000,
+      "salary_min": 10000,
+      "salary_max": 20000,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "https://www.liepin.com/city-bj/zpxieyizhangongchengshi/",
-      "source_url": "https://www.liepin.com/city-bj/zpxieyizhangongchengshi/",
-      "scraped_at": "2026-05-20T17:02:20.344642+00:00"
+      "data_source": "https://m.jobui.com/salary/quanguo-quanzhangongchengshi",
+      "source_url": "https://m.jobui.com/salary/quanguo-quanzhangongchengshi",
+      "scraped_at": "2026-06-25T16:08:42.309479+00:00"
     }
   ]
 }
