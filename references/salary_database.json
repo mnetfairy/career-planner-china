@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "2.2.140",
-    "updated_at": "2026-06-25T16:18:44.429797+00:00",
+    "version": "2.2.142",
+    "updated_at": "2026-06-25T17:32:03.074528+00:00",
     "source": "综合整理：国家统计局2024年度数据、智联招聘2024年度薪酬报告、前程无忧2024薪酬指南、猎聘2024年度薪酬报告、BOSS直聘2024薪酬数据",
     "total_records": 5385,
     "description": "中国各城市、各行业、各职业层级的薪资数据库，覆盖一线至三线城市，供职业规划参考使用",
@@ -6109,13 +6109,13 @@
       "industry": "教育培训",
       "occupation": "前端开发工程师",
       "level": "mid",
-      "salary_min": 12957,
-      "salary_max": 12957,
+      "salary_min": 20381,
+      "salary_max": 20381,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "https://cn.indeed.com/career/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
-      "source_url": "https://cn.indeed.com/career/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
-      "scraped_at": "2026-06-25T16:18:32.203889+00:00"
+      "data_source": "https://cn.indeed.com/career/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries",
+      "source_url": "https://cn.indeed.com/career/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries",
+      "scraped_at": "2026-06-25T17:31:49.745541+00:00"
     },
     {
       "city_tier": "tier1",
@@ -70157,13 +70157,13 @@
       "industry": "医疗/健康",
       "occupation": "全栈开发工程师",
       "level": "mid",
-      "salary_min": 20000,
-      "salary_max": 30000,
+      "salary_min": 25000,
+      "salary_max": 35000,
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "https://www.zhipin.com/zhaopin/29c30644d602fdce1H180t-5EA~~",
       "source_url": "https://www.zhipin.com/zhaopin/29c30644d602fdce1H180t-5EA~~",
-      "scraped_at": "2026-06-25T16:18:26.156206+00:00"
+      "scraped_at": "2026-06-25T17:31:29.811852+00:00"
     },
     {
       "city_tier": "tier1",
@@ -70185,13 +70185,13 @@
       "industry": "互联网/IT",
       "occupation": "全栈开发工程师",
       "level": "mid",
-      "salary_min": 10000,
-      "salary_max": 20000,
+      "salary_min": 20000,
+      "salary_max": 50000,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "https://m.jobui.com/salary/quanguo-quanzhangongchengshi",
-      "source_url": "https://m.jobui.com/salary/quanguo-quanzhangongchengshi",
-      "scraped_at": "2026-06-25T16:17:53.824119+00:00"
+      "data_source": "https://m.jobui.com/salary/beijing-quanzhankaifagongchengshi",
+      "source_url": "https://m.jobui.com/salary/beijing-quanzhankaifagongchengshi",
+      "scraped_at": "2026-06-25T17:30:32.847949+00:00"
     }
   ]
 }
