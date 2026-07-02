@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "2.2.159",
-    "updated_at": "2026-07-01T17:31:17.009329+00:00",
+    "version": "2.2.163",
+    "updated_at": "2026-07-02T11:01:17.595932+00:00",
     "source": "综合整理：国家统计局2024年度数据、智联招聘2024年度薪酬报告、前程无忧2024薪酬指南、猎聘2024年度薪酬报告、BOSS直聘2024薪酬数据",
     "total_records": 5385,
     "description": "中国各城市、各行业、各职业层级的薪资数据库，覆盖一线至三线城市，供职业规划参考使用",
@@ -6056,13 +6056,13 @@
       "industry": "医疗/健康",
       "occupation": "前端开发工程师",
       "level": "mid",
-      "salary_min": 12957,
-      "salary_max": 12957,
+      "salary_min": 8000,
+      "salary_max": 15000,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "https://cn.indeed.com/career/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
-      "source_url": "https://cn.indeed.com/career/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
-      "scraped_at": "2026-06-25T16:18:15.130780+00:00"
+      "data_source": "https://m.jobui.com/salary/beijing-chujiqianduankaifagongchengshi",
+      "source_url": "https://m.jobui.com/salary/beijing-chujiqianduankaifagongchengshi",
+      "scraped_at": "2026-07-02T10:49:54.235033+00:00"
     },
     {
       "city_tier": "tier1",
@@ -70144,12 +70144,12 @@
       "occupation": "全栈开发工程师",
       "level": "mid",
       "salary_min": 20000,
-      "salary_max": 50000,
+      "salary_max": 35000,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "https://m.jobui.com/salary/beijing-quanzhankaifagongchengshi",
-      "source_url": "https://m.jobui.com/salary/beijing-quanzhankaifagongchengshi",
-      "scraped_at": "2026-06-25T16:18:04.868968+00:00"
+      "data_source": "https://zhuanlan.zhihu.com/p/1982015629142802668",
+      "source_url": "https://zhuanlan.zhihu.com/p/1982015629142802668",
+      "scraped_at": "2026-07-02T10:49:45.617337+00:00"
     },
     {
       "city_tier": "tier1",
