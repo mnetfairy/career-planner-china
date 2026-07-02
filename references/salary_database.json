@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "2.2.166",
-    "updated_at": "2026-07-02T11:14:51.088477+00:00",
+    "version": "2.2.171",
+    "updated_at": "2026-07-02T17:31:22.249641+00:00",
     "source": "综合整理：国家统计局2024年度数据、智联招聘2024年度薪酬报告、前程无忧2024薪酬指南、猎聘2024年度薪酬报告、BOSS直聘2024薪酬数据",
     "total_records": 5385,
     "description": "中国各城市、各行业、各职业层级的薪资数据库，覆盖一线至三线城市，供职业规划参考使用",
@@ -6003,13 +6003,13 @@
       "industry": "金融/银行/保险",
       "occupation": "前端开发工程师",
       "level": "mid",
-      "salary_min": 15000,
-      "salary_max": 50000,
+      "salary_min": 10000,
+      "salary_max": 20000,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "https://m.jobui.com/salary/beijing-webqianduankaifagongchengshi",
-      "source_url": "https://m.jobui.com/salary/beijing-webqianduankaifagongchengshi",
-      "scraped_at": "2026-07-01T17:30:30.063166+00:00"
+      "data_source": "https://m.jobui.com/salary/quanguo-qianduankaifa/exp2",
+      "source_url": "https://m.jobui.com/salary/quanguo-qianduankaifa/exp2",
+      "scraped_at": "2026-07-02T17:30:28.336907+00:00"
     },
     {
       "city_tier": "tier1",
@@ -11778,13 +11778,13 @@
       "industry": "互联网/IT",
       "occupation": "算法工程师",
       "level": "mid",
-      "salary_min": 200000,
-      "salary_max": 200000,
+      "salary_min": 28499,
+      "salary_max": 28499,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "https://juejin.cn/post/7598003935425511467",
-      "source_url": "https://juejin.cn/post/7598003935425511467",
-      "scraped_at": "2026-06-30T17:30:29.364356+00:00"
+      "data_source": "https://cn.indeed.com/career/%E7%AE%97%E6%B3%95%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
+      "source_url": "https://cn.indeed.com/career/%E7%AE%97%E6%B3%95%E5%B7%A5%E7%A8%8B%E5%B8%88/salaries/%E5%8C%97%E4%BA%AC%E5%B8%82",
+      "scraped_at": "2026-07-02T17:30:23.271539+00:00"
     },
     {
       "city_tier": "tier1",
@@ -11884,13 +11884,13 @@
       "industry": "医疗/健康",
       "occupation": "算法工程师",
       "level": "mid",
-      "salary_min": 4500,
-      "salary_max": 30000,
+      "salary_min": 30000,
+      "salary_max": 50000,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "https://m.jobui.com/salary/beijing-chujisuanfagongchengshi",
-      "source_url": "https://m.jobui.com/salary/beijing-chujisuanfagongchengshi",
-      "scraped_at": "2026-06-30T17:31:17.391827+00:00"
+      "data_source": "https://m.jobui.com/salary/beijing-suanfagongchengshi",
+      "source_url": "https://m.jobui.com/salary/beijing-suanfagongchengshi",
+      "scraped_at": "2026-07-02T17:31:06.486867+00:00"
     },
     {
       "city_tier": "tier1",
@@ -70144,12 +70144,12 @@
       "occupation": "全栈开发工程师",
       "level": "mid",
       "salary_min": 20000,
-      "salary_max": 35000,
+      "salary_max": 50000,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "https://zhuanlan.zhihu.com/p/1982015629142802668",
-      "source_url": "https://zhuanlan.zhihu.com/p/1982015629142802668",
-      "scraped_at": "2026-07-02T10:49:45.617337+00:00"
+      "data_source": "https://m.jobui.com/salary/beijing-quanzhankaifagongchengshi",
+      "source_url": "https://m.jobui.com/salary/beijing-quanzhankaifagongchengshi",
+      "scraped_at": "2026-07-02T17:30:39.097468+00:00"
     },
     {
       "city_tier": "tier1",
@@ -70157,13 +70157,13 @@
       "industry": "医疗/健康",
       "occupation": "全栈开发工程师",
       "level": "mid",
-      "salary_min": 20000,
-      "salary_max": 50000,
+      "salary_min": 6000,
+      "salary_max": 8000,
       "salary_unit": "月薪",
       "annual_note": "",
-      "data_source": "https://m.jobui.com/salary/beijing-quanzhankaifagongchengshi",
-      "source_url": "https://m.jobui.com/salary/beijing-quanzhankaifagongchengshi",
-      "scraped_at": "2026-07-01T17:31:02.456584+00:00"
+      "data_source": "https://remote-china.com/jobs/785",
+      "source_url": "https://remote-china.com/jobs/785",
+      "scraped_at": "2026-07-02T17:31:01.266749+00:00"
     },
     {
       "city_tier": "tier1",
