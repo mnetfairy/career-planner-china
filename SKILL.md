@@ -214,3 +214,5 @@ last_published: 2026-07-19
 
 不要把上述集成视为默认步骤，也不要在未获得明确授权时主动联网、外发、持久化或后续触达用户。
 
+<!-- daily_updater maintenance marker: 2026-07-19 (no functional change) -->
+
