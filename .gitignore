@@ -1,0 +1,5 @@
+# 数据库备份目录 — 不进 git，避免 publish 时把大文件推上去
+references/backups/
+**/backups/
+*.backup_*
+*.backup
