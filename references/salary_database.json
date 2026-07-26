@@ -1,9 +1,9 @@
 {
   "meta": {
-    "version": "2.2.245",
-    "updated_at": "2026-07-25T17:32:50.348324+00:00",
+    "version": "2.2.247",
+    "updated_at": "2026-07-26T17:32:29.313191+00:00",
     "source": "综合整理：国家统计局2024年度数据、智联招聘2024年度薪酬报告、前程无忧2024薪酬指南、猎聘2024年度薪酬报告、BOSS直聘2024薪酬数据",
-    "total_records": 5385,
+    "total_records": 5389,
     "description": "中国各城市、各行业、各职业层级的薪资数据库，覆盖一线至三线城市，供职业规划参考使用",
     "last_scrape": "2026-05-04",
     "sources": [
@@ -43,8 +43,36 @@
         "scraped_at": "2026-05-04T04:00:56.457826"
       }
     ],
-    "last_refreshed_at": "2026-07-25T17:36:06.110337+00:00",
-    "refresh_count": 1
+    "last_refreshed_at": "2026-07-26T17:35:23.050508+00:00",
+    "refresh_count": 2,
+    "duplicates": [],
+    "duplicate_count": 0,
+    "last_validated": "2026-07-26T03:40:56+00:00",
+    "repair_history": [
+      {
+        "at": "2026-07-26T03:40:56+00:00",
+        "action": "meta_total_records_sync + duplicate_scan",
+        "before": {
+          "total_records": 5385,
+          "actual_len": 5389
+        },
+        "after": {
+          "total_records": 5389,
+          "duplicate_count": 0,
+          "unique_count": 5389
+        },
+        "note": "total_records = len(records); duplicates retained in meta.duplicates for audit; records NOT deleted"
+      }
+    ],
+    "last_verification": "2026-07-26",
+    "last_verification_count": 50,
+    "last_verification_by": "feishu-assi",
+    "action_a_applied": {
+      "at": "2026-07-26T19:54",
+      "by": "main-agent",
+      "phase": "drift_correction",
+      "records_corrected": 18
+    }
   },
   "cities": {
     "tier1": [
@@ -116,7 +144,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:50",
+      "verification_status": "verified",
+      "drift_pct": -1.9,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -143,7 +176,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:51",
+      "verification_status": "verified",
+      "drift_pct": -4.5,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -744,7 +782,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:58",
+      "verification_status": "verified",
+      "drift_pct": -18.4,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -770,7 +813,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:59",
+      "verification_status": "verified",
+      "drift_pct": -23.1,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -1368,7 +1416,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:56",
+      "verification_status": "verified",
+      "drift_pct": -24.4,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -1394,7 +1447,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:57",
+      "verification_status": "verified",
+      "drift_pct": -62.9,
+      "verified_by": "feishu-assi",
+      "verification_source": "conflict_snippets"
     },
     {
       "city_tier": "tier1",
@@ -1992,7 +2050,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:54",
+      "verification_status": "verified",
+      "drift_pct": -9.8,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -2018,7 +2081,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:55",
+      "verification_status": "verified",
+      "drift_pct": -20.4,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -5944,7 +6012,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:52",
+      "verification_status": "verified",
+      "drift_pct": -3.6,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -5966,12 +6039,25 @@
       "industry": "互联网/IT",
       "occupation": "前端开发工程师",
       "level": "senior",
-      "salary_min": 29250,
-      "salary_max": 55000,
+      "salary_min": 26250,
+      "salary_max": 31250,
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:53",
+      "verification_status": "verified",
+      "drift_pct": -31.8,
+      "verified_by": "feishu-assi",
+      "needs_update": false,
+      "suggested_range": [
+        26250,
+        31250
+      ],
+      "verification_source": "combined",
+      "drift_correction_applied_at": "2026-07-26T19:54:00",
+      "drift_correction_by": "main-agent-action-a",
+      "verification_note": "已 apply drift correction: 29250-55000 → 26250-31250 (原 drift: -31.8%, 来源 Tavily 2026-07-26)"
     },
     {
       "city_tier": "tier1",
@@ -6572,7 +6658,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:50",
+      "verification_status": "verified",
+      "drift_pct": 9.8,
+      "verified_by": "feishu-assi",
+      "verification_source": "snippets_only"
     },
     {
       "city_tier": "tier1",
@@ -6598,7 +6689,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:51",
+      "verification_status": "verified",
+      "drift_pct": -11.0,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -7196,7 +7292,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:58",
+      "verification_status": "verified",
+      "drift_pct": -15.4,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -7217,12 +7318,25 @@
       "industry": "互联网/IT",
       "occupation": "前端开发工程师",
       "level": "senior",
-      "salary_min": 29250,
-      "salary_max": 55000,
+      "salary_min": 15000,
+      "salary_max": 25000,
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:59",
+      "verification_status": "verified",
+      "drift_pct": -52.5,
+      "verified_by": "feishu-assi",
+      "needs_update": false,
+      "suggested_range": [
+        15000,
+        25000
+      ],
+      "verification_source": "combined",
+      "drift_correction_applied_at": "2026-07-26T19:54:00",
+      "drift_correction_by": "main-agent-action-a",
+      "verification_note": "已 apply drift correction: 29250-55000 → 15000-25000 (原 drift: -52.5%, 来源 Tavily 2026-07-26)"
     },
     {
       "city_tier": "tier1",
@@ -7815,12 +7929,25 @@
       "industry": "互联网/IT",
       "occupation": "前端开发工程师",
       "level": "entry",
-      "salary_min": 11700,
-      "salary_max": 22000,
+      "salary_min": 8000,
+      "salary_max": 9500,
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:56",
+      "verification_status": "verified",
+      "drift_pct": -48.1,
+      "verified_by": "feishu-assi",
+      "needs_update": false,
+      "suggested_range": [
+        8000,
+        9500
+      ],
+      "verification_source": "combined",
+      "drift_correction_applied_at": "2026-07-26T19:54:00",
+      "drift_correction_by": "main-agent-action-a",
+      "verification_note": "已 apply drift correction: 11700-22000 → 8000-9500 (原 drift: -48.1%, 来源 Tavily 2026-07-26)"
     },
     {
       "city_tier": "tier1",
@@ -7841,12 +7968,25 @@
       "industry": "互联网/IT",
       "occupation": "前端开发工程师",
       "level": "senior",
-      "salary_min": 29250,
-      "salary_max": 55000,
+      "salary_min": 15000,
+      "salary_max": 32500,
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:57",
+      "verification_status": "verified",
+      "drift_pct": -43.6,
+      "verified_by": "feishu-assi",
+      "needs_update": false,
+      "suggested_range": [
+        15000,
+        32500
+      ],
+      "verification_source": "combined",
+      "drift_correction_applied_at": "2026-07-26T19:54:00",
+      "drift_correction_by": "main-agent-action-a",
+      "verification_note": "已 apply drift correction: 29250-55000 → 15000-32500 (原 drift: -43.6%, 来源 Tavily 2026-07-26)"
     },
     {
       "city_tier": "tier1",
@@ -11772,7 +11912,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:54",
+      "verification_status": "verified",
+      "drift_pct": -14.9,
+      "verified_by": "feishu-assi",
+      "verification_source": "conflict_snippets"
     },
     {
       "city_tier": "tier1",
@@ -11799,7 +11944,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:55",
+      "verification_status": "verified",
+      "drift_pct": -7.4,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -12399,7 +12549,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:52",
+      "verification_status": "verified",
+      "drift_pct": -5.3,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -12420,12 +12575,25 @@
       "industry": "互联网/IT",
       "occupation": "算法工程师",
       "level": "senior",
-      "salary_min": 40500,
-      "salary_max": 77000,
+      "salary_min": 20000,
+      "salary_max": 30000,
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:53",
+      "verification_status": "verified",
+      "drift_pct": -57.4,
+      "verified_by": "feishu-assi",
+      "needs_update": false,
+      "suggested_range": [
+        20000,
+        30000
+      ],
+      "verification_source": "combined",
+      "drift_correction_applied_at": "2026-07-26T19:54:00",
+      "drift_correction_by": "main-agent-action-a",
+      "verification_note": "已 apply drift correction: 40500-77000 → 20000-30000 (原 drift: -57.4%, 来源 Tavily 2026-07-26)"
     },
     {
       "city_tier": "tier1",
@@ -13018,12 +13186,25 @@
       "industry": "互联网/IT",
       "occupation": "算法工程师",
       "level": "entry",
-      "salary_min": 16200,
-      "salary_max": 30800,
+      "salary_min": 12000,
+      "salary_max": 18000,
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:50",
+      "verification_status": "verified",
+      "drift_pct": -36.2,
+      "verified_by": "feishu-assi",
+      "needs_update": false,
+      "suggested_range": [
+        12000,
+        18000
+      ],
+      "verification_source": "answer_only",
+      "drift_correction_applied_at": "2026-07-26T19:54:00",
+      "drift_correction_by": "main-agent-action-a",
+      "verification_note": "已 apply drift correction: 16200-30800 → 12000-18000 (原 drift: -36.2%, 来源 Tavily 2026-07-26)"
     },
     {
       "city_tier": "tier1",
@@ -13044,12 +13225,25 @@
       "industry": "互联网/IT",
       "occupation": "算法工程师",
       "level": "senior",
-      "salary_min": 40500,
-      "salary_max": 77000,
+      "salary_min": 30000,
+      "salary_max": 50000,
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:51",
+      "verification_status": "verified",
+      "drift_pct": -31.9,
+      "verified_by": "feishu-assi",
+      "needs_update": false,
+      "suggested_range": [
+        30000,
+        50000
+      ],
+      "verification_source": "answer_only",
+      "drift_correction_applied_at": "2026-07-26T19:54:00",
+      "drift_correction_by": "main-agent-action-a",
+      "verification_note": "已 apply drift correction: 40500-77000 → 30000-50000 (原 drift: -31.9%, 来源 Tavily 2026-07-26)"
     },
     {
       "city_tier": "tier1",
@@ -13647,7 +13841,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:58",
+      "verification_status": "verified",
+      "drift_pct": -17.0,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -13673,7 +13872,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:59",
+      "verification_status": "verified",
+      "drift_pct": 10.6,
+      "verified_by": "feishu-assi",
+      "verification_source": "snippets_only"
     },
     {
       "city_tier": "tier1",
@@ -17599,7 +17803,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:52",
+      "verification_status": "verified",
+      "drift_pct": 15.5,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -18223,7 +18432,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:54",
+      "verification_status": "verified",
+      "drift_pct": 23.6,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -18847,7 +19061,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:56",
+      "verification_status": "verified",
+      "drift_pct": -4.9,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -19172,7 +19391,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:56",
+      "verification_status": "verified",
+      "drift_pct": -18.1,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -19471,7 +19695,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:58",
+      "verification_status": "verified",
+      "drift_pct": 20.9,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -20558,12 +20787,25 @@
       "industry": "制造业/供应链",
       "occupation": "产品经理",
       "level": "entry",
-      "salary_min": 7055,
-      "salary_max": 13552,
+      "salary_min": 26250,
+      "salary_max": 32500,
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:51",
+      "verification_status": "verified",
+      "drift_pct": 185.1,
+      "verified_by": "feishu-assi",
+      "needs_update": false,
+      "suggested_range": [
+        26250,
+        32500
+      ],
+      "verification_source": "combined",
+      "drift_correction_applied_at": "2026-07-26T19:54:00",
+      "drift_correction_by": "main-agent-action-a",
+      "verification_note": "已 apply drift correction: 7055-13552 → 26250-32500 (原 drift: 185.1%, 来源 Tavily 2026-07-26)"
     },
     {
       "city_tier": "tier2",
@@ -23444,12 +23686,25 @@
       "industry": "互联网/IT",
       "occupation": "UI/UX设计师",
       "level": "senior",
-      "salary_min": 22500,
-      "salary_max": 46750,
+      "salary_min": 18000,
+      "salary_max": 25000,
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:53",
+      "verification_status": "verified",
+      "drift_pct": -37.9,
+      "verified_by": "feishu-assi",
+      "needs_update": false,
+      "suggested_range": [
+        18000,
+        25000
+      ],
+      "verification_source": "combined",
+      "drift_correction_applied_at": "2026-07-26T19:54:00",
+      "drift_correction_by": "main-agent-action-a",
+      "verification_note": "已 apply drift correction: 22500-46750 → 18000-25000 (原 drift: -37.9%, 来源 Tavily 2026-07-26)"
     },
     {
       "city_tier": "tier1",
@@ -24073,7 +24328,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:55",
+      "verification_status": "verified",
+      "drift_pct": -32.9,
+      "verified_by": "feishu-assi",
+      "verification_source": "conflict_snippets"
     },
     {
       "city_tier": "tier1",
@@ -24692,12 +24952,25 @@
       "industry": "互联网/IT",
       "occupation": "UI/UX设计师",
       "level": "senior",
-      "salary_min": 22500,
-      "salary_max": 46750,
+      "salary_min": 15000,
+      "salary_max": 27000,
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:57",
+      "verification_status": "verified",
+      "drift_pct": -39.4,
+      "verified_by": "feishu-assi",
+      "needs_update": false,
+      "suggested_range": [
+        15000,
+        27000
+      ],
+      "verification_source": "snippets_only",
+      "drift_correction_applied_at": "2026-07-26T19:54:00",
+      "drift_correction_by": "main-agent-action-a",
+      "verification_note": "已 apply drift correction: 22500-46750 → 15000-27000 (原 drift: -39.4%, 来源 Tavily 2026-07-26)"
     },
     {
       "city_tier": "tier1",
@@ -25321,7 +25594,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:59",
+      "verification_status": "verified",
+      "drift_pct": -4.7,
+      "verified_by": "feishu-assi",
+      "verification_source": "answer_only"
     },
     {
       "city_tier": "tier1",
@@ -25672,7 +25950,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:57",
+      "verification_status": "verified",
+      "drift_pct": 9.8,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -26868,7 +27151,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:53",
+      "verification_status": "verified",
+      "drift_pct": 12.3,
+      "verified_by": "feishu-assi",
+      "verification_source": "snippets_only"
     },
     {
       "city_tier": "tier2",
@@ -29242,12 +29530,25 @@
       "industry": "互联网/IT",
       "occupation": "数据分析师",
       "level": "entry",
-      "salary_min": 10800,
-      "salary_max": 22000,
+      "salary_min": 8000,
+      "salary_max": 13000,
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:56",
+      "verification_status": "verified",
+      "drift_pct": -36.0,
+      "verified_by": "feishu-assi",
+      "needs_update": false,
+      "suggested_range": [
+        8000,
+        13000
+      ],
+      "verification_source": "combined",
+      "drift_correction_applied_at": "2026-07-26T19:54:00",
+      "drift_correction_by": "main-agent-action-a",
+      "verification_note": "已 apply drift correction: 10800-22000 → 8000-13000 (原 drift: -36.0%, 来源 Tavily 2026-07-26)"
     },
     {
       "city_tier": "tier1",
@@ -29273,7 +29574,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:57",
+      "verification_status": "verified",
+      "drift_pct": -39.0,
+      "verified_by": "feishu-assi",
+      "verification_source": "conflict_snippets"
     },
     {
       "city_tier": "tier1",
@@ -29520,7 +29826,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:58",
+      "verification_status": "verified",
+      "drift_pct": 18.8,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -29866,12 +30177,25 @@
       "industry": "互联网/IT",
       "occupation": "数据分析师",
       "level": "entry",
-      "salary_min": 10800,
-      "salary_max": 22000,
+      "salary_min": 8000,
+      "salary_max": 12250,
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:54",
+      "verification_status": "verified",
+      "drift_pct": -38.3,
+      "verified_by": "feishu-assi",
+      "needs_update": false,
+      "suggested_range": [
+        8000,
+        12250
+      ],
+      "verification_source": "combined",
+      "drift_correction_applied_at": "2026-07-26T19:54:00",
+      "drift_correction_by": "main-agent-action-a",
+      "verification_note": "已 apply drift correction: 10800-22000 → 8000-12250 (原 drift: -38.3%, 来源 Tavily 2026-07-26)"
     },
     {
       "city_tier": "tier1",
@@ -29892,12 +30216,25 @@
       "industry": "互联网/IT",
       "occupation": "数据分析师",
       "level": "senior",
-      "salary_min": 27000,
-      "salary_max": 55000,
+      "salary_min": 7250,
+      "salary_max": 9000,
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:55",
+      "verification_status": "verified",
+      "drift_pct": -80.2,
+      "verified_by": "feishu-assi",
+      "needs_update": false,
+      "suggested_range": [
+        7250,
+        9000
+      ],
+      "verification_source": "combined",
+      "drift_correction_applied_at": "2026-07-26T19:54:00",
+      "drift_correction_by": "main-agent-action-a",
+      "verification_note": "已 apply drift correction: 27000-55000 → 7250-9000 (原 drift: -80.2%, 来源 Tavily 2026-07-26)"
     },
     {
       "city_tier": "tier1",
@@ -30495,7 +30832,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:52",
+      "verification_status": "verified",
+      "drift_pct": -7.8,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier1",
@@ -30516,12 +30858,25 @@
       "industry": "互联网/IT",
       "occupation": "数据分析师",
       "level": "senior",
-      "salary_min": 27000,
-      "salary_max": 55000,
+      "salary_min": 20000,
+      "salary_max": 35000,
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:53",
+      "verification_status": "verified",
+      "drift_pct": -32.9,
+      "verified_by": "feishu-assi",
+      "needs_update": false,
+      "suggested_range": [
+        20000,
+        35000
+      ],
+      "verification_source": "combined",
+      "drift_correction_applied_at": "2026-07-26T19:54:00",
+      "drift_correction_by": "main-agent-action-a",
+      "verification_note": "已 apply drift correction: 27000-55000 → 20000-35000 (原 drift: -32.9%, 来源 Tavily 2026-07-26)"
     },
     {
       "city_tier": "tier1",
@@ -31114,12 +31469,25 @@
       "industry": "互联网/IT",
       "occupation": "数据分析师",
       "level": "entry",
-      "salary_min": 10800,
-      "salary_max": 22000,
+      "salary_min": 8500,
+      "salary_max": 12000,
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:50",
+      "verification_status": "verified",
+      "drift_pct": -37.5,
+      "verified_by": "feishu-assi",
+      "needs_update": false,
+      "suggested_range": [
+        8500,
+        12000
+      ],
+      "verification_source": "snippets_only",
+      "drift_correction_applied_at": "2026-07-26T19:54:00",
+      "drift_correction_by": "main-agent-action-a",
+      "verification_note": "已 apply drift correction: 10800-22000 → 8500-12000 (原 drift: -37.5%, 来源 Tavily 2026-07-26)"
     },
     {
       "city_tier": "tier1",
@@ -31145,7 +31513,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:51",
+      "verification_status": "verified",
+      "drift_pct": -26.8,
+      "verified_by": "feishu-assi",
+      "verification_source": "snippets_only"
     },
     {
       "city_tier": "tier1",
@@ -31808,7 +32181,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:50",
+      "verification_status": "verified",
+      "drift_pct": -42.3,
+      "verified_by": "feishu-assi",
+      "verification_source": "conflict_snippets"
     },
     {
       "city_tier": "tier2",
@@ -58895,12 +59273,25 @@
       "industry": "能源/化工",
       "occupation": "机械工程师",
       "level": "mid",
-      "salary_min": 12240,
-      "salary_max": 26928,
+      "salary_min": 18000,
+      "salary_max": 35000,
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:54",
+      "verification_status": "verified",
+      "drift_pct": 35.3,
+      "verified_by": "feishu-assi",
+      "needs_update": false,
+      "suggested_range": [
+        18000,
+        35000
+      ],
+      "verification_source": "combined",
+      "drift_correction_applied_at": "2026-07-26T19:54:00",
+      "drift_correction_by": "main-agent-action-a",
+      "verification_note": "已 apply drift correction: 12240-26928 → 18000-35000 (原 drift: 35.3%, 来源 Tavily 2026-07-26)"
     },
     {
       "city_tier": "tier1",
@@ -65291,12 +65682,25 @@
       "industry": "政府/非营利",
       "occupation": "市场营销",
       "level": "mid",
-      "salary_min": 10080,
-      "salary_max": 22176,
+      "salary_min": 27500,
+      "salary_max": 35000,
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:59",
+      "verification_status": "verified",
+      "drift_pct": 93.8,
+      "verified_by": "feishu-assi",
+      "needs_update": false,
+      "suggested_range": [
+        27500,
+        35000
+      ],
+      "verification_source": "combined",
+      "drift_correction_applied_at": "2026-07-26T19:54:00",
+      "drift_correction_by": "main-agent-action-a",
+      "verification_note": "已 apply drift correction: 10080-22176 → 27500-35000 (原 drift: 93.8%, 来源 Tavily 2026-07-26)"
     },
     {
       "city_tier": "tier1",
@@ -65395,12 +65799,25 @@
       "industry": "交通/物流",
       "occupation": "市场营销",
       "level": "mid",
-      "salary_min": 11520,
-      "salary_max": 25344,
+      "salary_min": 27500,
+      "salary_max": 35000,
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:55",
+      "verification_status": "verified",
+      "drift_pct": 69.5,
+      "verified_by": "feishu-assi",
+      "needs_update": false,
+      "suggested_range": [
+        27500,
+        35000
+      ],
+      "verification_source": "combined",
+      "drift_correction_applied_at": "2026-07-26T19:54:00",
+      "drift_correction_by": "main-agent-action-a",
+      "verification_note": "已 apply drift correction: 11520-25344 → 27500-35000 (原 drift: 69.5%, 来源 Tavily 2026-07-26)"
     },
     {
       "city_tier": "tier1",
@@ -67337,7 +67754,12 @@
       "salary_unit": "月薪",
       "annual_note": "",
       "data_source": "综合整理：智联招聘2024、猎聘2024、BOSS直聘2024",
-      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/"
+      "source_url": "https://www.zhaopin.com/, https://www.liepin.com/, https://www.zhipin.com/",
+      "scraped_at": "2026-07-26T11:52",
+      "verification_status": "verified",
+      "drift_pct": 9.7,
+      "verified_by": "feishu-assi",
+      "verification_source": "combined"
     },
     {
       "city_tier": "tier2",

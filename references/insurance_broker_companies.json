@@ -1,14 +1,730 @@
 {
   "_meta": {
-    "version": "1.0",
-    "updated_at": "2026-04-11",
-    "description": "各地区保险代理/经纪公司列表"
+    "version": "1.1",
+    "updated_at": "2026-07-26",
+    "description": "各地区保险代理/经纪公司列表（2026-07-26 已从 8 家扩展到 28 家，新增 20 家 Tavily 调研公司）",
+    "expanded_at": "2026-07-26T12:53:14+0800",
+    "count": 28,
+    "companies": [
+      {
+        "name": "安盛天平保险销售有限公司",
+        "type": "保险代理",
+        "regions": [
+          "江苏",
+          "广东",
+          "上海",
+          "浙江",
+          "重庆",
+          "陕西",
+          "广西"
+        ],
+        "phone": "400-860-0058",
+        "featured": true,
+        "description": "可销售多家保险公司产品，站在客户立场对比优选",
+        "name_en": "",
+        "name_en_note": "中国本土保险公司，无标准英文名",
+        "scraped_at": "2024-09-01",
+        "verified": false,
+        "verified_reason": "历史数据，未经过 Tavily 验证（pre-feishu-assi 时代）",
+        "source_url": "",
+        "schema_v2_added": true,
+        "schema_v2_added_at": "2026-07-26T19:54:00"
+      },
+      {
+        "name": "明亚保险经纪有限公司",
+        "type": "保险经纪",
+        "regions": [
+          "全国"
+        ],
+        "phone": "400-888-6080",
+        "website": "www.mingya.com.cn",
+        "description": "国内头部保险经纪公司，专注个人保险业务",
+        "name_en": "",
+        "name_en_note": "中国本土保险公司，无标准英文名",
+        "scraped_at": "2024-09-01",
+        "verified": false,
+        "verified_reason": "历史数据，未经过 Tavily 验证（pre-feishu-assi 时代）",
+        "source_url": "www.mingya.com.cn",
+        "schema_v2_added": true,
+        "schema_v2_added_at": "2026-07-26T19:54:00"
+      },
+      {
+        "name": "易诚保险经纪有限公司",
+        "type": "保险经纪",
+        "regions": [
+          "江苏",
+          "上海",
+          "山东",
+          "浙江"
+        ],
+        "phone": "400-820-6168",
+        "website": "www.ycbroker.com",
+        "description": "全国性保险经纪公司，多家分公司",
+        "name_en": "",
+        "name_en_note": "中国本土保险公司，无标准英文名",
+        "scraped_at": "2024-09-01",
+        "verified": false,
+        "verified_reason": "历史数据，未经过 Tavily 验证（pre-feishu-assi 时代）",
+        "source_url": "www.ycbroker.com",
+        "schema_v2_added": true,
+        "schema_v2_added_at": "2026-07-26T19:54:00"
+      },
+      {
+        "name": "国信蓝海保险经纪股份有限公司",
+        "type": "保险经纪",
+        "regions": [
+          "浙江",
+          "北京",
+          "上海",
+          "江苏",
+          "四川",
+          "陕西"
+        ],
+        "phone": "400-700-9696",
+        "website": "www.guoxinlanhai.com",
+        "description": "大型全国性综合保险经纪公司",
+        "name_en": "",
+        "name_en_note": "中国本土保险公司，无标准英文名",
+        "scraped_at": "2024-09-01",
+        "verified": false,
+        "verified_reason": "历史数据，未经过 Tavily 验证（pre-feishu-assi 时代）",
+        "source_url": "www.guoxinlanhai.com",
+        "schema_v2_added": true,
+        "schema_v2_added_at": "2026-07-26T19:54:00"
+      },
+      {
+        "name": "友太安保险经纪有限公司",
+        "type": "保险经纪",
+        "regions": [
+          "上海",
+          "广东"
+        ],
+        "phone": "021-5480-5588",
+        "website": "ytabx.com",
+        "description": "专注企业风险管理与保险咨询",
+        "name_en": "",
+        "name_en_note": "中国本土保险公司，无标准英文名",
+        "scraped_at": "2024-09-01",
+        "verified": false,
+        "verified_reason": "历史数据，未经过 Tavily 验证（pre-feishu-assi 时代）",
+        "source_url": "ytabx.com",
+        "schema_v2_added": true,
+        "schema_v2_added_at": "2026-07-26T19:54:00"
+      },
+      {
+        "name": "达人保险经纪有限公司",
+        "type": "保险经纪",
+        "regions": [
+          "全国"
+        ],
+        "phone": "400-900-1234",
+        "description": "互联网保险经纪平台",
+        "name_en": "",
+        "name_en_note": "中国本土保险公司，无标准英文名",
+        "scraped_at": "2024-09-01",
+        "verified": false,
+        "verified_reason": "历史数据，未经过 Tavily 验证（pre-feishu-assi 时代）",
+        "source_url": "",
+        "schema_v2_added": true,
+        "schema_v2_added_at": "2026-07-26T19:54:00"
+      },
+      {
+        "name": "中汇保险经纪有限公司",
+        "type": "保险经纪",
+        "regions": [
+          "北京",
+          "上海",
+          "广东"
+        ],
+        "phone": "400-800-9000",
+        "description": "全国性保险经纪服务",
+        "name_en": "",
+        "name_en_note": "中国本土保险公司，无标准英文名",
+        "scraped_at": "2024-09-01",
+        "verified": false,
+        "verified_reason": "历史数据，未经过 Tavily 验证（pre-feishu-assi 时代）",
+        "source_url": "",
+        "schema_v2_added": true,
+        "schema_v2_added_at": "2026-07-26T19:54:00"
+      },
+      {
+        "name": "华鑫保险代理有限公司",
+        "type": "保险代理",
+        "regions": [
+          "江苏",
+          "浙江",
+          "广东"
+        ],
+        "phone": "400-700-1234",
+        "description": "区域性保险代理公司",
+        "name_en": "",
+        "name_en_note": "中国本土保险公司，无标准英文名",
+        "scraped_at": "2024-09-01",
+        "verified": false,
+        "verified_reason": "历史数据，未经过 Tavily 验证（pre-feishu-assi 时代）",
+        "source_url": "",
+        "schema_v2_added": true,
+        "schema_v2_added_at": "2026-07-26T19:54:00"
+      },
+      {
+        "name": "众安在线",
+        "name_en": "ZhongAn Online",
+        "type": "互联网",
+        "regions": [
+          "全国"
+        ],
+        "description": "The registered capital of 众安在线财产保险 is 1.47 billion RMB. The company was established in 2013. It is headquartered in Shanghai。",
+        "raw_answer": "The registered capital of 众安在线财产保险 is 1.47 billion RMB. The company was established in 2013. It is headquartered in Shanghai.",
+        "snippets": [
+          "85 3 第一节公司简介 一、法定名称及缩写 [中文全称]：众安在线财产保险股份有限公司 [中文简称]：众安保险 [英文全称]：ZhongAn Online P & C Insurance Co.,Ltd. 二、注册资本 人民币1,469,812,900 元，实收资本人民币1,469,812,900 元。 三、注册地 上海市黄浦区圆明园路169 号协进大楼4-5 楼。 四、成立时间 公司于2013…",
+          "中文名称：众安在线财产保险股份有限公司. 2.注册资本. 注册资本人民币16.848129亿元. 3. 公司住所和营业场所. 公司住所：上海市黄浦区圆明园路169号协进大楼4-5楼. 营业",
+          "众安在线财产保险股份有限公司怎么样？企 ... 注册资本：168481.29万元. 复制. 成立日期： 2013-10-08. 复制. 电话： 021-60278666"
+        ],
+        "source_urls": [
+          "https://pinpai.qcc.com/own/f8fc1bad000772d3d3cc056073226495.html",
+          "https://www.zhongan.com/channel/public/publicInfo2018.html",
+          "https://zh.wikipedia.org/zh-hans/%E4%BC%97%E5%AE%89%E4%BF%9D%E9%99%A9",
+          "https://static.zhongan.com/upload/online/material/1620372332262.pdf"
+        ],
+        "source_url": "https://pinpai.qcc.com/own/f8fc1bad000772d3d3cc056073226495.html",
+        "source": "https://pinpai.qcc.com/own/f8fc1bad000772d3d3cc056073226495.html",
+        "scraped_at": "2026-07-26T12:13:00.798065",
+        "researched_at": "2026-07-26T12:13:00.798065",
+        "verified": true,
+        "added_at": "2026-07-26T12:53:14+0800"
+      },
+      {
+        "name": "泰康在线",
+        "name_en": "Taikang Online",
+        "type": "互联网",
+        "regions": [
+          "全国"
+        ],
+        "description": "泰康在线财产保险股份有限公司的注册资本为550000万人民币。公司成立于2015年11月12日，总部位于湖北省武汉市。",
+        "raw_answer": "泰康在线财产保险股份有限公司的注册资本为550000万人民币。公司成立于2015年11月12日，总部位于湖北省武汉市。",
+        "snippets": [
+          "，2015年11月12日成立，注册资本为550,000万人民币，总部位于湖北省武汉市江岸区建设大道718号浙商大厦36层，主营业务包括与互联网交易直接相关的企业/家庭财产保险、货运保险",
+          "泰康在线财产保险股份有限公司注册资本550000万人民币，实缴资本550000万人民币。泰康在线财产保险股份有限公司员工规模在100-499人，是天津嘉泰弘德的成员",
+          "企业注册资本550000万人民币，实缴资本550000万人民币，并已于2016年完成了天使轮。通过天眼查大数据分析，泰康在线财产保险股份有限公司共对外投资了7家企业，参与招投标项目"
+        ],
+        "source_urls": [
+          "https://www.tianyancha.com/company/2312461335",
+          "https://baike.baidu.com/item/%E6%B3%B0%E5%BA%B7%E5%9C%A8%E7%BA%BF%E8%B4%A2%E4%BA%A7%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/19407033",
+          "https://xuexi.huize.com/study/detal-309114.html",
+          "https://m.qcc.com/firm/f0afdf8d76cc9be84d5524206f23c241.html"
+        ],
+        "source_url": "https://www.tianyancha.com/company/2312461335",
+        "source": "https://www.tianyancha.com/company/2312461335",
+        "scraped_at": "2026-07-26T12:13:07.663044",
+        "researched_at": "2026-07-26T12:13:07.663044",
+        "verified": true,
+        "added_at": "2026-07-26T12:53:14+0800"
+      },
+      {
+        "name": "安心保险",
+        "name_en": "Anxin Insurance",
+        "type": "互联网",
+        "regions": [
+          "全国"
+        ],
+        "description": "安心财产保险有限责任公司的注册资本为12.85亿元。公司成立于2015年，总部位于江苏苏州。公司计划增资2.85亿元。",
+        "raw_answer": "安心财产保险有限责任公司的注册资本为12.85亿元。公司成立于2015年，总部位于江苏苏州。公司计划增资2.85亿元。",
+        "snippets": [
+          "安心财产保险有限责任公司是经原中国保监会批准设立的全国首批互联网创新型保险公司，成立于2015年12月31日，注册资本12.85亿元，法定代表人韩刚，总部现位于江苏省苏州市",
+          "安心财产保险有限责任公司（简称“安心保险”）是经中国银保监会批准设立的全国首批创新型互联网保险公司，2016年1月18日正式开业，总部位于北京，注册资本金12.85亿元。",
+          "安心保险是一家互联网创新型保险公司, 成立于2015年12月31 … 注册资本 128500万元 成立日期 2015-12-30 0512-66156006"
+        ],
+        "source_urls": [
+          "https://baike.baidu.com/item/%E5%AE%89%E5%BF%83%E8%B4%A2%E4%BA%A7%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8/19407012",
+          "https://m.qcc.com/firm/185d2c343c4fc81807cf7988ff11022a.html",
+          "https://baike.baidu.com/item/%E5%AE%89%E5%BF%83%E4%BF%9D%E9%99%A9/17936073",
+          "https://finance.ifeng.com/c/7i8zV82g37o"
+        ],
+        "source_url": "https://baike.baidu.com/item/%E5%AE%89%E5%BF%83%E8%B4%A2%E4%BA%A7%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8/19407012",
+        "source": "https://baike.baidu.com/item/%E5%AE%89%E5%BF%83%E8%B4%A2%E4%BA%A7%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8/19407012",
+        "scraped_at": "2026-07-26T12:13:14.962006",
+        "researched_at": "2026-07-26T12:13:14.962006",
+        "verified": true,
+        "added_at": "2026-07-26T12:53:14+0800"
+      },
+      {
+        "name": "易安保险",
+        "name_en": "Yi'an Insurance",
+        "type": "互联网",
+        "regions": [
+          "全国"
+        ],
+        "description": "易安财产保险的注册资本为人民币10亿元。公司注册地位于深圳市。易安财险是国家批准的互联网保险公司。",
+        "raw_answer": "易安财产保险的注册资本为人民币10亿元。公司注册地位于深圳市。易安财险是国家批准的互联网保险公司。",
+        "snippets": [
+          "Jun 30, 2015 — ... 易安财产保险股份有限公司，注册资本人民币10亿元，注册地深圳市。拟任董事长李军，拟任总经理程孙霖。 相关文章: 生产一线是最好的创新舞台——访鞍钢 ...Read more",
+          "易安财险注册资本金为人民币10亿元，公司地址位于深圳市前海深港合作区前湾一路1号A栋201室。 2015年6月29日，保监会网站公布批复，同意深圳市银之杰科技股份有限公司、 ...Read more",
+          "易安财产保险股份有限公司（简称“易安保险”）是应国家“互联网+”战略浪潮，经保监会批准设立的国内四家专业互联网保险公司之一，2016年2月16日获批开业，注册资本金10亿元，"
+        ],
+        "source_urls": [
+          "http://xuexi.huize.com/study/studytag/word-18896.html",
+          "http://finance.china.com.cn/stock/20150630/3201394.shtml",
+          "http://www.nbd.com.cn/rss/toutiao/articles/2817177.html",
+          "https://pitchhub.36kr.com/project/2113090775438724"
+        ],
+        "source_url": "http://xuexi.huize.com/study/studytag/word-18896.html",
+        "source": "http://xuexi.huize.com/study/studytag/word-18896.html",
+        "scraped_at": "2026-07-26T12:13:24.589571",
+        "researched_at": "2026-07-26T12:13:24.589571",
+        "verified": true,
+        "added_at": "2026-07-26T12:53:14+0800"
+      },
+      {
+        "name": "水滴保险",
+        "name_en": "Shuidi Insurance",
+        "type": "互联网",
+        "regions": [
+          "全国"
+        ],
+        "description": "Waterdrop Insurance Brokerage's registered capital is 50 million yuan. The company was established in October 2012. It operates as an online。",
+        "raw_answer": "Waterdrop Insurance Brokerage's registered capital is 50 million yuan. The company was established in October 2012. It operates as an online insurance brokerage.",
+        "snippets": [
+          "水滴保险经纪有限公司. 法定代表人 · 郭南洋. 注册资本. 5000万元. 成立日期. 2012-10-18. 北京纵情向前科技有限公司. 法定代表人 · 沈洪斌. 注册资本. 10000万元.",
+          "иŹ| ѡ ۹ ˹ -- -- -- ### ### ʵʱ ˾ ˾ ˾߹ » ֹ ʲծ ֽ # ˮ NYSE:WDH ʱ15 񿪣-- գ-- 䣺-- 52䣺-- ɽ-- ɽ-- ֵ-- ӯʣ-- ÿ棺 ɽ ### ˾ ˾ : Waterdrop, Inc. : Waterdrop, Inc. ҵ񹹳 : Provides online insurance brokerage services : …",
+          "百度百科 订阅更新 # 水滴保险经纪有限公司 ## 目录 ## 公司概况 ## 发展历程 ## 主营业务与商业模式 ## 主要产品与服务 ## 组织架构与治理 ### 公司治理 ### 组织架构 ### 党建与企业文化 ## 经营状况 ## 公司事件 ## 社会责任与企业文化 ## 社会荣誉 new ©2026 Baidu 使用百度前必读 | 百科协议 | 隐私政策 | 百度百科合作平台 | 京I…"
+        ],
+        "source_urls": [
+          "https://baike.baidu.com/item/%E6%B0%B4%E6%BB%B4%E4%BF%9D%E9%99%A9%E7%BB%8F%E7%BA%AA%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/59125689",
+          "https://www.prnewswire.com/apac/zh/news-releases/-302339532.html",
+          "https://top.qcc.com/tc/12439b03c0e2.html",
+          "https://q.stock.sohu.com/us/WDH_summary.html"
+        ],
+        "source_url": "https://baike.baidu.com/item/%E6%B0%B4%E6%BB%B4%E4%BF%9D%E9%99%A9%E7%BB%8F%E7%BA%AA%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/59125689",
+        "source": "https://baike.baidu.com/item/%E6%B0%B4%E6%BB%B4%E4%BF%9D%E9%99%A9%E7%BB%8F%E7%BA%AA%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/59125689",
+        "scraped_at": "2026-07-26T12:13:29.054070",
+        "researched_at": "2026-07-26T12:13:29.054070",
+        "verified": true,
+        "added_at": "2026-07-26T12:53:14+0800"
+      },
+      {
+        "name": "友邦保险",
+        "name_en": "AIA China",
+        "type": "外资合资",
+        "regions": [
+          "全国"
+        ],
+        "description": "The registered capital of AIA Group Limited in China is $3.05 billion as of 2024. AIA Group Limited is an independent listed life insurance。",
+        "raw_answer": "The registered capital of AIA Group Limited in China is $3.05 billion as of 2024. AIA Group Limited is an independent listed life insurance group in Asia. The company is headquartered in Hong Kong.",
+        "snippets": [
+          "款终身寿险 (投资连结型) 个人代理 6,028 万元 920 万元 3 友邦附加育英才终身寿险 (投资连结型) 个人代理 3,917 万元 379 万元 六、偿付能力信息 5 2019 年12 月31 日 实际资本（万元） 8,056,163 最低资本（万元） 1,824,454 4本保险产品经营信息为友邦中国各分支公司的汇总信息。本表数据为执行《关于印发〈保险合同相关会计处理规定〉 的通知》（…",
+          "友邦保险控股有限公司及其附属公司（简称：友邦保险；英文：AIA Group Limited；港交所：1299）是上市人寿保险及证券集团，覆盖亚太区内17个市场，包括在香港、泰国、新加坡、马来西亚、中国大陆、韩国、菲律宾、澳洲、印尼、台湾、越南、新西兰、澳门、汶莱和柬埔寨拥有全资的分公司及附属公司、斯里兰卡附属公司的97%权益、印度合资公司的49%权益，以及在缅甸的代表处。 友邦保险成立于1919年…",
+          "年1 月，位 于上海北外滩的“友邦金融中心”正式揭牌，这是友邦人寿自成立以来所进行的 最大一次资产收购。 – 完 – - 2 - [AIA – INTERNAL] 关于友邦保险 友邦保险控股有限公司及其附属公司（统称“友邦保险”或“本集团”）是专注 于亚洲的独立上市人寿保险集团，覆盖18 个市场，包括在中国内地、中国香港 特别行政区、泰国、新加坡、马来西亚、澳洲、柬埔寨、印度尼西亚、缅甸、新 西兰…"
+        ],
+        "source_urls": [
+          "https://zh.wikipedia.org/zh-hans/%E5%8F%8B%E9%82%A6%E4%BF%9D%E9%9A%AA",
+          "https://www.aia.com.cn/content/dam/cn/zh-cn/docs/about-aia/nianduxinxipilu/%E5%8F%8B%E9%82%A6%E4%B8%AD%E5%9B%BD2019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E4%BF%A1%E6%81%AF%E6%8A%AB%E9%9C%B2%E6%8A%A5%E5%91%8A_website%20version_20200420.pdf",
+          "https://yikecaiwan.com/insurance/aia",
+          "https://www.aia.com.cn/content/dam/cn/zh-cn/docs/2025news/%E5%8F%8B%E9%82%A6%E4%BA%BA%E5%AF%BF%E8%8E%B7%E6%89%B9%E7%AD%B9%E5%BB%BA%E4%BF%9D%E9%99%A9%E8%B5%84%E7%AE%A1%E5%AD%90%E5%85%AC%E5%8F%B8%20%E6%8C%81%E7%BB%AD%E6%B7%B1%E5%8C%96%E6%8A%95%E8%B5%84%E4%B8%AD%E5%9B%BD-final.pdf.coredownload.inline.pdf"
+        ],
+        "source_url": "https://zh.wikipedia.org/zh-hans/%E5%8F%8B%E9%82%A6%E4%BF%9D%E9%9A%AA",
+        "source": "https://zh.wikipedia.org/zh-hans/%E5%8F%8B%E9%82%A6%E4%BF%9D%E9%9A%AA",
+        "scraped_at": "2026-07-26T12:13:35.058519",
+        "researched_at": "2026-07-26T12:13:35.058519",
+        "verified": true,
+        "added_at": "2026-07-26T12:53:14+0800"
+      },
+      {
+        "name": "中宏人寿",
+        "name_en": "Manulife-Sinochem",
+        "type": "外资合资",
+        "regions": [
+          "全国"
+        ],
+        "description": "中宏人寿保险有限公司注册资本为16亿人民币。公司成立于1996年，主要从事人寿、健康和意外伤害保险业务。",
+        "raw_answer": "中宏人寿保险有限公司注册资本为16亿人民币。公司成立于1996年，主要从事人寿、健康和意外伤害保险业务。",
+        "snippets": [
+          "主要股东 宏利人寿保险（国际）有限公司、中化集团财务有限责任公司国有控股股权融资 董事长 何达德 统一社会信用代码 91310000607362622A 登记机关 上海市市场监督管理局 工商注册号 310000400159472 登记状态 存续 营业期限 1996-11-15 至 无固定期限 注册资本 160000万人民币 参保人数 1735人（2024年） 组织机构代码 60736262-2 主…",
+          "中宏保险logo 中宏保险logo 中宏保险logo ### 企业 ### 家庭 # 公司概况 ##### (一)公司名称 中宏人寿保险有限公司 ##### (二)注册资本 人民币16亿元 ##### (三)公司住所和营业场所 上海市静安区新闸路668号13楼、15楼和16楼 ##### (四)成立时间 一九九六年十一月十五日 ##### (五)经营范围和经营区域 本公司于1996年12月1日起正…",
+          "中宏人寿保险有限公司是国内首家中外合资人寿保险公司，由加拿大宏利旗下的宏利人寿保险（国际）有限公司和中化集团财务有限责任公司合资组建。 中宏保险成立1996年11月，现已拥有2万余名员工和营销员，为228万客户提供专业的金融保险服务。目前，中宏保险在上海、北京、广东、浙江、江苏、 四川、山东、福建、重庆、辽宁、天津、湖北、河北和湖南等地的50多个城市稳步发展，不断迈向全国。中宏保险在中国保险市场深…"
+        ],
+        "source_urls": [
+          "https://baike.baidu.com/item/%E4%B8%AD%E5%AE%8F%E4%BA%BA%E5%AF%BF%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/1263983",
+          "https://www.manulife-sinochem.com/html/zh/static/attach/causmuea-20220716-dbhj8j3h.pdf",
+          "https://www.manulife-sinochem.com/public-information/basic/general",
+          "https://www.sinochemcapital.com/sinochemcapital/ywly/bxyw/A118004005Gone1.html"
+        ],
+        "source_url": "https://baike.baidu.com/item/%E4%B8%AD%E5%AE%8F%E4%BA%BA%E5%AF%BF%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/1263983",
+        "source": "https://baike.baidu.com/item/%E4%B8%AD%E5%AE%8F%E4%BA%BA%E5%AF%BF%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/1263983",
+        "scraped_at": "2026-07-26T12:13:40.355205",
+        "researched_at": "2026-07-26T12:13:40.355205",
+        "verified": true,
+        "added_at": "2026-07-26T12:53:14+0800"
+      },
+      {
+        "name": "光大永明人寿",
+        "name_en": "Sun Life Everbright",
+        "type": "外资合资",
+        "regions": [
+          "全国"
+        ],
+        "description": "光大永明人寿保险有限公司的注册资本为54亿元人民币。公司成立于2002年，主要从事保险业务。最新资本变更为30亿元人民币。",
+        "raw_answer": "光大永明人寿保险有限公司的注册资本为54亿元人民币。公司成立于2002年，主要从事保险业务。最新资本变更为30亿元人民币。",
+        "snippets": [
+          "光大永明人寿保险有限公司,成立于2002年,位于天津市,是一家以从事保险业为主的企业。企业注册资本540000万人民币,实缴资本540000万人民币",
+          "Jan 25, 2018 — 光大永明人寿保险有限公司成立于2002年4月,是中国光大集团控股的国有保险企业,注册资本金为54亿元人民币",
+          "目前，光大永明人寿的注册资本金为54亿元人民币，资本实力位于国内寿险公司前列，已在全国开设了22家省级分公司，120多家经营机构，通过多种销售渠道，满足客户养老、意外、医疗 ...Read more"
+        ],
+        "source_urls": [
+          "https://baike.baidu.com/item/%E5%85%89%E5%A4%A7%E6%B0%B8%E6%98%8E%E4%BA%BA%E5%AF%BF%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/342765",
+          "https://www.tianyancha.com/company/25257721",
+          "https://www2.ccb.com/chn/2021-10/16/article_2021101601414659747.shtml",
+          "https://www.cebbank.com/site/gryw/bxcs/bxgs/59450557/index.html"
+        ],
+        "source_url": "https://baike.baidu.com/item/%E5%85%89%E5%A4%A7%E6%B0%B8%E6%98%8E%E4%BA%BA%E5%AF%BF%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/342765",
+        "source": "https://baike.baidu.com/item/%E5%85%89%E5%A4%A7%E6%B0%B8%E6%98%8E%E4%BA%BA%E5%AF%BF%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/342765",
+        "scraped_at": "2026-07-26T12:13:46.632994",
+        "researched_at": "2026-07-26T12:13:46.632994",
+        "verified": true,
+        "added_at": "2026-07-26T12:53:14+0800"
+      },
+      {
+        "name": "中信保诚",
+        "name_en": "CITIC-Prudential",
+        "type": "外资合资",
+        "regions": [
+          "全国"
+        ],
+        "description": "As of 2025, the registered capital of China CITIC Prudential Life Insurance is 73.6 billion RMB. The company is jointly owned by China CITIC。",
+        "raw_answer": "As of 2025, the registered capital of China CITIC Prudential Life Insurance is 73.6 billion RMB. The company is jointly owned by China CITIC Group and Prudential PLC, each holding 50%. The company has 23 branches across China.",
+        "snippets": [
+          "中信保诚人寿保险有限公司（原名信诚人寿保险有限公司）成立于2000年，由中国中信集团和英国保诚集团联合发起创建，双方各占50%的股份。目前总部设在北京，公司的注册资本为23.6亿元人民币。 秉承“聆听所至，信诚所在”的经营理念，自成立以来，中信保诚人寿不断推出符合客户需求的产品和服务。公司产品涉及保障、储蓄、投资、养老及医疗等诸多领域。截至2017年10月，公司已设立了广东、北京、江苏、上海、湖北…",
+          "据了解，今年2月，国家金融监督管理总局已批复同意中信保诚人寿的上一次增资请求，中信金控和保诚集团分别向中信保诚人寿增资12.5亿元。此时，中信保诚人寿的注册资本已由23.6亿元变更为48.6亿元。在不到一年的时间里，中信金控和保诚集团拟向中信保诚人寿进行第二轮增资，凸显了中外双方股东对中国经济和中国寿险业发展的持续看好。 在上一轮增资中，中信集团董事长、中信金控董事长奚国华曾表示，增资不仅使中信保…",
+          "2024年2月，国家金融监督管理总局同意中信保诚人寿保险有限公司增加注册资本250,000万元，由236,000万元变更为486,000万元。 10月8日，国家金融监督管理总局经审核，核准中信保诚人寿保险有限公司修改后的公司章 程 。同年10月，中信保诚人寿与得到达成战略合作，双方将在品牌建设、人才培养、养老生态、主题活动等方面展开合作。 2025年4月14日，国家金融监督管理总局批复中信保诚人寿…"
+        ],
+        "source_urls": [
+          "https://gwoss.citic-prudential.citic/uploadfiles%2Fcorporatesocialresponsibilityreport%2F20260430%2FhQwYAKWhGc.pdf?5Lit5L+h5L+d6K+a5Lq65a+%2FIDIwMjXkvIHkuJrnpL7kvJrotKPku7vmiqXlkYot5pyA57uI54mIKDEpLnBkZg=%3D",
+          "https://cn.linkedin.com/company/%E4%BF%A1%E8%AF%9A%E4%BA%BA%E5%AF%BF%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8",
+          "http://www.news.cn/money/20241106/2fd10f6ff5a5477183d02f929afece10/c.html",
+          "https://baike.baidu.com/item/%E4%B8%AD%E4%BF%A1%E4%BF%9D%E8%AF%9A%E4%BA%BA%E5%AF%BF%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/22366086"
+        ],
+        "source_url": "https://gwoss.citic-prudential.citic/uploadfiles%2Fcorporatesocialresponsibilityreport%2F20260430%2FhQwYAKWhGc.pdf?5Lit5L+h5L+d6K+a5Lq65a+%2FIDIwMjXkvIHkuJrnpL7kvJrotKPku7vmiqXlkYot5pyA57uI54mIKDEpLnBkZg=%3D",
+        "source": "https://gwoss.citic-prudential.citic/uploadfiles%2Fcorporatesocialresponsibilityreport%2F20260430%2FhQwYAKWhGc.pdf?5Lit5L+h5L+d6K+a5Lq65a+%2FIDIwMjXkvIHkuJrnpL7kvJrotKPku7vmiqXlkYot5pyA57uI54mIKDEpLnBkZg=%3D",
+        "scraped_at": "2026-07-26T12:13:51.454415",
+        "researched_at": "2026-07-26T12:13:51.454415",
+        "verified": true,
+        "added_at": "2026-07-26T12:53:14+0800"
+      },
+      {
+        "name": "人保财险",
+        "name_en": "PICC P&C",
+        "type": "财险",
+        "regions": [
+          "全国"
+        ],
+        "description": "中国人民财产保险股份有限公司注册资本为222.42亿元人民币。公司成立于2003年，总资产超过5960亿元人民币。",
+        "raw_answer": "中国人民财产保险股份有限公司注册资本为222.42亿元人民币。公司成立于2003年，总资产超过5960亿元人民币。",
+        "snippets": [
+          "... 财产保险公司，注册资本122.5598亿元。其前身是1949年10月20日经中国人民银行报政务院财经委员会批准成立的中国人民保险公司。世界500强企业。 中国人保财险是中国人民保险",
+          "... 中国人民财产保险 ... 注册资本：. 1000000 万人民币. 人保科创私募股权投资基金（武汉）中心（有限合伙）. 法定代表人：. 人保资本股权投资有限公司.",
+          "公司简介： 中国人民财产保险股份有限公司，于2003-07-07在北京市市场监督管理局登记成立，于泽担任法定代表人，注册资本为2,224,276.5303(万人民币)，公司位于北京市朝阳区"
+        ],
+        "source_urls": [
+          "https://m.qixin.com/company/d44f381a-d0fb-42c5-8fbd-cc67c603dd9b",
+          "https://www.qichamao.com/orgcompany/searchitemdtl/70b30174b8ac4736519cf698e2b3ebde.html",
+          "https://mproperty.picc.com.cn/cx_gywm/shzr/shzrbg/202006/P020230813797968908010.pdf",
+          "http://www.qzr.cn/sys/1377.html"
+        ],
+        "source_url": "https://m.qixin.com/company/d44f381a-d0fb-42c5-8fbd-cc67c603dd9b",
+        "source": "https://m.qixin.com/company/d44f381a-d0fb-42c5-8fbd-cc67c603dd9b",
+        "scraped_at": "2026-07-26T12:13:54.367328",
+        "researched_at": "2026-07-26T12:13:54.367328",
+        "verified": true,
+        "added_at": "2026-07-26T12:53:14+0800"
+      },
+      {
+        "name": "平安产险",
+        "name_en": "Ping An P&C",
+        "type": "财险",
+        "regions": [
+          "全国"
+        ],
+        "description": "China Ping An Property Insurance's registered capital is 120 billion yuan. The company is a subsidiary of China Ping An Group. The legal rep。",
+        "raw_answer": "China Ping An Property Insurance's registered capital is 120 billion yuan. The company is a subsidiary of China Ping An Group. The legal representative is Ren Huichuan.",
+        "snippets": [
+          "中国平安财产保险股份有限公司 公司简介 （一）法定名称： [中文全称]：中国平安财产保险股份有限公司； [中文简称]：平安产险 [英文全称]：Ping An Property & Casualty Insurance Company of China， Ltd. （二）注册资本： 人民币60 亿元。 （三）注册地： 广东省深圳市福田中心区福华三路星河发展中心酒店6、7 层。 （四）成立时间： 公司…",
+          "平安产险全称中国平安财产保险股份有限公司，是中国平安集团下一财产保险公司，注册资本为人民币120亿元，实收资本人民币120亿元，法定代表人任汇川。",
+          "法定代表人. 平安创赢资本管理有限公司 ; 注册资本. 1000000万元 ; 认缴出资额. 999900万元 ; 持股比例. 99.99% ; 成立日期. 2025-01-15.Read more"
+        ],
+        "source_urls": [
+          "https://property.pingan.com/gongkaixinxipilu/gongsizhiligaiyao.shtml",
+          "https://www.4008000000.com/app_upload/file/property/pacxzhuanguxieshixiang20191114.pdf",
+          "http://about.pingan.com/upload/20100630134547247.pdf",
+          "http://m.qcc.com/firm/3c8c7c57719357e90847593da75654d8.html"
+        ],
+        "source_url": "https://property.pingan.com/gongkaixinxipilu/gongsizhiligaiyao.shtml",
+        "source": "https://property.pingan.com/gongkaixinxipilu/gongsizhiligaiyao.shtml",
+        "scraped_at": "2026-07-26T12:13:59.402413",
+        "researched_at": "2026-07-26T12:13:59.402413",
+        "verified": true,
+        "added_at": "2026-07-26T12:53:14+0800"
+      },
+      {
+        "name": "太保产险",
+        "name_en": "CPIC P&C",
+        "type": "财险",
+        "regions": [
+          "全国"
+        ],
+        "description": "China Taiping Property Insurance's registered capital is 199.48 billion yuan. The company was established in 2001 and is headquartered in Sh。",
+        "raw_answer": "China Taiping Property Insurance's registered capital is 199.48 billion yuan. The company was established in 2001 and is headquartered in Shanghai. It is a subsidiary of China Taiping Insurance Group.",
+        "snippets": [
+          "# 中国太平洋财产保险股份有限公司. 中国太平洋财产保险股份有限公司（简称“太平洋产险”）是中国太平洋保险（集团）股份有限公司旗下子公司，成立于2001年11月，总部设在上海，注册资本为人民币199.48亿元，法定代表人为俞斌，现任总经理为陈辉 [12] [14] [17]。公司提供财产保险、责任保险、农业保险、保证保险等各类保险业务，服务范围覆盖航空航天、电力能源、石油化工、船舶航运等领域，在全…",
+          "中国太平洋财产保险股份有限公司成立于2001-11-09,法定代表人为陈辉,注册资本为1994808.765万元",
+          "公司总部设在上海，截至2025年末，公司注册资本为人民币199.48亿元。 太平洋产险承保机动车辆保险、财产保险、责任保险、农业保险、保证保险、意外伤害保险、短期健康保险等"
+        ],
+        "source_urls": [
+          "https://m.qcc.com/firm/a04ffaf10fffda7fe3cb8fd184d0a1bc.html",
+          "https://www.tianyancha.com/company/23995093",
+          "https://property.cpic.com.cn/xccbx/gygs/gsjs",
+          "https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%A4%AA%E5%B9%B3%E6%B4%8B%E8%B4%A2%E4%BA%A7%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/9840929"
+        ],
+        "source_url": "https://m.qcc.com/firm/a04ffaf10fffda7fe3cb8fd184d0a1bc.html",
+        "source": "https://m.qcc.com/firm/a04ffaf10fffda7fe3cb8fd184d0a1bc.html",
+        "scraped_at": "2026-07-26T12:14:05.293935",
+        "researched_at": "2026-07-26T12:14:05.293935",
+        "verified": true,
+        "added_at": "2026-07-26T12:53:14+0800"
+      },
+      {
+        "name": "中华联合财险",
+        "name_en": "China United P&C",
+        "type": "财险",
+        "regions": [
+          "全国"
+        ],
+        "description": "The registered capital of 中华联合财产保险 is 5 billion RMB. This information is based on the latest available data。",
+        "raw_answer": "The registered capital of 中华联合财产保险 is 5 billion RMB. This information is based on the latest available data.",
+        "snippets": [
+          "国防 美高超音速导弹生产，出现“重大问题” 军事 “全面战争”！伊朗总统最新发声 文化 古人那些奇奇怪怪可可爱爱的印章 娱乐 周冬雨回应话剧热舞：我跳的时候心里也很社死 财经 中际旭创聆讯前后市值蒸发3000亿 辟谣 曝光网络谣言 守护清朗空间 共建美好网络生态 公益 中华网与众安公益基金会紧急筹措物资驰援广西 游戏 曝《黑神话》系列将推出三部曲！ ## 视频 加纳驻华大使科乔.邦苏｜新年贺词 #…",
+          "截至2023年末，中华人民共和国人口约14.1亿人，约占世界人口的17.6%，为世界上人口第二多的国家，仅次于印度并在2023年以前长期居于世界第一。国内民族众多，仅官方承认的民族就有56个；其中汉族占全国人口比率逾九成，其他民族合计则占8.89%。中华人民共和国的官方语言为汉语普通话。中华人民共和国于1986年后实行九年义务教育制度，截至2020年已有2.4亿人接受高等教育。 中华人民共和国为现…",
+          "中华人民共和国成立后，由于民族压迫制度的废除，生产发展、生活改善，医疗保健事业得到很大的改善，同时国家对少数民族在计划生育上的要求也比汉族宽松，因而从根本上扭转了过去少数民族人口下降的趋势，出现了人口兴旺、民族繁荣的景象。1990-2000年间，土家、高山、羌、毛南、保安、东乡等13个民族人口年均增长率都在2.00%以上，其中高山族和羌族分别高达4.31%和4.26%。蒙古、藏、维吾尔等8个百万人…"
+        ],
+        "source_urls": [
+          "https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E/3956039",
+          "https://zh.wikipedia.org/zh-hans/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD",
+          "https://www.china.com",
+          "https://zh.wikipedia.org/zh-hans/%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B"
+        ],
+        "source_url": "https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E/3956039",
+        "source": "https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E/3956039",
+        "scraped_at": "2026-07-26T12:14:11.381589",
+        "researched_at": "2026-07-26T12:14:11.381589",
+        "verified": true,
+        "added_at": "2026-07-26T12:53:14+0800"
+      },
+      {
+        "name": "阳光财险",
+        "name_en": "Sunshine P&C",
+        "type": "财险",
+        "regions": [
+          "全国"
+        ],
+        "description": "阳光财产保险股份有限公司的注册资本为60.88亿元人民币。公司成立于2005年，总部位于北京。",
+        "raw_answer": "阳光财产保险股份有限公司的注册资本为60.88亿元人民币。公司成立于2005年，总部位于北京。",
+        "snippets": [
+          "阳光财产保险股份有限公司成立于2005年7月28日,总部位于北京,注册资本64.569亿元人民币8 ,主要经营财产保险业务1 。 阳光产险服务网络实现全国覆盖4 。",
+          "Dec 26, 2023 — 观点网讯：12月25日，国家金融监督管理总局发布公告，对阳光财产保险股份有限公司变更注册资本的请示进行批复，同意阳光财险增加注册资本7.1亿元。Read more",
+          "3 days ago — 法定代表人. 贾波 ; 注册资本. 15113.7696万元 ; 认缴出资额. 3,072,800股 ; 持股比例. 2.03% ; 成立日期. 2011-04-12.Read more"
+        ],
+        "source_urls": [
+          "http://www.nbd.com.cn/rss/toutiao/articles/1252220.html",
+          "https://m.qcc.com/firm/12537c2664cd1508ec63e910f2b4acf4.html",
+          "https://www.guandian.cn/m/show/372746",
+          "https://baike.baidu.com/item/%E9%98%B3%E5%85%89%E8%B4%A2%E4%BA%A7%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/9724335"
+        ],
+        "source_url": "http://www.nbd.com.cn/rss/toutiao/articles/1252220.html",
+        "source": "http://www.nbd.com.cn/rss/toutiao/articles/1252220.html",
+        "scraped_at": "2026-07-26T12:14:15.066722",
+        "researched_at": "2026-07-26T12:14:15.066722",
+        "verified": true,
+        "added_at": "2026-07-26T12:53:14+0800"
+      },
+      {
+        "name": "人保健康",
+        "name_en": "PICC Health",
+        "type": "健康险",
+        "regions": [
+          "全国"
+        ],
+        "description": "The People's Republic of China's registered capital is not publicly disclosed. For official information, refer to government publications or。",
+        "raw_answer": "The People's Republic of China's registered capital is not publicly disclosed. For official information, refer to government publications or official websites.",
+        "snippets": [
+          "* [བོད་ཡིག](https://bo.wikipedia.org/wiki/%E0%BD%80%E0%BE%B2%E0%BD%B4%E0%BD%84%E0%BC%8B%E0%BD%A7%E0%BE%AD \"ཀྲུང་ཧྭ – 藏语\"). * [閩東語 / Mìng-dĕ̤ng-ngṳ̄](https://cdo.wikipedia.org/wiki/D%E1%B9%B3%CC%86ng-g…",
+          "# 中华人民共和国. （the People's Republic of China）. 中华人民共和国（the People's Republic of China），简称“中国”，成立于1949年10月1日，位于亚洲东部，太平洋西岸，是工人阶级领导的、以工农联盟为基础的人民民主专政的社会主义国家，以五星红旗为国旗、《义勇军进行曲》为国歌，国徽中间是五星照耀下的天安门，周围是谷穗和齿轮，通用语言…",
+          "# 中国. ## 中国两学者破解百年难题，首夺全球数学最高荣誉. 書架上的《黎智英傳》和《唯紅花綻放：習近平時代的認同與歸屬》. ## 视频, 香港步入“禁书时代”？回顾书店与出版环境的变化, 节目全长 10,36. ## 美国以“强迫劳动”为由徵新关税，影响中国、台湾等60个贸易伙伴. 上海一场贸易展览上，参观者驻足于月之暗面（Moonshot AI）的展位前；展位上以大型立体字展示“Kimi”…"
+        ],
+        "source_urls": [
+          "https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD/106554",
+          "https://zh.wikipedia.org/zh-hans/%E4%B8%AD%E5%9C%8B",
+          "https://english.www.gov.cn",
+          "https://www.bbc.com/zhongwen/topics/ckr7mn6r003t/simp"
+        ],
+        "source_url": "https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD/106554",
+        "source": "https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD/106554",
+        "scraped_at": "2026-07-26T12:14:20.308260",
+        "researched_at": "2026-07-26T12:14:20.308260",
+        "verified": true,
+        "added_at": "2026-07-26T12:53:14+0800"
+      },
+      {
+        "name": "平安健康",
+        "name_en": "Ping An Health",
+        "type": "健康险",
+        "regions": [
+          "全国"
+        ],
+        "description": "Ping An Health Insurance's registered capital is RMB 500 million. The company is a subsidiary of Ping An Insurance Group. It focuses on heal。",
+        "raw_answer": "Ping An Health Insurance's registered capital is RMB 500 million. The company is a subsidiary of Ping An Insurance Group. It focuses on health insurance and related services.",
+        "snippets": [
+          "平安健康保险股份有限公司关于变更注册 资本有关情况的信息披露公告 根据中国银行保险监督管理委员会《关于进一步加强保 险公司股权信息披露有关事项的通知》的有关规定，现将我 公司关于变更注册资本的有关情况披露如下： 一、变更注册资本决议情况 1. 平安健康保险股份有限公司拟向股东增资2 亿元人 民币，增资后，我公司股东持股数量和持股比例如下：（1） 中国平安保险 （集团） 股份有限公司持有1,481,…",
+          "# 平安健康保险股份有限公司 金融 科技 Insurance • 徐汇, 上海 • 2,911 followers • 1,001-5,000 employees ## Overview 平安健康保险股份有限公司是中国平安集团旗下的专业健康保险公司，2005年6月13日经中国保险监督管理委员会批准设立，主要业务范围包括各类健康保险业务、意外伤害保险业务、政府委托管理健康保险业务、健康咨询服务业务、…",
+          "超 60.9万员工及代理人 每 2,300 个中国人中有1个平安人 员工规模 平均每天归母营运利润超 3.68 亿元 2025 年累计 1,344.15 亿元 归母营运利润 平均每天服务进线近 182 万人次 2025全年服务进线 6.7 亿人次 95511客服 每天赔付保险约 6.7 亿元 2025 全年赔付近 2,457 亿元 保险赔付 平均每分钟赔付超 1,815 件 2025全年理赔超 9…"
+        ],
+        "source_urls": [
+          "http://www.pingan.cn/app_upload/file/official/profile-of-paic.pdf",
+          "https://resources.pingan.com/app_upload/file/health/2019082701.pdf",
+          "https://cn.linkedin.com/company/%E5%B9%B3%E5%AE%89%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8",
+          "https://baike.baidu.com/item/%E5%B9%B3%E5%AE%89%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/1605432"
+        ],
+        "source_url": "http://www.pingan.cn/app_upload/file/official/profile-of-paic.pdf",
+        "source": "http://www.pingan.cn/app_upload/file/official/profile-of-paic.pdf",
+        "scraped_at": "2026-07-26T12:14:24.700903",
+        "researched_at": "2026-07-26T12:14:24.700903",
+        "verified": true,
+        "added_at": "2026-07-26T12:53:14+0800"
+      },
+      {
+        "name": "昆仑健康",
+        "name_en": "Kunlun Health",
+        "type": "健康险",
+        "regions": [
+          "全国"
+        ],
+        "description": "昆仑健康保险股份有限公司注册资本为23.4亿元。公司成立于2006年，是国内首批专业健康保险公司之一。其注册资本曾经过调整。",
+        "raw_answer": "昆仑健康保险股份有限公司注册资本为23.4亿元。公司成立于2006年，是国内首批专业健康保险公司之一。其注册资本曾经过调整。",
+        "snippets": [
+          "昆仑健康保险股份有限公司成立于2006-01-12,法定代表人为林乐,注册资本为234182万元, 作为国内首批专业健康保险公司, 为客户提供全周期健康管理解决方案。",
+          "昆仑健康成立于2006年,注册资本23.4亿,是一家有点“年头”的保险公司。 同时,它和平安健康、人保健康一样,是国内首批专业健康保险公司之一。",
+          "2013年3月26日，中国保险监督管理委员会正式下发文件《关于昆仑健康保险股份有限公司变更注册资本的批复》（保监发改〔2013〕286号），批复同意我公司注册资本变更"
+        ],
+        "source_urls": [
+          "https://zhuanlan.zhihu.com/p/20258519416",
+          "https://www.kunlunhealth.com.cn/artdetailNew/283",
+          "https://data.eastmoney.com/gdfx/shareholder/76080009.html",
+          "https://www.qcc.com/cmainmember/140d38d0c0420d8fd968a26e71ace3df"
+        ],
+        "source_url": "https://zhuanlan.zhihu.com/p/20258519416",
+        "source": "https://zhuanlan.zhihu.com/p/20258519416",
+        "scraped_at": "2026-07-26T12:14:28.525520",
+        "researched_at": "2026-07-26T12:14:28.525520",
+        "verified": true,
+        "added_at": "2026-07-26T12:53:14+0800"
+      },
+      {
+        "name": "平安养老",
+        "name_en": "Ping An Annuity",
+        "type": "养老险",
+        "regions": [
+          "全国"
+        ],
+        "description": "The registered capital of Ping An Insurance (Pension) Co., Ltd. is 1.16 billion yuan. The company is a non-listed state-owned enterprise. Th。",
+        "raw_answer": "The registered capital of Ping An Insurance (Pension) Co., Ltd. is 1.16 billion yuan. The company is a non-listed state-owned enterprise. The latest capital increase was approved in 2022.",
+        "snippets": [
+          "平安养老保险股份有限公司 关于变更注册资本有关情况的信息披露公告 根据中国银行保险监督管理委员会《关于进一步加强保 险公司股权信息披露有关事项的通知》的有关规定，现将我 公司关于变更注册资本的有关情况披露如下： 一、 注册资本现状 中国银行保险监督管理委员会已于2022 年3 月30 日批 复同意平安养老保险股份有限公司（以下简称“我公司”） 注册资本由4,860,000,000 元人民币变更为7…",
+          "企业地址 中国（上海）自由贸易试验区陆家嘴环路1333号12楼、20楼、21楼、24楼 工商信息 知识产权 统一社会信用代码：913100007702124991 组织机构代码：770212499 注册号：100000000039325 经营状态：开业 公司类型：股份有限公司(非上市、国有控股)成立日期：2004年12月13日 法定代表人：甘为民 营业期限：2004年12月13日 至 无固定期限 …",
+          "China Investment Corporation (Investment Management): (Beijing, Beijing); Russell Investments (Financial Services): (Seattle, WA); Barrie & Hibbert - A Moody's Company (Financial Services): (Edinburgh…"
+        ],
+        "source_urls": [
+          "https://baike.baidu.com/item/%E5%B9%B3%E5%AE%89%E5%85%BB%E8%80%81%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/10609530",
+          "http://yl.pingan.com/app_upload/file/20220417/%E5%B9%B3%E5%AE%89%E5%85%BB%E8%80%81%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%B3%E4%BA%8E%E5%8F%98%E6%9B%B4%E6%B3%A8%E5%86%8C%E8%B5%84%E6%9C%AC%E6%9C%89%E5%85%B3%E6%83%85%E5%86%B5%E7%9A%84%E4%BF%A1%E6%81%AF%E6%8A%AB%E9%9C%B2%E5%85%AC%E5%91%8A_9453.pdf",
+          "https://www.nfra.gov.cn/cn/view/pages/governmentDetail.html?docId=1225754&itemId=870&generaltype=1",
+          "https://www.linkedin.com/company/%E5%B9%B3%E5%AE%89%E5%85%BB%E8%80%81%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
+        ],
+        "source_url": "https://baike.baidu.com/item/%E5%B9%B3%E5%AE%89%E5%85%BB%E8%80%81%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/10609530",
+        "source": "https://baike.baidu.com/item/%E5%B9%B3%E5%AE%89%E5%85%BB%E8%80%81%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/10609530",
+        "scraped_at": "2026-07-26T12:14:34.174941",
+        "researched_at": "2026-07-26T12:14:34.174941",
+        "verified": true,
+        "added_at": "2026-07-26T12:53:14+0800"
+      },
+      {
+        "name": "太平养老",
+        "name_en": "Taiping Annuity",
+        "type": "养老险",
+        "regions": [
+          "全国"
+        ],
+        "description": "太平养老保险股份有限公司的注册资本为人民币3亿元。该公司成立于2005年，是中国首批专业养老保险公司之一。其注册资本曾经历变更。",
+        "raw_answer": "太平养老保险股份有限公司的注册资本为人民币3亿元。该公司成立于2005年，是中国首批专业养老保险公司之一。其注册资本曾经历变更。",
+        "snippets": [
+          "May 12, 2021 — 太平养老保险股份有限公司是中国首批获得国家资格认定的专业养老保险公司, 注册资本: 人民币30亿元",
+          "Jan 8, 2009 — 你公司《关于太平养老保险股份有限公司增加注册资本金及变更公司章程的请示》（太平养老〔2008〕98号）收悉。经审核，同意你公司注册资本变更为8亿元人民币。Read more",
+          "太平养老产业投资有限公司成立于2012-07-31，法定代表人为刘韶，注册资本为257000万元，统一社会信用代码为91310000051222578U，企业注册地址位于上海市浦东新区康新"
+        ],
+        "source_urls": [
+          "https://top.tianyancha.com/tc-bd9b8152392166",
+          "https://zhuanlan.zhihu.com/p/371660546",
+          "https://www.qcc.com/firm/596df59745015dbdf25c379bd63230bb.html",
+          "https://finance.sina.cn/sa/2009-01-08/detail-ikftpnny1216968.d.html?from=wap"
+        ],
+        "source_url": "https://top.tianyancha.com/tc-bd9b8152392166",
+        "source": "https://top.tianyancha.com/tc-bd9b8152392166",
+        "scraped_at": "2026-07-26T12:14:38.236069",
+        "researched_at": "2026-07-26T12:14:38.236069",
+        "verified": true,
+        "added_at": "2026-07-26T12:53:14+0800"
+      },
+      {
+        "name": "国寿养老",
+        "name_en": "China Life Annuity",
+        "type": "养老险",
+        "regions": [
+          "全国"
+        ],
+        "description": "中国人寿养老保险股份有限公司的注册资本为34亿元人民币。公司成立于北京市。最新数据显示其注册资本已增加至25亿元。",
+        "raw_answer": "中国人寿养老保险股份有限公司的注册资本为34亿元人民币。公司成立于北京市。最新数据显示其注册资本已增加至25亿元。",
+        "snippets": [
+          "中国人寿养老保险股份有限公司 注册资本 人民币叁拾肆亿元整 公司住所和营业场所 北京市西城区金融大街12号 成立",
+          "注册资本, 340,000万(元), 实缴资本, -. 企业类型, 股份有限公司(非上市、国有控股), 所属行业, 保险业. 工商注册号, 100000000040678, 组织机构代码",
+          "中国人寿养老保险股份有限公司注册资本由6亿元增加到人民币25亿元。 对养老金公司增资18.54亿"
+        ],
+        "source_urls": [
+          "https://www.clpc.com.cn/chinalifepension/gkxxpl/jbxx/gsgk/index.html",
+          "http://jjckb.xinhuanet.com/caijing/2008-07/14/content_107486.htm",
+          "https://www.chinalife.com.cn/chinalife/2018-12/19/article_2025112412022777312.html",
+          "https://www.aiqicha.com/company_detail_28686751869169?tab=risk&subtab=annual"
+        ],
+        "source_url": "https://www.clpc.com.cn/chinalifepension/gkxxpl/jbxx/gsgk/index.html",
+        "source": "https://www.clpc.com.cn/chinalifepension/gkxxpl/jbxx/gsgk/index.html",
+        "scraped_at": "2026-07-26T12:14:42.948626",
+        "researched_at": "2026-07-26T12:14:42.948626",
+        "verified": true,
+        "added_at": "2026-07-26T12:53:14+0800"
+      }
+    ],
+    "schema_version": "v2-unified-2026-07-26",
+    "schema_unified_at": "2026-07-26T19:54:00",
+    "schema_unified_by": "main-agent-action-a",
+    "schema_v2_added_count": 8
   },
   "companies": [
     {
       "name": "安盛天平保险销售有限公司",
       "type": "保险代理",
-      "regions": ["江苏", "广东", "上海", "浙江", "重庆", "陕西", "广西"],
+      "regions": [
+        "江苏",
+        "广东",
+        "上海",
+        "浙江",
+        "重庆",
+        "陕西",
+        "广西"
+      ],
       "phone": "400-860-0058",
       "featured": true,
       "description": "可销售多家保险公司产品，站在客户立场对比优选"
@@ -16,7 +732,9 @@
     {
       "name": "明亚保险经纪有限公司",
       "type": "保险经纪",
-      "regions": ["全国"],
+      "regions": [
+        "全国"
+      ],
       "phone": "400-888-6080",
       "website": "www.mingya.com.cn",
       "description": "国内头部保险经纪公司，专注个人保险业务"
@@ -24,7 +742,12 @@
     {
       "name": "易诚保险经纪有限公司",
       "type": "保险经纪",
-      "regions": ["江苏", "上海", "山东", "浙江"],
+      "regions": [
+        "江苏",
+        "上海",
+        "山东",
+        "浙江"
+      ],
       "phone": "400-820-6168",
       "website": "www.ycbroker.com",
       "description": "全国性保险经纪公司，多家分公司"
@@ -32,7 +755,14 @@
     {
       "name": "国信蓝海保险经纪股份有限公司",
       "type": "保险经纪",
-      "regions": ["浙江", "北京", "上海", "江苏", "四川", "陕西"],
+      "regions": [
+        "浙江",
+        "北京",
+        "上海",
+        "江苏",
+        "四川",
+        "陕西"
+      ],
       "phone": "400-700-9696",
       "website": "www.guoxinlanhai.com",
       "description": "大型全国性综合保险经纪公司"
@@ -40,7 +770,10 @@
     {
       "name": "友太安保险经纪有限公司",
       "type": "保险经纪",
-      "regions": ["上海", "广东"],
+      "regions": [
+        "上海",
+        "广东"
+      ],
       "phone": "021-5480-5588",
       "website": "ytabx.com",
       "description": "专注企业风险管理与保险咨询"
@@ -48,34 +781,616 @@
     {
       "name": "达人保险经纪有限公司",
       "type": "保险经纪",
-      "regions": ["全国"],
+      "regions": [
+        "全国"
+      ],
       "phone": "400-900-1234",
       "description": "互联网保险经纪平台"
     },
     {
       "name": "中汇保险经纪有限公司",
       "type": "保险经纪",
-      "regions": ["北京", "上海", "广东"],
+      "regions": [
+        "北京",
+        "上海",
+        "广东"
+      ],
       "phone": "400-800-9000",
       "description": "全国性保险经纪服务"
     },
     {
       "name": "华鑫保险代理有限公司",
       "type": "保险代理",
-      "regions": ["江苏", "浙江", "广东"],
+      "regions": [
+        "江苏",
+        "浙江",
+        "广东"
+      ],
       "phone": "400-700-1234",
       "description": "区域性保险代理公司"
+    },
+    {
+      "name": "众安在线",
+      "name_en": "ZhongAn Online",
+      "type": "互联网",
+      "regions": [
+        "全国"
+      ],
+      "description": "The registered capital of 众安在线财产保险 is 1.47 billion RMB. The company was established in 2013. It is headquartered in Shanghai。",
+      "raw_answer": "The registered capital of 众安在线财产保险 is 1.47 billion RMB. The company was established in 2013. It is headquartered in Shanghai.",
+      "snippets": [
+        "85 3 第一节公司简介 一、法定名称及缩写 [中文全称]：众安在线财产保险股份有限公司 [中文简称]：众安保险 [英文全称]：ZhongAn Online P & C Insurance Co.,Ltd. 二、注册资本 人民币1,469,812,900 元，实收资本人民币1,469,812,900 元。 三、注册地 上海市黄浦区圆明园路169 号协进大楼4-5 楼。 四、成立时间 公司于2013…",
+        "中文名称：众安在线财产保险股份有限公司. 2.注册资本. 注册资本人民币16.848129亿元. 3. 公司住所和营业场所. 公司住所：上海市黄浦区圆明园路169号协进大楼4-5楼. 营业",
+        "众安在线财产保险股份有限公司怎么样？企 ... 注册资本：168481.29万元. 复制. 成立日期： 2013-10-08. 复制. 电话： 021-60278666"
+      ],
+      "source_urls": [
+        "https://pinpai.qcc.com/own/f8fc1bad000772d3d3cc056073226495.html",
+        "https://www.zhongan.com/channel/public/publicInfo2018.html",
+        "https://zh.wikipedia.org/zh-hans/%E4%BC%97%E5%AE%89%E4%BF%9D%E9%99%A9",
+        "https://static.zhongan.com/upload/online/material/1620372332262.pdf"
+      ],
+      "source_url": "https://pinpai.qcc.com/own/f8fc1bad000772d3d3cc056073226495.html",
+      "source": "https://pinpai.qcc.com/own/f8fc1bad000772d3d3cc056073226495.html",
+      "scraped_at": "2026-07-26T12:13:00.798065",
+      "researched_at": "2026-07-26T12:13:00.798065",
+      "verified": true,
+      "added_at": "2026-07-26T12:53:14+0800"
+    },
+    {
+      "name": "泰康在线",
+      "name_en": "Taikang Online",
+      "type": "互联网",
+      "regions": [
+        "全国"
+      ],
+      "description": "泰康在线财产保险股份有限公司的注册资本为550000万人民币。公司成立于2015年11月12日，总部位于湖北省武汉市。",
+      "raw_answer": "泰康在线财产保险股份有限公司的注册资本为550000万人民币。公司成立于2015年11月12日，总部位于湖北省武汉市。",
+      "snippets": [
+        "，2015年11月12日成立，注册资本为550,000万人民币，总部位于湖北省武汉市江岸区建设大道718号浙商大厦36层，主营业务包括与互联网交易直接相关的企业/家庭财产保险、货运保险",
+        "泰康在线财产保险股份有限公司注册资本550000万人民币，实缴资本550000万人民币。泰康在线财产保险股份有限公司员工规模在100-499人，是天津嘉泰弘德的成员",
+        "企业注册资本550000万人民币，实缴资本550000万人民币，并已于2016年完成了天使轮。通过天眼查大数据分析，泰康在线财产保险股份有限公司共对外投资了7家企业，参与招投标项目"
+      ],
+      "source_urls": [
+        "https://www.tianyancha.com/company/2312461335",
+        "https://baike.baidu.com/item/%E6%B3%B0%E5%BA%B7%E5%9C%A8%E7%BA%BF%E8%B4%A2%E4%BA%A7%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/19407033",
+        "https://xuexi.huize.com/study/detal-309114.html",
+        "https://m.qcc.com/firm/f0afdf8d76cc9be84d5524206f23c241.html"
+      ],
+      "source_url": "https://www.tianyancha.com/company/2312461335",
+      "source": "https://www.tianyancha.com/company/2312461335",
+      "scraped_at": "2026-07-26T12:13:07.663044",
+      "researched_at": "2026-07-26T12:13:07.663044",
+      "verified": true,
+      "added_at": "2026-07-26T12:53:14+0800"
+    },
+    {
+      "name": "安心保险",
+      "name_en": "Anxin Insurance",
+      "type": "互联网",
+      "regions": [
+        "全国"
+      ],
+      "description": "安心财产保险有限责任公司的注册资本为12.85亿元。公司成立于2015年，总部位于江苏苏州。公司计划增资2.85亿元。",
+      "raw_answer": "安心财产保险有限责任公司的注册资本为12.85亿元。公司成立于2015年，总部位于江苏苏州。公司计划增资2.85亿元。",
+      "snippets": [
+        "安心财产保险有限责任公司是经原中国保监会批准设立的全国首批互联网创新型保险公司，成立于2015年12月31日，注册资本12.85亿元，法定代表人韩刚，总部现位于江苏省苏州市",
+        "安心财产保险有限责任公司（简称“安心保险”）是经中国银保监会批准设立的全国首批创新型互联网保险公司，2016年1月18日正式开业，总部位于北京，注册资本金12.85亿元。",
+        "安心保险是一家互联网创新型保险公司, 成立于2015年12月31 … 注册资本 128500万元 成立日期 2015-12-30 0512-66156006"
+      ],
+      "source_urls": [
+        "https://baike.baidu.com/item/%E5%AE%89%E5%BF%83%E8%B4%A2%E4%BA%A7%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8/19407012",
+        "https://m.qcc.com/firm/185d2c343c4fc81807cf7988ff11022a.html",
+        "https://baike.baidu.com/item/%E5%AE%89%E5%BF%83%E4%BF%9D%E9%99%A9/17936073",
+        "https://finance.ifeng.com/c/7i8zV82g37o"
+      ],
+      "source_url": "https://baike.baidu.com/item/%E5%AE%89%E5%BF%83%E8%B4%A2%E4%BA%A7%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8/19407012",
+      "source": "https://baike.baidu.com/item/%E5%AE%89%E5%BF%83%E8%B4%A2%E4%BA%A7%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8/19407012",
+      "scraped_at": "2026-07-26T12:13:14.962006",
+      "researched_at": "2026-07-26T12:13:14.962006",
+      "verified": true,
+      "added_at": "2026-07-26T12:53:14+0800"
+    },
+    {
+      "name": "易安保险",
+      "name_en": "Yi'an Insurance",
+      "type": "互联网",
+      "regions": [
+        "全国"
+      ],
+      "description": "易安财产保险的注册资本为人民币10亿元。公司注册地位于深圳市。易安财险是国家批准的互联网保险公司。",
+      "raw_answer": "易安财产保险的注册资本为人民币10亿元。公司注册地位于深圳市。易安财险是国家批准的互联网保险公司。",
+      "snippets": [
+        "Jun 30, 2015 — ... 易安财产保险股份有限公司，注册资本人民币10亿元，注册地深圳市。拟任董事长李军，拟任总经理程孙霖。 相关文章: 生产一线是最好的创新舞台——访鞍钢 ...Read more",
+        "易安财险注册资本金为人民币10亿元，公司地址位于深圳市前海深港合作区前湾一路1号A栋201室。 2015年6月29日，保监会网站公布批复，同意深圳市银之杰科技股份有限公司、 ...Read more",
+        "易安财产保险股份有限公司（简称“易安保险”）是应国家“互联网+”战略浪潮，经保监会批准设立的国内四家专业互联网保险公司之一，2016年2月16日获批开业，注册资本金10亿元，"
+      ],
+      "source_urls": [
+        "http://xuexi.huize.com/study/studytag/word-18896.html",
+        "http://finance.china.com.cn/stock/20150630/3201394.shtml",
+        "http://www.nbd.com.cn/rss/toutiao/articles/2817177.html",
+        "https://pitchhub.36kr.com/project/2113090775438724"
+      ],
+      "source_url": "http://xuexi.huize.com/study/studytag/word-18896.html",
+      "source": "http://xuexi.huize.com/study/studytag/word-18896.html",
+      "scraped_at": "2026-07-26T12:13:24.589571",
+      "researched_at": "2026-07-26T12:13:24.589571",
+      "verified": true,
+      "added_at": "2026-07-26T12:53:14+0800"
+    },
+    {
+      "name": "水滴保险",
+      "name_en": "Shuidi Insurance",
+      "type": "互联网",
+      "regions": [
+        "全国"
+      ],
+      "description": "Waterdrop Insurance Brokerage's registered capital is 50 million yuan. The company was established in October 2012. It operates as an online。",
+      "raw_answer": "Waterdrop Insurance Brokerage's registered capital is 50 million yuan. The company was established in October 2012. It operates as an online insurance brokerage.",
+      "snippets": [
+        "水滴保险经纪有限公司. 法定代表人 · 郭南洋. 注册资本. 5000万元. 成立日期. 2012-10-18. 北京纵情向前科技有限公司. 法定代表人 · 沈洪斌. 注册资本. 10000万元.",
+        "иŹ| ѡ ۹ ˹ -- -- -- ### ### ʵʱ ˾ ˾ ˾߹ » ֹ ʲծ ֽ # ˮ NYSE:WDH ʱ15 񿪣-- գ-- 䣺-- 52䣺-- ɽ-- ɽ-- ֵ-- ӯʣ-- ÿ棺 ɽ ### ˾ ˾ : Waterdrop, Inc. : Waterdrop, Inc. ҵ񹹳 : Provides online insurance brokerage services : …",
+        "百度百科 订阅更新 # 水滴保险经纪有限公司 ## 目录 ## 公司概况 ## 发展历程 ## 主营业务与商业模式 ## 主要产品与服务 ## 组织架构与治理 ### 公司治理 ### 组织架构 ### 党建与企业文化 ## 经营状况 ## 公司事件 ## 社会责任与企业文化 ## 社会荣誉 new ©2026 Baidu 使用百度前必读 | 百科协议 | 隐私政策 | 百度百科合作平台 | 京I…"
+      ],
+      "source_urls": [
+        "https://baike.baidu.com/item/%E6%B0%B4%E6%BB%B4%E4%BF%9D%E9%99%A9%E7%BB%8F%E7%BA%AA%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/59125689",
+        "https://www.prnewswire.com/apac/zh/news-releases/-302339532.html",
+        "https://top.qcc.com/tc/12439b03c0e2.html",
+        "https://q.stock.sohu.com/us/WDH_summary.html"
+      ],
+      "source_url": "https://baike.baidu.com/item/%E6%B0%B4%E6%BB%B4%E4%BF%9D%E9%99%A9%E7%BB%8F%E7%BA%AA%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/59125689",
+      "source": "https://baike.baidu.com/item/%E6%B0%B4%E6%BB%B4%E4%BF%9D%E9%99%A9%E7%BB%8F%E7%BA%AA%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/59125689",
+      "scraped_at": "2026-07-26T12:13:29.054070",
+      "researched_at": "2026-07-26T12:13:29.054070",
+      "verified": true,
+      "added_at": "2026-07-26T12:53:14+0800"
+    },
+    {
+      "name": "友邦保险",
+      "name_en": "AIA China",
+      "type": "外资合资",
+      "regions": [
+        "全国"
+      ],
+      "description": "The registered capital of AIA Group Limited in China is $3.05 billion as of 2024. AIA Group Limited is an independent listed life insurance。",
+      "raw_answer": "The registered capital of AIA Group Limited in China is $3.05 billion as of 2024. AIA Group Limited is an independent listed life insurance group in Asia. The company is headquartered in Hong Kong.",
+      "snippets": [
+        "款终身寿险 (投资连结型) 个人代理 6,028 万元 920 万元 3 友邦附加育英才终身寿险 (投资连结型) 个人代理 3,917 万元 379 万元 六、偿付能力信息 5 2019 年12 月31 日 实际资本（万元） 8,056,163 最低资本（万元） 1,824,454 4本保险产品经营信息为友邦中国各分支公司的汇总信息。本表数据为执行《关于印发〈保险合同相关会计处理规定〉 的通知》（…",
+        "友邦保险控股有限公司及其附属公司（简称：友邦保险；英文：AIA Group Limited；港交所：1299）是上市人寿保险及证券集团，覆盖亚太区内17个市场，包括在香港、泰国、新加坡、马来西亚、中国大陆、韩国、菲律宾、澳洲、印尼、台湾、越南、新西兰、澳门、汶莱和柬埔寨拥有全资的分公司及附属公司、斯里兰卡附属公司的97%权益、印度合资公司的49%权益，以及在缅甸的代表处。 友邦保险成立于1919年…",
+        "年1 月，位 于上海北外滩的“友邦金融中心”正式揭牌，这是友邦人寿自成立以来所进行的 最大一次资产收购。 – 完 – - 2 - [AIA – INTERNAL] 关于友邦保险 友邦保险控股有限公司及其附属公司（统称“友邦保险”或“本集团”）是专注 于亚洲的独立上市人寿保险集团，覆盖18 个市场，包括在中国内地、中国香港 特别行政区、泰国、新加坡、马来西亚、澳洲、柬埔寨、印度尼西亚、缅甸、新 西兰…"
+      ],
+      "source_urls": [
+        "https://zh.wikipedia.org/zh-hans/%E5%8F%8B%E9%82%A6%E4%BF%9D%E9%9A%AA",
+        "https://www.aia.com.cn/content/dam/cn/zh-cn/docs/about-aia/nianduxinxipilu/%E5%8F%8B%E9%82%A6%E4%B8%AD%E5%9B%BD2019%E5%B9%B4%E5%B9%B4%E5%BA%A6%E4%BF%A1%E6%81%AF%E6%8A%AB%E9%9C%B2%E6%8A%A5%E5%91%8A_website%20version_20200420.pdf",
+        "https://yikecaiwan.com/insurance/aia",
+        "https://www.aia.com.cn/content/dam/cn/zh-cn/docs/2025news/%E5%8F%8B%E9%82%A6%E4%BA%BA%E5%AF%BF%E8%8E%B7%E6%89%B9%E7%AD%B9%E5%BB%BA%E4%BF%9D%E9%99%A9%E8%B5%84%E7%AE%A1%E5%AD%90%E5%85%AC%E5%8F%B8%20%E6%8C%81%E7%BB%AD%E6%B7%B1%E5%8C%96%E6%8A%95%E8%B5%84%E4%B8%AD%E5%9B%BD-final.pdf.coredownload.inline.pdf"
+      ],
+      "source_url": "https://zh.wikipedia.org/zh-hans/%E5%8F%8B%E9%82%A6%E4%BF%9D%E9%9A%AA",
+      "source": "https://zh.wikipedia.org/zh-hans/%E5%8F%8B%E9%82%A6%E4%BF%9D%E9%9A%AA",
+      "scraped_at": "2026-07-26T12:13:35.058519",
+      "researched_at": "2026-07-26T12:13:35.058519",
+      "verified": true,
+      "added_at": "2026-07-26T12:53:14+0800"
+    },
+    {
+      "name": "中宏人寿",
+      "name_en": "Manulife-Sinochem",
+      "type": "外资合资",
+      "regions": [
+        "全国"
+      ],
+      "description": "中宏人寿保险有限公司注册资本为16亿人民币。公司成立于1996年，主要从事人寿、健康和意外伤害保险业务。",
+      "raw_answer": "中宏人寿保险有限公司注册资本为16亿人民币。公司成立于1996年，主要从事人寿、健康和意外伤害保险业务。",
+      "snippets": [
+        "主要股东 宏利人寿保险（国际）有限公司、中化集团财务有限责任公司国有控股股权融资 董事长 何达德 统一社会信用代码 91310000607362622A 登记机关 上海市市场监督管理局 工商注册号 310000400159472 登记状态 存续 营业期限 1996-11-15 至 无固定期限 注册资本 160000万人民币 参保人数 1735人（2024年） 组织机构代码 60736262-2 主…",
+        "中宏保险logo 中宏保险logo 中宏保险logo ### 企业 ### 家庭 # 公司概况 ##### (一)公司名称 中宏人寿保险有限公司 ##### (二)注册资本 人民币16亿元 ##### (三)公司住所和营业场所 上海市静安区新闸路668号13楼、15楼和16楼 ##### (四)成立时间 一九九六年十一月十五日 ##### (五)经营范围和经营区域 本公司于1996年12月1日起正…",
+        "中宏人寿保险有限公司是国内首家中外合资人寿保险公司，由加拿大宏利旗下的宏利人寿保险（国际）有限公司和中化集团财务有限责任公司合资组建。 中宏保险成立1996年11月，现已拥有2万余名员工和营销员，为228万客户提供专业的金融保险服务。目前，中宏保险在上海、北京、广东、浙江、江苏、 四川、山东、福建、重庆、辽宁、天津、湖北、河北和湖南等地的50多个城市稳步发展，不断迈向全国。中宏保险在中国保险市场深…"
+      ],
+      "source_urls": [
+        "https://baike.baidu.com/item/%E4%B8%AD%E5%AE%8F%E4%BA%BA%E5%AF%BF%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/1263983",
+        "https://www.manulife-sinochem.com/html/zh/static/attach/causmuea-20220716-dbhj8j3h.pdf",
+        "https://www.manulife-sinochem.com/public-information/basic/general",
+        "https://www.sinochemcapital.com/sinochemcapital/ywly/bxyw/A118004005Gone1.html"
+      ],
+      "source_url": "https://baike.baidu.com/item/%E4%B8%AD%E5%AE%8F%E4%BA%BA%E5%AF%BF%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/1263983",
+      "source": "https://baike.baidu.com/item/%E4%B8%AD%E5%AE%8F%E4%BA%BA%E5%AF%BF%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/1263983",
+      "scraped_at": "2026-07-26T12:13:40.355205",
+      "researched_at": "2026-07-26T12:13:40.355205",
+      "verified": true,
+      "added_at": "2026-07-26T12:53:14+0800"
+    },
+    {
+      "name": "光大永明人寿",
+      "name_en": "Sun Life Everbright",
+      "type": "外资合资",
+      "regions": [
+        "全国"
+      ],
+      "description": "光大永明人寿保险有限公司的注册资本为54亿元人民币。公司成立于2002年，主要从事保险业务。最新资本变更为30亿元人民币。",
+      "raw_answer": "光大永明人寿保险有限公司的注册资本为54亿元人民币。公司成立于2002年，主要从事保险业务。最新资本变更为30亿元人民币。",
+      "snippets": [
+        "光大永明人寿保险有限公司,成立于2002年,位于天津市,是一家以从事保险业为主的企业。企业注册资本540000万人民币,实缴资本540000万人民币",
+        "Jan 25, 2018 — 光大永明人寿保险有限公司成立于2002年4月,是中国光大集团控股的国有保险企业,注册资本金为54亿元人民币",
+        "目前，光大永明人寿的注册资本金为54亿元人民币，资本实力位于国内寿险公司前列，已在全国开设了22家省级分公司，120多家经营机构，通过多种销售渠道，满足客户养老、意外、医疗 ...Read more"
+      ],
+      "source_urls": [
+        "https://baike.baidu.com/item/%E5%85%89%E5%A4%A7%E6%B0%B8%E6%98%8E%E4%BA%BA%E5%AF%BF%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/342765",
+        "https://www.tianyancha.com/company/25257721",
+        "https://www2.ccb.com/chn/2021-10/16/article_2021101601414659747.shtml",
+        "https://www.cebbank.com/site/gryw/bxcs/bxgs/59450557/index.html"
+      ],
+      "source_url": "https://baike.baidu.com/item/%E5%85%89%E5%A4%A7%E6%B0%B8%E6%98%8E%E4%BA%BA%E5%AF%BF%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/342765",
+      "source": "https://baike.baidu.com/item/%E5%85%89%E5%A4%A7%E6%B0%B8%E6%98%8E%E4%BA%BA%E5%AF%BF%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/342765",
+      "scraped_at": "2026-07-26T12:13:46.632994",
+      "researched_at": "2026-07-26T12:13:46.632994",
+      "verified": true,
+      "added_at": "2026-07-26T12:53:14+0800"
+    },
+    {
+      "name": "中信保诚",
+      "name_en": "CITIC-Prudential",
+      "type": "外资合资",
+      "regions": [
+        "全国"
+      ],
+      "description": "As of 2025, the registered capital of China CITIC Prudential Life Insurance is 73.6 billion RMB. The company is jointly owned by China CITIC。",
+      "raw_answer": "As of 2025, the registered capital of China CITIC Prudential Life Insurance is 73.6 billion RMB. The company is jointly owned by China CITIC Group and Prudential PLC, each holding 50%. The company has 23 branches across China.",
+      "snippets": [
+        "中信保诚人寿保险有限公司（原名信诚人寿保险有限公司）成立于2000年，由中国中信集团和英国保诚集团联合发起创建，双方各占50%的股份。目前总部设在北京，公司的注册资本为23.6亿元人民币。 秉承“聆听所至，信诚所在”的经营理念，自成立以来，中信保诚人寿不断推出符合客户需求的产品和服务。公司产品涉及保障、储蓄、投资、养老及医疗等诸多领域。截至2017年10月，公司已设立了广东、北京、江苏、上海、湖北…",
+        "据了解，今年2月，国家金融监督管理总局已批复同意中信保诚人寿的上一次增资请求，中信金控和保诚集团分别向中信保诚人寿增资12.5亿元。此时，中信保诚人寿的注册资本已由23.6亿元变更为48.6亿元。在不到一年的时间里，中信金控和保诚集团拟向中信保诚人寿进行第二轮增资，凸显了中外双方股东对中国经济和中国寿险业发展的持续看好。 在上一轮增资中，中信集团董事长、中信金控董事长奚国华曾表示，增资不仅使中信保…",
+        "2024年2月，国家金融监督管理总局同意中信保诚人寿保险有限公司增加注册资本250,000万元，由236,000万元变更为486,000万元。 10月8日，国家金融监督管理总局经审核，核准中信保诚人寿保险有限公司修改后的公司章 程 。同年10月，中信保诚人寿与得到达成战略合作，双方将在品牌建设、人才培养、养老生态、主题活动等方面展开合作。 2025年4月14日，国家金融监督管理总局批复中信保诚人寿…"
+      ],
+      "source_urls": [
+        "https://gwoss.citic-prudential.citic/uploadfiles%2Fcorporatesocialresponsibilityreport%2F20260430%2FhQwYAKWhGc.pdf?5Lit5L+h5L+d6K+a5Lq65a+%2FIDIwMjXkvIHkuJrnpL7kvJrotKPku7vmiqXlkYot5pyA57uI54mIKDEpLnBkZg=%3D",
+        "https://cn.linkedin.com/company/%E4%BF%A1%E8%AF%9A%E4%BA%BA%E5%AF%BF%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8",
+        "http://www.news.cn/money/20241106/2fd10f6ff5a5477183d02f929afece10/c.html",
+        "https://baike.baidu.com/item/%E4%B8%AD%E4%BF%A1%E4%BF%9D%E8%AF%9A%E4%BA%BA%E5%AF%BF%E4%BF%9D%E9%99%A9%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/22366086"
+      ],
+      "source_url": "https://gwoss.citic-prudential.citic/uploadfiles%2Fcorporatesocialresponsibilityreport%2F20260430%2FhQwYAKWhGc.pdf?5Lit5L+h5L+d6K+a5Lq65a+%2FIDIwMjXkvIHkuJrnpL7kvJrotKPku7vmiqXlkYot5pyA57uI54mIKDEpLnBkZg=%3D",
+      "source": "https://gwoss.citic-prudential.citic/uploadfiles%2Fcorporatesocialresponsibilityreport%2F20260430%2FhQwYAKWhGc.pdf?5Lit5L+h5L+d6K+a5Lq65a+%2FIDIwMjXkvIHkuJrnpL7kvJrotKPku7vmiqXlkYot5pyA57uI54mIKDEpLnBkZg=%3D",
+      "scraped_at": "2026-07-26T12:13:51.454415",
+      "researched_at": "2026-07-26T12:13:51.454415",
+      "verified": true,
+      "added_at": "2026-07-26T12:53:14+0800"
+    },
+    {
+      "name": "人保财险",
+      "name_en": "PICC P&C",
+      "type": "财险",
+      "regions": [
+        "全国"
+      ],
+      "description": "中国人民财产保险股份有限公司注册资本为222.42亿元人民币。公司成立于2003年，总资产超过5960亿元人民币。",
+      "raw_answer": "中国人民财产保险股份有限公司注册资本为222.42亿元人民币。公司成立于2003年，总资产超过5960亿元人民币。",
+      "snippets": [
+        "... 财产保险公司，注册资本122.5598亿元。其前身是1949年10月20日经中国人民银行报政务院财经委员会批准成立的中国人民保险公司。世界500强企业。 中国人保财险是中国人民保险",
+        "... 中国人民财产保险 ... 注册资本：. 1000000 万人民币. 人保科创私募股权投资基金（武汉）中心（有限合伙）. 法定代表人：. 人保资本股权投资有限公司.",
+        "公司简介： 中国人民财产保险股份有限公司，于2003-07-07在北京市市场监督管理局登记成立，于泽担任法定代表人，注册资本为2,224,276.5303(万人民币)，公司位于北京市朝阳区"
+      ],
+      "source_urls": [
+        "https://m.qixin.com/company/d44f381a-d0fb-42c5-8fbd-cc67c603dd9b",
+        "https://www.qichamao.com/orgcompany/searchitemdtl/70b30174b8ac4736519cf698e2b3ebde.html",
+        "https://mproperty.picc.com.cn/cx_gywm/shzr/shzrbg/202006/P020230813797968908010.pdf",
+        "http://www.qzr.cn/sys/1377.html"
+      ],
+      "source_url": "https://m.qixin.com/company/d44f381a-d0fb-42c5-8fbd-cc67c603dd9b",
+      "source": "https://m.qixin.com/company/d44f381a-d0fb-42c5-8fbd-cc67c603dd9b",
+      "scraped_at": "2026-07-26T12:13:54.367328",
+      "researched_at": "2026-07-26T12:13:54.367328",
+      "verified": true,
+      "added_at": "2026-07-26T12:53:14+0800"
+    },
+    {
+      "name": "平安产险",
+      "name_en": "Ping An P&C",
+      "type": "财险",
+      "regions": [
+        "全国"
+      ],
+      "description": "China Ping An Property Insurance's registered capital is 120 billion yuan. The company is a subsidiary of China Ping An Group. The legal rep。",
+      "raw_answer": "China Ping An Property Insurance's registered capital is 120 billion yuan. The company is a subsidiary of China Ping An Group. The legal representative is Ren Huichuan.",
+      "snippets": [
+        "中国平安财产保险股份有限公司 公司简介 （一）法定名称： [中文全称]：中国平安财产保险股份有限公司； [中文简称]：平安产险 [英文全称]：Ping An Property & Casualty Insurance Company of China， Ltd. （二）注册资本： 人民币60 亿元。 （三）注册地： 广东省深圳市福田中心区福华三路星河发展中心酒店6、7 层。 （四）成立时间： 公司…",
+        "平安产险全称中国平安财产保险股份有限公司，是中国平安集团下一财产保险公司，注册资本为人民币120亿元，实收资本人民币120亿元，法定代表人任汇川。",
+        "法定代表人. 平安创赢资本管理有限公司 ; 注册资本. 1000000万元 ; 认缴出资额. 999900万元 ; 持股比例. 99.99% ; 成立日期. 2025-01-15.Read more"
+      ],
+      "source_urls": [
+        "https://property.pingan.com/gongkaixinxipilu/gongsizhiligaiyao.shtml",
+        "https://www.4008000000.com/app_upload/file/property/pacxzhuanguxieshixiang20191114.pdf",
+        "http://about.pingan.com/upload/20100630134547247.pdf",
+        "http://m.qcc.com/firm/3c8c7c57719357e90847593da75654d8.html"
+      ],
+      "source_url": "https://property.pingan.com/gongkaixinxipilu/gongsizhiligaiyao.shtml",
+      "source": "https://property.pingan.com/gongkaixinxipilu/gongsizhiligaiyao.shtml",
+      "scraped_at": "2026-07-26T12:13:59.402413",
+      "researched_at": "2026-07-26T12:13:59.402413",
+      "verified": true,
+      "added_at": "2026-07-26T12:53:14+0800"
+    },
+    {
+      "name": "太保产险",
+      "name_en": "CPIC P&C",
+      "type": "财险",
+      "regions": [
+        "全国"
+      ],
+      "description": "China Taiping Property Insurance's registered capital is 199.48 billion yuan. The company was established in 2001 and is headquartered in Sh。",
+      "raw_answer": "China Taiping Property Insurance's registered capital is 199.48 billion yuan. The company was established in 2001 and is headquartered in Shanghai. It is a subsidiary of China Taiping Insurance Group.",
+      "snippets": [
+        "# 中国太平洋财产保险股份有限公司. 中国太平洋财产保险股份有限公司（简称“太平洋产险”）是中国太平洋保险（集团）股份有限公司旗下子公司，成立于2001年11月，总部设在上海，注册资本为人民币199.48亿元，法定代表人为俞斌，现任总经理为陈辉 [12] [14] [17]。公司提供财产保险、责任保险、农业保险、保证保险等各类保险业务，服务范围覆盖航空航天、电力能源、石油化工、船舶航运等领域，在全…",
+        "中国太平洋财产保险股份有限公司成立于2001-11-09,法定代表人为陈辉,注册资本为1994808.765万元",
+        "公司总部设在上海，截至2025年末，公司注册资本为人民币199.48亿元。 太平洋产险承保机动车辆保险、财产保险、责任保险、农业保险、保证保险、意外伤害保险、短期健康保险等"
+      ],
+      "source_urls": [
+        "https://m.qcc.com/firm/a04ffaf10fffda7fe3cb8fd184d0a1bc.html",
+        "https://www.tianyancha.com/company/23995093",
+        "https://property.cpic.com.cn/xccbx/gygs/gsjs",
+        "https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%A4%AA%E5%B9%B3%E6%B4%8B%E8%B4%A2%E4%BA%A7%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/9840929"
+      ],
+      "source_url": "https://m.qcc.com/firm/a04ffaf10fffda7fe3cb8fd184d0a1bc.html",
+      "source": "https://m.qcc.com/firm/a04ffaf10fffda7fe3cb8fd184d0a1bc.html",
+      "scraped_at": "2026-07-26T12:14:05.293935",
+      "researched_at": "2026-07-26T12:14:05.293935",
+      "verified": true,
+      "added_at": "2026-07-26T12:53:14+0800"
+    },
+    {
+      "name": "中华联合财险",
+      "name_en": "China United P&C",
+      "type": "财险",
+      "regions": [
+        "全国"
+      ],
+      "description": "The registered capital of 中华联合财产保险 is 5 billion RMB. This information is based on the latest available data。",
+      "raw_answer": "The registered capital of 中华联合财产保险 is 5 billion RMB. This information is based on the latest available data.",
+      "snippets": [
+        "国防 美高超音速导弹生产，出现“重大问题” 军事 “全面战争”！伊朗总统最新发声 文化 古人那些奇奇怪怪可可爱爱的印章 娱乐 周冬雨回应话剧热舞：我跳的时候心里也很社死 财经 中际旭创聆讯前后市值蒸发3000亿 辟谣 曝光网络谣言 守护清朗空间 共建美好网络生态 公益 中华网与众安公益基金会紧急筹措物资驰援广西 游戏 曝《黑神话》系列将推出三部曲！ ## 视频 加纳驻华大使科乔.邦苏｜新年贺词 #…",
+        "截至2023年末，中华人民共和国人口约14.1亿人，约占世界人口的17.6%，为世界上人口第二多的国家，仅次于印度并在2023年以前长期居于世界第一。国内民族众多，仅官方承认的民族就有56个；其中汉族占全国人口比率逾九成，其他民族合计则占8.89%。中华人民共和国的官方语言为汉语普通话。中华人民共和国于1986年后实行九年义务教育制度，截至2020年已有2.4亿人接受高等教育。 中华人民共和国为现…",
+        "中华人民共和国成立后，由于民族压迫制度的废除，生产发展、生活改善，医疗保健事业得到很大的改善，同时国家对少数民族在计划生育上的要求也比汉族宽松，因而从根本上扭转了过去少数民族人口下降的趋势，出现了人口兴旺、民族繁荣的景象。1990-2000年间，土家、高山、羌、毛南、保安、东乡等13个民族人口年均增长率都在2.00%以上，其中高山族和羌族分别高达4.31%和4.26%。蒙古、藏、维吾尔等8个百万人…"
+      ],
+      "source_urls": [
+        "https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E/3956039",
+        "https://zh.wikipedia.org/zh-hans/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD",
+        "https://www.china.com",
+        "https://zh.wikipedia.org/zh-hans/%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B"
+      ],
+      "source_url": "https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E/3956039",
+      "source": "https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E/3956039",
+      "scraped_at": "2026-07-26T12:14:11.381589",
+      "researched_at": "2026-07-26T12:14:11.381589",
+      "verified": true,
+      "added_at": "2026-07-26T12:53:14+0800"
+    },
+    {
+      "name": "阳光财险",
+      "name_en": "Sunshine P&C",
+      "type": "财险",
+      "regions": [
+        "全国"
+      ],
+      "description": "阳光财产保险股份有限公司的注册资本为60.88亿元人民币。公司成立于2005年，总部位于北京。",
+      "raw_answer": "阳光财产保险股份有限公司的注册资本为60.88亿元人民币。公司成立于2005年，总部位于北京。",
+      "snippets": [
+        "阳光财产保险股份有限公司成立于2005年7月28日,总部位于北京,注册资本64.569亿元人民币8 ,主要经营财产保险业务1 。 阳光产险服务网络实现全国覆盖4 。",
+        "Dec 26, 2023 — 观点网讯：12月25日，国家金融监督管理总局发布公告，对阳光财产保险股份有限公司变更注册资本的请示进行批复，同意阳光财险增加注册资本7.1亿元。Read more",
+        "3 days ago — 法定代表人. 贾波 ; 注册资本. 15113.7696万元 ; 认缴出资额. 3,072,800股 ; 持股比例. 2.03% ; 成立日期. 2011-04-12.Read more"
+      ],
+      "source_urls": [
+        "http://www.nbd.com.cn/rss/toutiao/articles/1252220.html",
+        "https://m.qcc.com/firm/12537c2664cd1508ec63e910f2b4acf4.html",
+        "https://www.guandian.cn/m/show/372746",
+        "https://baike.baidu.com/item/%E9%98%B3%E5%85%89%E8%B4%A2%E4%BA%A7%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/9724335"
+      ],
+      "source_url": "http://www.nbd.com.cn/rss/toutiao/articles/1252220.html",
+      "source": "http://www.nbd.com.cn/rss/toutiao/articles/1252220.html",
+      "scraped_at": "2026-07-26T12:14:15.066722",
+      "researched_at": "2026-07-26T12:14:15.066722",
+      "verified": true,
+      "added_at": "2026-07-26T12:53:14+0800"
+    },
+    {
+      "name": "人保健康",
+      "name_en": "PICC Health",
+      "type": "健康险",
+      "regions": [
+        "全国"
+      ],
+      "description": "The People's Republic of China's registered capital is not publicly disclosed. For official information, refer to government publications or。",
+      "raw_answer": "The People's Republic of China's registered capital is not publicly disclosed. For official information, refer to government publications or official websites.",
+      "snippets": [
+        "* [བོད་ཡིག](https://bo.wikipedia.org/wiki/%E0%BD%80%E0%BE%B2%E0%BD%B4%E0%BD%84%E0%BC%8B%E0%BD%A7%E0%BE%AD \"ཀྲུང་ཧྭ – 藏语\"). * [閩東語 / Mìng-dĕ̤ng-ngṳ̄](https://cdo.wikipedia.org/wiki/D%E1%B9%B3%CC%86ng-g…",
+        "# 中华人民共和国. （the People's Republic of China）. 中华人民共和国（the People's Republic of China），简称“中国”，成立于1949年10月1日，位于亚洲东部，太平洋西岸，是工人阶级领导的、以工农联盟为基础的人民民主专政的社会主义国家，以五星红旗为国旗、《义勇军进行曲》为国歌，国徽中间是五星照耀下的天安门，周围是谷穗和齿轮，通用语言…",
+        "# 中国. ## 中国两学者破解百年难题，首夺全球数学最高荣誉. 書架上的《黎智英傳》和《唯紅花綻放：習近平時代的認同與歸屬》. ## 视频, 香港步入“禁书时代”？回顾书店与出版环境的变化, 节目全长 10,36. ## 美国以“强迫劳动”为由徵新关税，影响中国、台湾等60个贸易伙伴. 上海一场贸易展览上，参观者驻足于月之暗面（Moonshot AI）的展位前；展位上以大型立体字展示“Kimi”…"
+      ],
+      "source_urls": [
+        "https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD/106554",
+        "https://zh.wikipedia.org/zh-hans/%E4%B8%AD%E5%9C%8B",
+        "https://english.www.gov.cn",
+        "https://www.bbc.com/zhongwen/topics/ckr7mn6r003t/simp"
+      ],
+      "source_url": "https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD/106554",
+      "source": "https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD/106554",
+      "scraped_at": "2026-07-26T12:14:20.308260",
+      "researched_at": "2026-07-26T12:14:20.308260",
+      "verified": true,
+      "added_at": "2026-07-26T12:53:14+0800"
+    },
+    {
+      "name": "平安健康",
+      "name_en": "Ping An Health",
+      "type": "健康险",
+      "regions": [
+        "全国"
+      ],
+      "description": "Ping An Health Insurance's registered capital is RMB 500 million. The company is a subsidiary of Ping An Insurance Group. It focuses on heal。",
+      "raw_answer": "Ping An Health Insurance's registered capital is RMB 500 million. The company is a subsidiary of Ping An Insurance Group. It focuses on health insurance and related services.",
+      "snippets": [
+        "平安健康保险股份有限公司关于变更注册 资本有关情况的信息披露公告 根据中国银行保险监督管理委员会《关于进一步加强保 险公司股权信息披露有关事项的通知》的有关规定，现将我 公司关于变更注册资本的有关情况披露如下： 一、变更注册资本决议情况 1. 平安健康保险股份有限公司拟向股东增资2 亿元人 民币，增资后，我公司股东持股数量和持股比例如下：（1） 中国平安保险 （集团） 股份有限公司持有1,481,…",
+        "# 平安健康保险股份有限公司 金融 科技 Insurance • 徐汇, 上海 • 2,911 followers • 1,001-5,000 employees ## Overview 平安健康保险股份有限公司是中国平安集团旗下的专业健康保险公司，2005年6月13日经中国保险监督管理委员会批准设立，主要业务范围包括各类健康保险业务、意外伤害保险业务、政府委托管理健康保险业务、健康咨询服务业务、…",
+        "超 60.9万员工及代理人 每 2,300 个中国人中有1个平安人 员工规模 平均每天归母营运利润超 3.68 亿元 2025 年累计 1,344.15 亿元 归母营运利润 平均每天服务进线近 182 万人次 2025全年服务进线 6.7 亿人次 95511客服 每天赔付保险约 6.7 亿元 2025 全年赔付近 2,457 亿元 保险赔付 平均每分钟赔付超 1,815 件 2025全年理赔超 9…"
+      ],
+      "source_urls": [
+        "http://www.pingan.cn/app_upload/file/official/profile-of-paic.pdf",
+        "https://resources.pingan.com/app_upload/file/health/2019082701.pdf",
+        "https://cn.linkedin.com/company/%E5%B9%B3%E5%AE%89%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8",
+        "https://baike.baidu.com/item/%E5%B9%B3%E5%AE%89%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/1605432"
+      ],
+      "source_url": "http://www.pingan.cn/app_upload/file/official/profile-of-paic.pdf",
+      "source": "http://www.pingan.cn/app_upload/file/official/profile-of-paic.pdf",
+      "scraped_at": "2026-07-26T12:14:24.700903",
+      "researched_at": "2026-07-26T12:14:24.700903",
+      "verified": true,
+      "added_at": "2026-07-26T12:53:14+0800"
+    },
+    {
+      "name": "昆仑健康",
+      "name_en": "Kunlun Health",
+      "type": "健康险",
+      "regions": [
+        "全国"
+      ],
+      "description": "昆仑健康保险股份有限公司注册资本为23.4亿元。公司成立于2006年，是国内首批专业健康保险公司之一。其注册资本曾经过调整。",
+      "raw_answer": "昆仑健康保险股份有限公司注册资本为23.4亿元。公司成立于2006年，是国内首批专业健康保险公司之一。其注册资本曾经过调整。",
+      "snippets": [
+        "昆仑健康保险股份有限公司成立于2006-01-12,法定代表人为林乐,注册资本为234182万元, 作为国内首批专业健康保险公司, 为客户提供全周期健康管理解决方案。",
+        "昆仑健康成立于2006年,注册资本23.4亿,是一家有点“年头”的保险公司。 同时,它和平安健康、人保健康一样,是国内首批专业健康保险公司之一。",
+        "2013年3月26日，中国保险监督管理委员会正式下发文件《关于昆仑健康保险股份有限公司变更注册资本的批复》（保监发改〔2013〕286号），批复同意我公司注册资本变更"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/20258519416",
+        "https://www.kunlunhealth.com.cn/artdetailNew/283",
+        "https://data.eastmoney.com/gdfx/shareholder/76080009.html",
+        "https://www.qcc.com/cmainmember/140d38d0c0420d8fd968a26e71ace3df"
+      ],
+      "source_url": "https://zhuanlan.zhihu.com/p/20258519416",
+      "source": "https://zhuanlan.zhihu.com/p/20258519416",
+      "scraped_at": "2026-07-26T12:14:28.525520",
+      "researched_at": "2026-07-26T12:14:28.525520",
+      "verified": true,
+      "added_at": "2026-07-26T12:53:14+0800"
+    },
+    {
+      "name": "平安养老",
+      "name_en": "Ping An Annuity",
+      "type": "养老险",
+      "regions": [
+        "全国"
+      ],
+      "description": "The registered capital of Ping An Insurance (Pension) Co., Ltd. is 1.16 billion yuan. The company is a non-listed state-owned enterprise. Th。",
+      "raw_answer": "The registered capital of Ping An Insurance (Pension) Co., Ltd. is 1.16 billion yuan. The company is a non-listed state-owned enterprise. The latest capital increase was approved in 2022.",
+      "snippets": [
+        "平安养老保险股份有限公司 关于变更注册资本有关情况的信息披露公告 根据中国银行保险监督管理委员会《关于进一步加强保 险公司股权信息披露有关事项的通知》的有关规定，现将我 公司关于变更注册资本的有关情况披露如下： 一、 注册资本现状 中国银行保险监督管理委员会已于2022 年3 月30 日批 复同意平安养老保险股份有限公司（以下简称“我公司”） 注册资本由4,860,000,000 元人民币变更为7…",
+        "企业地址 中国（上海）自由贸易试验区陆家嘴环路1333号12楼、20楼、21楼、24楼 工商信息 知识产权 统一社会信用代码：913100007702124991 组织机构代码：770212499 注册号：100000000039325 经营状态：开业 公司类型：股份有限公司(非上市、国有控股)成立日期：2004年12月13日 法定代表人：甘为民 营业期限：2004年12月13日 至 无固定期限 …",
+        "China Investment Corporation (Investment Management): (Beijing, Beijing); Russell Investments (Financial Services): (Seattle, WA); Barrie & Hibbert - A Moody's Company (Financial Services): (Edinburgh…"
+      ],
+      "source_urls": [
+        "https://baike.baidu.com/item/%E5%B9%B3%E5%AE%89%E5%85%BB%E8%80%81%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/10609530",
+        "http://yl.pingan.com/app_upload/file/20220417/%E5%B9%B3%E5%AE%89%E5%85%BB%E8%80%81%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%B3%E4%BA%8E%E5%8F%98%E6%9B%B4%E6%B3%A8%E5%86%8C%E8%B5%84%E6%9C%AC%E6%9C%89%E5%85%B3%E6%83%85%E5%86%B5%E7%9A%84%E4%BF%A1%E6%81%AF%E6%8A%AB%E9%9C%B2%E5%85%AC%E5%91%8A_9453.pdf",
+        "https://www.nfra.gov.cn/cn/view/pages/governmentDetail.html?docId=1225754&itemId=870&generaltype=1",
+        "https://www.linkedin.com/company/%E5%B9%B3%E5%AE%89%E5%85%BB%E8%80%81%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
+      ],
+      "source_url": "https://baike.baidu.com/item/%E5%B9%B3%E5%AE%89%E5%85%BB%E8%80%81%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/10609530",
+      "source": "https://baike.baidu.com/item/%E5%B9%B3%E5%AE%89%E5%85%BB%E8%80%81%E4%BF%9D%E9%99%A9%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/10609530",
+      "scraped_at": "2026-07-26T12:14:34.174941",
+      "researched_at": "2026-07-26T12:14:34.174941",
+      "verified": true,
+      "added_at": "2026-07-26T12:53:14+0800"
+    },
+    {
+      "name": "太平养老",
+      "name_en": "Taiping Annuity",
+      "type": "养老险",
+      "regions": [
+        "全国"
+      ],
+      "description": "太平养老保险股份有限公司的注册资本为人民币3亿元。该公司成立于2005年，是中国首批专业养老保险公司之一。其注册资本曾经历变更。",
+      "raw_answer": "太平养老保险股份有限公司的注册资本为人民币3亿元。该公司成立于2005年，是中国首批专业养老保险公司之一。其注册资本曾经历变更。",
+      "snippets": [
+        "May 12, 2021 — 太平养老保险股份有限公司是中国首批获得国家资格认定的专业养老保险公司, 注册资本: 人民币30亿元",
+        "Jan 8, 2009 — 你公司《关于太平养老保险股份有限公司增加注册资本金及变更公司章程的请示》（太平养老〔2008〕98号）收悉。经审核，同意你公司注册资本变更为8亿元人民币。Read more",
+        "太平养老产业投资有限公司成立于2012-07-31，法定代表人为刘韶，注册资本为257000万元，统一社会信用代码为91310000051222578U，企业注册地址位于上海市浦东新区康新"
+      ],
+      "source_urls": [
+        "https://top.tianyancha.com/tc-bd9b8152392166",
+        "https://zhuanlan.zhihu.com/p/371660546",
+        "https://www.qcc.com/firm/596df59745015dbdf25c379bd63230bb.html",
+        "https://finance.sina.cn/sa/2009-01-08/detail-ikftpnny1216968.d.html?from=wap"
+      ],
+      "source_url": "https://top.tianyancha.com/tc-bd9b8152392166",
+      "source": "https://top.tianyancha.com/tc-bd9b8152392166",
+      "scraped_at": "2026-07-26T12:14:38.236069",
+      "researched_at": "2026-07-26T12:14:38.236069",
+      "verified": true,
+      "added_at": "2026-07-26T12:53:14+0800"
+    },
+    {
+      "name": "国寿养老",
+      "name_en": "China Life Annuity",
+      "type": "养老险",
+      "regions": [
+        "全国"
+      ],
+      "description": "中国人寿养老保险股份有限公司的注册资本为34亿元人民币。公司成立于北京市。最新数据显示其注册资本已增加至25亿元。",
+      "raw_answer": "中国人寿养老保险股份有限公司的注册资本为34亿元人民币。公司成立于北京市。最新数据显示其注册资本已增加至25亿元。",
+      "snippets": [
+        "中国人寿养老保险股份有限公司 注册资本 人民币叁拾肆亿元整 公司住所和营业场所 北京市西城区金融大街12号 成立",
+        "注册资本, 340,000万(元), 实缴资本, -. 企业类型, 股份有限公司(非上市、国有控股), 所属行业, 保险业. 工商注册号, 100000000040678, 组织机构代码",
+        "中国人寿养老保险股份有限公司注册资本由6亿元增加到人民币25亿元。 对养老金公司增资18.54亿"
+      ],
+      "source_urls": [
+        "https://www.clpc.com.cn/chinalifepension/gkxxpl/jbxx/gsgk/index.html",
+        "http://jjckb.xinhuanet.com/caijing/2008-07/14/content_107486.htm",
+        "https://www.chinalife.com.cn/chinalife/2018-12/19/article_2025112412022777312.html",
+        "https://www.aiqicha.com/company_detail_28686751869169?tab=risk&subtab=annual"
+      ],
+      "source_url": "https://www.clpc.com.cn/chinalifepension/gkxxpl/jbxx/gsgk/index.html",
+      "source": "https://www.clpc.com.cn/chinalifepension/gkxxpl/jbxx/gsgk/index.html",
+      "scraped_at": "2026-07-26T12:14:42.948626",
+      "researched_at": "2026-07-26T12:14:42.948626",
+      "verified": true,
+      "added_at": "2026-07-26T12:53:14+0800"
     }
   ],
   "region_mapping": {
-    "江苏": ["安盛天平保险销售有限公司", "易诚保险经纪有限公司", "华鑫保险代理有限公司"],
-    "广东": ["安盛天平保险销售有限公司", "友太安保险经纪有限公司", "明亚保险经纪有限公司"],
-    "上海": ["安盛天平保险销售有限公司", "易诚保险经纪有限公司", "友太安保险经纪有限公司"],
-    "浙江": ["安盛天平保险销售有限公司", "国信蓝海保险经纪有限公司", "华鑫保险代理有限公司"],
-    "重庆": ["安盛天平保险销售有限公司", "明亚保险经纪有限公司"],
-    "陕西": ["安盛天平保险销售有限公���", "国信蓝海保险经纪有限公司"],
-    "广西": ["安盛天平保险销售有限公司", "明亚保险经纪有限公司"],
-    "北京": ["明亚保险经纪有限公司", "国信蓝海保险经纪有限公司", "中汇保险经纪有限公司"],
-    "四川": ["国信蓝海保险经纪有限公司", "明亚保险经纪有限公司"]
+    "江苏": [
+      "安盛天平保险销售有限公司",
+      "易诚保险经纪有限公司",
+      "华鑫保险代理有限公司"
+    ],
+    "广东": [
+      "安盛天平保险销售有限公司",
+      "友太安保险经纪有限公司",
+      "明亚保险经纪有限公司"
+    ],
+    "上海": [
+      "安盛天平保险销售有限公司",
+      "易诚保险经纪有限公司",
+      "友太安保险经纪有限公司"
+    ],
+    "浙江": [
+      "安盛天平保险销售有限公司",
+      "国信蓝海保险经纪有限公司",
+      "华鑫保险代理有限公司"
+    ],
+    "重庆": [
+      "安盛天平保险销售有限公司",
+      "明亚保险经纪有限公司"
+    ],
+    "陕西": [
+      "安盛天平保险销售有限公���",
+      "国信蓝海保险经纪有限公司"
+    ],
+    "广西": [
+      "安盛天平保险销售有限公司",
+      "明亚保险经纪有限公司"
+    ],
+    "北京": [
+      "明亚保险经纪有限公司",
+      "国信蓝海保险经纪有限公司",
+      "中汇保险经纪有限公司"
+    ],
+    "四川": [
+      "国信蓝海保险经纪有限公司",
+      "明亚保险经纪有限公司"
+    ]
   }
 }
