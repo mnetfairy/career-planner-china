@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "2.2.257",
+    "version": "2.2.258",
     "updated_at": "2026-07-30T17:32:13.987782+00:00",
     "source": "综合整理：国家统计局2024年度数据、智联招聘2024年度薪酬报告、前程无忧2024薪酬指南、猎聘2024年度薪酬报告、BOSS直聘2024薪酬数据",
     "total_records": 5389,
@@ -43,8 +43,8 @@
         "scraped_at": "2026-05-04T04:00:56.457826"
       }
     ],
-    "last_refreshed_at": "2026-07-30T17:34:49.042752+00:00",
-    "refresh_count": 7,
+    "last_refreshed_at": "2026-07-30T17:37:17.213260+00:00",
+    "refresh_count": 8,
     "duplicates": [],
     "duplicate_count": 0,
     "last_validated": "2026-07-26T03:40:56+00:00",
