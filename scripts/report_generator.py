@@ -1,22 +1,158 @@
 #!/usr/bin/env python3
-import json, os, sys
+"""
+career-planner-china 职业规划报告生成器（2026-10-26 ClawHub 复审加固，C5）
+
+加固要点（移植自姊妹 skill ai-era-career-planner/scripts/report_generator.py，
+保持两者的安全语义与 env 名称一致）：
+  1. 默认输出根由「当前工作目录（CWD）」改为 SKILL_DIR/exports/ —— 旧实现写 CWD，
+     与 frontmatter `write:` 声明矛盾，且会在用户目录里散落文件。
+  2. --output-dir 必须位于 ALLOWED_EXPORT_ROOTS 之内（默认 SKILL_DIR/exports/；
+     可由环境变量 AIERA_EXPORT_ROOT 显式追加；不允许任意路径）。
+  3. **符号链接检查顺序**：先对**未解析**的原始路径逐级做 os.path.islink() 检查
+     （命中即拒绝），再 realpath + commonpath 包含性校验。旧实现（2026-10-26 之前）
+     先 resolve() 再查 is_symlink()，resolve() 已经跟随符号链接导致检查永远为 False。
+  4. **独占创建**（O_CREAT|O_EXCL）+ **collision-resistant 文件名**
+     （职业规划报告_YYYYMMDD_HHMMSS_<8hex>.md）—— 旧实现固定文件名
+     「职业规划报告_YYYYMMDD.md」会被静默覆盖。
+  5. 拒绝绝对路径越界、相对路径穿越（..）、NUL 字节等异常输入。
+  6. 显式以 0600 权限写入文件、0700 权限创建目录。
+
+调用方式：
+  python3 scripts/report_generator.py --data '<json>' --output-dir ./exports
+  python3 scripts/report_generator.py --data '<json>'   # 默认输出到 SKILL_DIR/exports/
+"""
+import json
+import os
+import secrets
+import sys
 from datetime import datetime
+from pathlib import Path
+
+THIS_DIR = os.path.dirname(os.path.abspath(__file__))
+SKILL_DIR = os.path.dirname(THIS_DIR)
+DEFAULT_EXPORT_ROOT = os.path.join(SKILL_DIR, "exports")
+ALLOWED_EXPORT_ROOTS_ENV = "AIERA_EXPORT_ROOT"  # 可选追加允许的导出根目录（绝对路径列表，:分隔）
+
+
+def _load_allowed_roots():
+    """读取允许的导出根目录集合。
+
+    返回 dict：{字面路径(abspath, 未解析 symlink): 真实路径(realpath)}。
+    默认 DEFAULT_EXPORT_ROOT，可由环境变量 AIERA_EXPORT_ROOT 追加。
+    """
+    roots = {DEFAULT_EXPORT_ROOT}
+    env_val = os.environ.get(ALLOWED_EXPORT_ROOTS_ENV, "").strip()
+    if env_val:
+        for p in env_val.split(":"):
+            p = p.strip()
+            if p:
+                roots.add(p)
+    return {os.path.abspath(p): os.path.realpath(p) for p in roots}
+
+
+def _is_within(child, parent):
+    """child 是否位于 parent 之内（含 parent 自身）。两者都应为绝对路径。"""
+    try:
+        return os.path.commonpath([child, parent]) == parent
+    except ValueError:
+        # 不同盘符（Windows）或混合路径：不视为包含关系。
+        return False
+
+
+def _iter_levels(path):
+    """从叶子逐级向上产出 path 的各级目录（含 path 自身，直到根）。"""
+    current = path
+    while True:
+        yield current
+        parent = os.path.dirname(current)
+        if parent == current:
+            break
+        current = parent
+
+
+def _pick_anchor(literal_path, allowed_roots):
+    """挑选可作为「可信锚点」的允许根字面路径（最长匹配）。
+
+    锚点及其以上层级视为宿主已授权的可信路径（系统自身的路径布局，例如 macOS
+    上 /tmp -> /private/tmp），不做 symlink 拒绝；锚点**以下**的每一级都必须
+    不是符号链接。若 literal_path 不在任何允许根之下，则锚点退化为文件系统根，
+    即整条链都要检查。
+    """
+    best = None
+    for literal_root in allowed_roots:
+        if _is_within(literal_path, literal_root):
+            if best is None or len(literal_root) > len(best):
+                best = literal_root
+    return best if best is not None else os.sep
+
+
+def _validate_output_dir(output_dir_arg, allowed_roots):
+    """验证 --output-dir 在 ALLOWED_EXPORT_ROOTS 之内；拒绝越界/符号链接/穿越。
+
+    顺序：
+      a) 参数类型 / NUL 字节 / ".." 穿越检查
+      b) **未解析**原始路径的终端 symlink + 逐级 symlink 检查
+      c) realpath 规范化 + commonpath 包含性校验
+    """
+    if not output_dir_arg or not isinstance(output_dir_arg, str):
+        raise ValueError("output-dir must be a non-empty string")
+    if "\x00" in output_dir_arg:
+        raise ValueError("output-dir contains NUL byte")
+    if ".." in Path(output_dir_arg).parts:
+        raise ValueError("output-dir must not contain '..' path traversal")
+
+    # 归一化为绝对路径，但**不** resolve()——resolve 会跟随符号链接，
+    # 导致随后的 islink() 检查永远为 False。
+    literal = os.path.abspath(output_dir_arg)
+
+    # 终端 symlink（--output-dir 本身就是软链）直接拒绝
+    if os.path.islink(literal):
+        raise ValueError(f"output-dir path traverses a symlink: {literal}")
+
+    # 逐级 symlink 检查：从 literal 向上，直到授权锚点为止
+    anchor = _pick_anchor(literal, allowed_roots)
+    for level in _iter_levels(literal):
+        if level == anchor:
+            break
+        if os.path.islink(level):
+            raise ValueError(f"output-dir path traverses a symlink: {level}")
+
+    # 真实路径包含性校验（防止越界写入授权根之外的位置）
+    real = os.path.realpath(literal)
+    for real_root in allowed_roots.values():
+        if _is_within(real, real_root):
+            return Path(real)
+    raise ValueError(
+        f"output-dir is not inside any allowed export root. "
+        f"Requested (resolved): {real}; allowed: {sorted(allowed_roots.values())}"
+    )
+
+
+def _generate_collision_resistant_name(date_str):
+    """collision-resistant 文件名：职业规划报告_YYYYMMDD_HHMMSS_<8hex>.md
+    同一秒多次导出也基本不会冲突；不再使用固定文件名避免覆盖。"""
+    time_str = datetime.now().strftime("%H%M%S")
+    suffix = secrets.token_hex(4)  # 8 hex chars = 32 bits entropy
+    return f"职业规划报告_{date_str}_{time_str}_{suffix}.md"
+
 
 def build_recs(recs):
     lines = []
     star = chr(9733)
     for i, r in enumerate(recs, 1):
         lines.append("### {0}. 【{1}】 适合指数：{2}".format(
-            i, r.get('title','方向'+str(i)), star * r.get('score', 3)))
-        for k, v in [('推荐理由', r.get('reason','')),
-                      ('AI评级', r.get('ai_rating','')),
-                      ('薪资参考', r.get('salary','')),
-                      ('入门路径', r.get('path','')),
-                      ('3年预期', r.get('expectation','')),
-                      ('潜在风险', r.get('risk',''))]:
-            if v: lines.append("- **{0}**：{1}".format(k, v))
+            i, r.get('title', '方向' + str(i)), star * r.get('score', 3)))
+        for k, v in [('推荐理由', r.get('reason', '')),
+                      ('AI评级', r.get('ai_rating', '')),
+                      ('薪资参考', r.get('salary', '')),
+                      ('入门路径', r.get('path', '')),
+                      ('3年预期', r.get('expectation', '')),
+                      ('潜在风险', r.get('risk', ''))]:
+            if v:
+                lines.append("- **{0}**：{1}".format(k, v))
         lines.append('')
     return '\n'.join(lines)
+
 
 def generate_report(data):
     today = datetime.now().strftime('%Y-%m-%d')
@@ -32,13 +168,13 @@ def generate_report(data):
         '',
         '## 基础档案',
         '',
-        '- 昵称：' + data.get('nickname','未提供'),
-        '- 当前阶段：' + data.get('stage','未提供'),
-        '- 霍兰德代码：' + data.get('holland','未测评'),
-        '- MBTI类型：' + data.get('mbti','未测评'),
-        '- 职业锚：' + data.get('anchor','未测评'),
-        '- 核心价值观：' + data.get('values','未明确'),
-        '- 城市：' + data.get('city','未提供'),
+        '- 昵称：' + data.get('nickname', '未提供'),
+        '- 当前阶段：' + data.get('stage', '未提供'),
+        '- 霍兰德代码：' + data.get('holland', '未测评'),
+        '- MBTI类型：' + data.get('mbti', '未测评'),
+        '- 职业锚：' + data.get('anchor', '未测评'),
+        '- 核心价值观：' + data.get('values', '未明确'),
+        '- 城市：' + data.get('city', '未提供'),
         '',
         '---',
         '',
@@ -48,16 +184,16 @@ def generate_report(data):
         '',
         '## AI时代生存指南',
         '',
-        '- 核心技能：' + ai.get('skills','详见推荐职业'),
-        '- 必学AI工具：' + ai.get('tools','暂无'),
-        '- 建议认证：' + ai.get('cert','暂无'),
+        '- 核心技能：' + ai.get('skills', '详见推荐职业'),
+        '- 必学AI工具：' + ai.get('tools', '暂无'),
+        '- 建议认证：' + ai.get('cert', '暂无'),
         '',
         '## 下一步行动清单',
         '',
-        '- 今天：' + acts.get('today','暂无'),
-        '- 1个月内：' + acts.get('1month','暂无'),
-        '- 3个月内：' + acts.get('3months','暂无'),
-        '- 1年内：' + acts.get('1year','暂无'),
+        '- 今天：' + acts.get('today', '暂无'),
+        '- 1个月内：' + acts.get('1month', '暂无'),
+        '- 3个月内：' + acts.get('3months', '暂无'),
+        '- 1年内：' + acts.get('1year', '暂无'),
         '',
         '---',
         '',
@@ -65,16 +201,54 @@ def generate_report(data):
     ]
     return '\n'.join(md)
 
+
 if __name__ == '__main__':
     import argparse
     p = argparse.ArgumentParser()
     p.add_argument('--data', default='{}')
-    p.add_argument('--output-dir', default='.')
+    p.add_argument('--output-dir', default=DEFAULT_EXPORT_ROOT,
+                   help='报告输出目录；必须位于 ALLOWED_EXPORT_ROOTS 之内（默认 SKILL_DIR/exports/）')
     args = p.parse_args()
-    data = json.loads(args.data)
+
+    try:
+        data = json.loads(args.data)
+    except json.JSONDecodeError as e:
+        print(f"[ERROR] --data 不是合法 JSON: {e}", file=sys.stderr)
+        sys.exit(2)
+
+    allowed = _load_allowed_roots()
+    try:
+        safe_dir = _validate_output_dir(args.output_dir, allowed)
+    except ValueError as e:
+        print(f"[ERROR] {e}", file=sys.stderr)
+        sys.exit(3)
+
+    os.makedirs(str(safe_dir), mode=0o700, exist_ok=True)
+
     md = generate_report(data)
-    ds = datetime.now().strftime('%Y%m%d')
-    path = os.path.join(args.output_dir, '职业规划报告_' + ds + '.md')
-    with open(path, 'w', encoding='utf-8') as f:
-        f.write(md)
-    print('Markdown: ' + path)
+    date_str = datetime.now().strftime('%Y%m%d')
+    filename = _generate_collision_resistant_name(date_str)
+    target = safe_dir / filename
+
+    # Exclusive creation: refuse to overwrite an existing file
+    flags = os.O_WRONLY | os.O_CREAT | os.O_EXCL
+    try:
+        fd = os.open(str(target), flags, 0o600)
+    except FileExistsError:
+        # 极小概率：随机冲突；再生成一次
+        filename = _generate_collision_resistant_name(date_str)
+        target = safe_dir / filename
+        fd = os.open(str(target), flags, 0o600)
+
+    try:
+        with os.fdopen(fd, 'w', encoding='utf-8') as f:
+            f.write(md)
+    except Exception:
+        # 如果写失败，清理半成品文件
+        try:
+            os.unlink(str(target))
+        except OSError:
+            pass
+        raise
+
+    print('Markdown: ' + str(target))

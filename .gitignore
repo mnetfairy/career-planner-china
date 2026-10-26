@@ -3,3 +3,8 @@ references/backups/
 **/backups/
 *.backup_*
 *.backup
+# 运行时导出报告目录（用户数据，不进 git，避免 publish 时推上去）
+exports/
+# Python 缓存
+**/__pycache__/
+*.pyc
