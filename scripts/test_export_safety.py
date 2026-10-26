@@ -19,6 +19,11 @@ career-planner-china report_generator.py 导出安全性验证（2026-10-26 Claw
   9. --output-dir 本身是 symlink → 拒绝
   10. 父目录链中任一级是 symlink → 拒绝
   11. AIERA_EXPORT_ROOT 可显式扩展允许根
+ 12. 【新增】允许根（AIERA_EXPORT_ROOT）本身是 symlink → 拒绝，
+     且文件**没有**写到 symlink 的目标目录
+ 13. 【新增】默认 exports/ 目录被替换成 symlink → 拒绝，
+     且文件**没有**写到 skill 目录之外
+ 14. 【回归】用户显式指定普通真实绝对目录 → 仍能成功（防止修过头）
 
 退出码：
   0  全部通过
@@ -328,6 +333,104 @@ def test_env_var_override():
         return True
 
 
+def test_allowed_root_is_symlink():
+    """Test 12: 允许根（AIERA_EXPORT_ROOT）本身是 symlink → 拒绝。
+
+    2026-10-27 加固（ClawHub 第二轮 P0）：旧实现把允许根的「字面路径」当作
+    豁免锚点，允许根本身是 symlink 时整条链的 symlink 检查被跳过，文件会写到
+    symlink 目标目录（允许根之外）。本用例断言：
+      a) 命令被拒绝（exit != 0）
+      b) symlink 的目标目录里**没有**产生任何报告文件
+    """
+    print("\nTest 12: allowed root itself is a symlink -> must be REJECTED (no write to target)")
+    with tempfile.TemporaryDirectory() as tmp:
+        real_root = os.path.join(tmp, "real_root")
+        os.makedirs(real_root, exist_ok=True)
+        root_link = os.path.join(tmp, "root_link")
+        try:
+            os.symlink(real_root, root_link)
+        except (OSError, NotImplementedError) as e:
+            print(f"  {FAIL} cannot create symlink on this platform: {e}")
+            return False
+        out_dir = os.path.join(root_link, "sub")
+        os.makedirs(out_dir, exist_ok=True)
+        fake_skill, fake_script = _make_fake_skill(tmp)
+        env_extra = {"AIERA_EXPORT_ROOT": root_link}
+        data = '{"nickname":"allowed-root-symlink"}'
+        r = _run(fake_script, ["--data", data, "--output-dir", out_dir], env_extra=env_extra)
+        if r.returncode == 0:
+            print(f"  {FAIL} symlink allowed root was ACCEPTED; stdout={r.stdout[:200]}")
+            return False
+        leaked = []
+        for root, _dirs, files in os.walk(real_root):
+            for name in files:
+                if name.endswith(".md"):
+                    leaked.append(os.path.join(root, name))
+        if leaked:
+            print(f"  {FAIL} report was written to the symlink target dir: {leaked}")
+            return False
+        print(f"  {PASS} symlink allowed root rejected (exit={r.returncode}); "
+              f"nothing written to target dir")
+        return True
+
+
+def test_default_exports_is_symlink():
+    """Test 13: 默认 exports/ 目录被替换成 symlink → 拒绝。
+
+    2026-10-27 加固（ClawHub 第二轮 P0）：默认导出根（SKILL_DIR/exports/）
+    走与 AIERA_EXPORT_ROOT 完全相同的检查路径——是 symlink 就不可用于授权。
+    本用例在**临时目录**里造一个假 skill 根（脚本副本），把它的 exports/ 换成
+    symlink，断言命令被拒绝，且文件没有写到 skill 目录之外。
+    """
+    print("\nTest 13: default exports/ dir is a symlink -> must be REJECTED (no write outside skill)")
+    with tempfile.TemporaryDirectory() as tmp:
+        fake_skill, fake_script = _make_fake_skill(tmp)
+        real_exports = os.path.join(tmp, "real_exports")
+        os.makedirs(real_exports, exist_ok=True)
+        exports_link = os.path.join(fake_skill, "exports")
+        try:
+            os.symlink(real_exports, exports_link)
+        except (OSError, NotImplementedError) as e:
+            print(f"  {FAIL} cannot create symlink on this platform: {e}")
+            return False
+        data = '{"nickname":"default-exports-symlink"}'
+        r = _run(fake_script, ["--data", data])
+        if r.returncode == 0:
+            print(f"  {FAIL} symlinked default exports was ACCEPTED; stdout={r.stdout[:200]}")
+            return False
+        leaked = [f for f in os.listdir(real_exports) if f.endswith(".md")]
+        if leaked:
+            print(f"  {FAIL} report was written outside the skill dir: {leaked}")
+            return False
+        print(f"  {PASS} symlinked default exports rejected (exit={r.returncode}); "
+              f"nothing written outside the skill dir")
+        return True
+
+
+def test_plain_absolute_dir_still_works():
+    """Test 14 [回归]: 用户显式指定普通真实绝对目录 → 仍能成功。
+
+    防止修复过头：收窄豁免范围之后，正常的显式目录用法不能被误拒。
+    """
+    print("\nTest 14 [regression]: explicit plain real absolute dir should still SUCCEED")
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp_real = os.path.realpath(tmp)
+        fake_skill, fake_script = _make_fake_skill(tmp)
+        env_extra = {"AIERA_EXPORT_ROOT": tmp_real}
+        data = '{"nickname":"plain-dir-regression"}'
+        r = _run(fake_script, ["--data", data, "--output-dir", tmp_real], env_extra=env_extra)
+        if r.returncode != 0:
+            print(f"  {FAIL} plain absolute dir was REJECTED; exit={r.returncode} "
+                  f"stderr={r.stderr[:200]}")
+            return False
+        files = [f for f in os.listdir(tmp_real) if f.startswith("职业规划报告_")]
+        if not files:
+            print(f"  {FAIL} no report produced in the plain dir: {os.listdir(tmp_real)}")
+            return False
+        print(f"  {PASS} plain absolute dir accepted; file: {files[0]}")
+        return True
+
+
 def main():
     global _INITIAL_EXPORT_SNAPSHOT
     _INITIAL_EXPORT_SNAPSHOT = _snapshot(DEFAULT_EXPORT)
@@ -350,6 +453,9 @@ def main():
         ("Test 9  (output-dir is symlink)",         test_output_dir_is_symlink()),
         ("Test 10 (parent chain symlink)",          test_parent_chain_symlink()),
         ("Test 11 (env var override)",              test_env_var_override()),
+        ("Test 12 (allowed root is symlink)",       test_allowed_root_is_symlink()),
+        ("Test 13 (default exports symlink)",       test_default_exports_is_symlink()),
+        ("Test 14 (plain abs dir regression)",      test_plain_absolute_dir_still_works()),
     ]
 
     print("\n" + "=" * 60)

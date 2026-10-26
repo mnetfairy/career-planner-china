@@ -39,6 +39,10 @@ def _load_allowed_roots():
 
     返回 dict：{字面路径(abspath, 未解析 symlink): 真实路径(realpath)}。
     默认 DEFAULT_EXPORT_ROOT，可由环境变量 AIERA_EXPORT_ROOT 追加。
+
+    2026-10-27 加固：**允许根自身是符号链接时，该根被直接剔除**——
+    它不再能授权任何写入。旧实现把允许根的「字面路径」当作豁免锚点，
+    允许根本身是 symlink 时检查被跳过，文件可写到允许根之外。
     """
     roots = {DEFAULT_EXPORT_ROOT}
     env_val = os.environ.get(ALLOWED_EXPORT_ROOTS_ENV, "").strip()
@@ -47,7 +51,16 @@ def _load_allowed_roots():
             p = p.strip()
             if p:
                 roots.add(p)
-    return {os.path.abspath(p): os.path.realpath(p) for p in roots}
+
+    allowed = {}
+    for p in roots:
+        literal = os.path.abspath(p)
+        # 允许根本身是符号链接 → 不可用于授权（默认 exports/ 与
+        # AIERA_EXPORT_ROOT 走同一条检查路径）。
+        if os.path.islink(literal):
+            continue
+        allowed[literal] = os.path.realpath(literal)
+    return allowed
 
 
 def _is_within(child, parent):
@@ -71,19 +84,22 @@ def _iter_levels(path):
 
 
 def _pick_anchor(literal_path, allowed_roots):
-    """挑选可作为「可信锚点」的允许根字面路径（最长匹配）。
+    """挑选可作为「豁免边界」的允许根**字面路径**（最长匹配）。
 
-    锚点及其以上层级视为宿主已授权的可信路径（系统自身的路径布局，例如 macOS
-    上 /tmp -> /private/tmp），不做 symlink 拒绝；锚点**以下**的每一级都必须
-    不是符号链接。若 literal_path 不在任何允许根之下，则锚点退化为文件系统根，
-    即整条链都要检查。
+    2026-10-27 加固（收窄豁免范围）：
+      - 锚点**本身这一级照样做 symlink 检查**（旧实现把锚点当成豁免起点，
+        允许根本身是 symlink 时整条链被跳过 → 可写出允许根之外）；
+      - 只有锚点**之上**的宿主系统级路径前缀才豁免（例如 macOS 的
+        /tmp -> /private/tmp），这一段的 realpath 必然落在允许根的
+        realpath 之内，由后续 commonpath 包含性校验兜底。
+    若 literal_path 不在任何允许根之下，则返回 None —— 整条链都要检查。
     """
     best = None
     for literal_root in allowed_roots:
         if _is_within(literal_path, literal_root):
             if best is None or len(literal_root) > len(best):
                 best = literal_root
-    return best if best is not None else os.sep
+    return best
 
 
 def _validate_output_dir(output_dir_arg, allowed_roots):
@@ -109,13 +125,14 @@ def _validate_output_dir(output_dir_arg, allowed_roots):
     if os.path.islink(literal):
         raise ValueError(f"output-dir path traverses a symlink: {literal}")
 
-    # 逐级 symlink 检查：从 literal 向上，直到授权锚点为止
+    # 逐级 symlink 检查：从 literal 向上逐级检查，锚点（允许根字面路径）
+    # **本身这一级也要检查**；只有锚点之上的系统级前缀豁免。
     anchor = _pick_anchor(literal, allowed_roots)
     for level in _iter_levels(literal):
-        if level == anchor:
-            break
         if os.path.islink(level):
             raise ValueError(f"output-dir path traverses a symlink: {level}")
+        if anchor is not None and level == anchor:
+            break
 
     # 真实路径包含性校验（防止越界写入授权根之外的位置）
     real = os.path.realpath(literal)
