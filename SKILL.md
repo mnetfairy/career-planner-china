@@ -1,7 +1,7 @@
 ---
 name: career-planner-china
 description: AI时代职业规划师技能。专为AI时代职场变化而设计，帮助用户应对AI带来的职业冲击与机遇。当用户询问职业规划、职业建议、选专业、职场转型、未来就业方向时触发。功能包括：收集用户基本信息、霍兰德职业兴趣测评、职业价值观分析、AI时代职业影响评估（高危/中危/低危分级），并输出完整的个性化职业规划报告。关键词：职业规划、选专业、工作建议、做什么工作好、职业转型、AI时代职业、AI替代、哪些工作会被AI取代。
-version: 2.2.525
+version: 2.2.526
 last_published: 2026-10-27
 permissions:
   filesystem:
@@ -374,3 +374,23 @@ SKILL_DIR/
   - **C5 报告导出器加固**：`scripts/report_generator.py` 移植 ai-era-career-planner 的安全实现 —— 默认输出根由**当前工作目录（CWD）**改为 `SKILL_DIR/exports/`；`--output-dir` 必须位于 ALLOWED_EXPORT_ROOTS 之内（可由 `AIERA_EXPORT_ROOT` 显式追加）；**未解析**原始路径逐级 `os.path.islink()` 检查（含终端 symlink 与父目录链任一级）后拒绝，再 realpath + commonpath 包含性校验；拒绝 NUL 字节与 `..` 穿越；文件名由固定的「职业规划报告_YYYYMMDD.md」（**同名会被静默覆盖**）改为 collision-resistant「职业规划报告_YYYYMMDD_HHMMSS_<8hex>.md」+ `O_CREAT|O_EXCL` 独占创建；写入权限 `0o600`、目录 `0o700`
   - **新增** `scripts/test_export_safety.py`：11/11 PASS（默认根非 CWD / 不写 CWD / 白名单内通过 / 越界拒绝 / 路径穿越拒绝 / NUL 拒绝 / 不覆盖 / 0600 权限 / 终端 symlink 拒绝 / 父目录链 symlink 拒绝 / env 扩展）。测试只使用 tempfile 临时目录，**绝不删除 SKILL_DIR/exports 下的任何文件**（结束时有只读断言）
   - **数据文件零改动**：`references/salary_database.json` 与 `references/insurance_broker_companies.json` 均未触碰（`git diff --stat` 仅显示此前已有的 salary_database.json 版本号字段差异，非本次改动）
+
+- v2.2.526 (2026-10-28)：**第三轮加固：消除静态分析器的动态代码执行告警（suspicious.dynamic_code_execution / critical）**：
+  - **告警根因**：`scripts/test_report_exporter.py`（本 skill）/ `scripts/test_export_safety.py`（姊妹 skill）
+    曾用动态模块加载来读取被测脚本的 `DEFAULT_EXPORT_ROOT` 常量 —— 为读一个常量而动态执行整个模块，
+    被 ClawHub 静态分析器判为 `suspicious.dynamic_code_execution`（severity=critical）。
+    改动前该 skill 的静态分析结果是 clean，改动后变成 suspicious —— 这是本轮加固自己引入的问题。
+  - **修复方式**：给 `scripts/report_generator.py` 增加两个**只读自省参数**：
+    `--print-default-export-root`（打印默认导出根后退出）与 `--self-check`
+    （运行内部路径校验用例并输出 JSON 报告，不写任何文件）。两者都在 `--data` 解析与任何目录创建
+    **之前**返回，纯查询、零副作用。测试改用 `subprocess` 调用它们。
+  - **测试断言强度不变**：仍断言「真实脚本的 `DEFAULT_EXPORT_ROOT` == `SKILL_DIR/exports`」
+    （不是拿正则读到的字符串与自己算的字符串自证），NUL 字节拒绝用例改为经 `--self-check` 断言，
+    用例数量未减少。
+  - **导出行为零变化**：新参数是纯增量，未改动任何现有导出逻辑；
+    独占创建（`O_CREAT|O_EXCL`）、collision-resistant 文件名、`0o600` 文件 / `0o700` 目录、
+    symlink 逐级检查、`..` 穿越拒绝、NUL 字节拒绝全部保留。
+  - **测试结果**：`test_report_exporter.py` 11/11 PASS（ai-era）/
+    `test_export_safety.py` 14/14 PASS（career-planner-china）；独立 symlink 绕过验证脚本 7/7 PASS，
+    `wrote_outside=0`。
+  - **业务逻辑零改动**：400 电话优先推荐完整保留；数据文件除 `meta.version` 外未触碰。

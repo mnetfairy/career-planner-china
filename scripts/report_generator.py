@@ -219,13 +219,72 @@ def generate_report(data):
     return '\n'.join(md)
 
 
+def _self_check():
+    """只读自检：验证内部路径校验行为，**不写任何文件**。
+
+    用途：让测试用 subprocess 触发内部校验逻辑（尤其是含 NUL 字节的路径 ——
+    NUL 无法通过 argv 传递），而不必动态加载本模块。
+    输出 JSON 报告到 stdout；exit 0 表示全部通过。
+    """
+    checks = {}
+    allowed = _load_allowed_roots()
+
+    # 1. NUL 字节路径必须被拒绝
+    nul_path = os.path.join(os.sep, "a\x00b")
+    try:
+        _validate_output_dir(nul_path, allowed)
+        checks["nul_rejected"] = False
+    except ValueError as e:
+        checks["nul_rejected"] = "NUL" in str(e)
+        checks["nul_message"] = str(e)
+    except Exception as e:  # noqa: BLE001
+        checks["nul_rejected"] = False
+        checks["nul_message"] = f"{type(e).__name__}: {e}"
+
+    # 2. '..' 穿越必须被拒绝
+    try:
+        _validate_output_dir(os.path.join(DEFAULT_EXPORT_ROOT, "..", "..", "etc"), allowed)
+        checks["traversal_rejected"] = False
+    except ValueError as e:
+        checks["traversal_rejected"] = "traversal" in str(e)
+        checks["traversal_message"] = str(e)
+    except Exception as e:  # noqa: BLE001
+        checks["traversal_rejected"] = False
+        checks["traversal_message"] = f"{type(e).__name__}: {e}"
+
+    # 3. 默认导出根必须位于允许根之内
+    checks["default_root_allowed"] = os.path.realpath(DEFAULT_EXPORT_ROOT) in [
+        os.path.realpath(p) for p in allowed.values()
+    ]
+
+    ok = all(v is True for v in checks.values() if isinstance(v, bool))
+    checks["all_passed"] = ok
+    print(json.dumps(checks, ensure_ascii=False))
+    return 0 if ok else 1
+
+
 if __name__ == '__main__':
     import argparse
     p = argparse.ArgumentParser()
     p.add_argument('--data', default='{}')
     p.add_argument('--output-dir', default=DEFAULT_EXPORT_ROOT,
                    help='报告输出目录；必须位于 ALLOWED_EXPORT_ROOTS 之内（默认 SKILL_DIR/exports/）')
+    p.add_argument('--print-default-export-root', action='store_true',
+                   help='只读查询：打印默认导出根目录后退出，不生成任何文件')
+    p.add_argument('--self-check', action='store_true',
+                   help='只读自检：运行内部路径校验用例并输出 JSON 报告，不生成任何文件')
     args = p.parse_args()
+
+    # 🆕 2026-10-28：只读自省参数（与姊妹 skill ai-era-career-planner 同源同码）。
+    # 用途：让测试用 subprocess 查询 DEFAULT_EXPORT_ROOT 常量，
+    # 而不必动态加载本模块（动态执行会被安全扫描器判为
+    # suspicious.dynamic_code_execution / critical）。
+    # 该分支在 --data 解析与任何目录创建之前返回：纯查询、零副作用。
+    if args.print_default_export_root:
+        print(DEFAULT_EXPORT_ROOT)
+        sys.exit(0)
+    if args.self_check:
+        sys.exit(_self_check())
 
     try:
         data = json.loads(args.data)

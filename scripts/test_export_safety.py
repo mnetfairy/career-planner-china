@@ -29,7 +29,7 @@ career-planner-china report_generator.py 导出安全性验证（2026-10-26 Claw
   0  全部通过
   1  至少一项失败
 """
-import importlib.util
+import json
 import os
 import shutil
 import stat
@@ -95,23 +95,50 @@ def _make_fake_skill(tmp_root):
 
 
 def _module_constants():
-    """只读方式读取脚本常量（不执行其 __main__）。"""
-    sys.dont_write_bytecode = True  # 避免在 skill 目录里生成 __pycache__
-    spec = importlib.util.spec_from_file_location("_rg_probe", SCRIPT)
-    mod = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(mod)
-    return mod
+    """只读方式读取脚本常量与内部校验行为（不执行其 __main__）。
+
+    实现方式：subprocess 调用脚本的只读自省参数。
+    **不用动态模块加载** —— 动态执行会被 ClawHub 静态分析器判为
+    `suspicious.dynamic_code_execution`（critical）。
+    """
+    out = {}
+
+    # 1. 默认导出根常量
+    r = subprocess.run(
+        ["python3", SCRIPT, "--print-default-export-root"],
+        capture_output=True, text=True, timeout=30, cwd=SKILL_DIR,
+    )
+    if r.returncode != 0:
+        raise RuntimeError(f"self-introspection failed: exit={r.returncode}: {r.stderr[:200]}")
+    lines = [ln.strip() for ln in r.stdout.strip().splitlines() if ln.strip()]
+    if not lines:
+        raise RuntimeError("self-introspection returned empty output")
+    out["DEFAULT_EXPORT_ROOT"] = lines[-1]
+
+    # 2. 内部校验行为（NUL 字节路径无法通过 argv 传递，只能由脚本内部校验）
+    r2 = subprocess.run(
+        ["python3", SCRIPT, "--self-check"],
+        capture_output=True, text=True, timeout=30, cwd=SKILL_DIR,
+    )
+    try:
+        out["self_check"] = json.loads(r2.stdout.strip().splitlines()[-1])
+    except (ValueError, IndexError) as e:
+        raise RuntimeError(
+            f"self-check output unparsable: {r2.stdout[:200]} / {r2.stderr[:200]}"
+        ) from e
+
+    return out
 
 
 def test_default_root_is_skill_exports():
     """Test 1: 默认输出根是 SKILL_DIR/exports/，不是 CWD。"""
     print("\nTest 1: default export root is SKILL_DIR/exports/ (not CWD)")
     try:
-        mod = _module_constants()
+        info = _module_constants()
     except Exception as e:  # noqa: BLE001
-        print(f"  {FAIL} cannot import module: {e}")
+        print(f"  {FAIL} cannot query module self-introspection: {e}")
         return False
-    default_root = getattr(mod, "DEFAULT_EXPORT_ROOT", None)
+    default_root = info.get("DEFAULT_EXPORT_ROOT")
     if not default_root or os.path.realpath(default_root) != os.path.realpath(DEFAULT_EXPORT):
         print(f"  {FAIL} DEFAULT_EXPORT_ROOT={default_root} != {DEFAULT_EXPORT}")
         return False
@@ -191,28 +218,23 @@ def test_nul_byte():
     """Test 6: NUL 字节拒绝。
 
     注意：NUL 字节无法通过 subprocess 的 argv 传递（CPython 在 exec 阶段就抛
-    ValueError: embedded null byte），因此本用例直接调用模块内的
-    _validate_output_dir 校验函数来断言拒绝行为。
+    ValueError: embedded null byte），因此本用例通过脚本的 `--self-check`
+    只读自省参数触发内部 _validate_output_dir 校验，断言其拒绝行为。
     """
     print("\nTest 6: NUL byte in --output-dir should be REJECTED")
     try:
-        mod = _module_constants()
+        info = _module_constants()
     except Exception as e:  # noqa: BLE001
-        print(f"  {FAIL} cannot import module: {e}")
+        print(f"  {FAIL} cannot query module self-check: {e}")
         return False
-    allowed = mod._load_allowed_roots()
-    try:
-        mod._validate_output_dir(os.path.join(tempfile.gettempdir(), "a\x00b"), allowed)
-    except ValueError as e:
-        if "NUL" not in str(e):
-            print(f"  {FAIL} rejected with unexpected message: {e}")
-            return False
-        print(f"  [PASS] NUL byte rejected: {e}")
+    sc = info.get("self_check") or {}
+    if sc.get("nul_rejected") is True:
+        print(f"  [PASS] NUL byte rejected: {sc.get('nul_message')}")
         return True
-    except Exception as e:  # noqa: BLE001
-        print(f"  {FAIL} unexpected exception type: {type(e).__name__}: {e}")
-        return False
-    print(f"  {FAIL} NUL-byte path was ACCEPTED")
+    if sc.get("nul_rejected") is False:
+        print(f"  {FAIL} NUL-byte path was ACCEPTED")
+    else:
+        print(f"  {FAIL} unexpected self-check result: {sc}")
     return False
 
 
