@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "2.3.1",
-    "updated_at": "2026-11-01T17:31:04.246379+00:00",
+    "version": "2.3.2",
+    "updated_at": "2026-11-05T17:31:11.340624+00:00",
     "source": "综合整理：国家统计局2024年度数据、智联招聘2024年度薪酬报告、前程无忧2024薪酬指南、猎聘2024年度薪酬报告、BOSS直聘2024薪酬数据",
     "total_records": 5389,
     "description": "中国各城市、各行业、各职业层级的薪资数据库，覆盖一线至三线城市，供职业规划参考使用",
@@ -43,8 +43,8 @@
         "scraped_at": "2026-05-04T04:00:56.457826"
       }
     ],
-    "last_refreshed_at": "2026-10-31T17:55:19.125190+00:00",
-    "refresh_count": 147,
+    "last_refreshed_at": "2026-11-05T17:43:47.487971+00:00",
+    "refresh_count": 148,
     "duplicates": [],
     "duplicate_count": 0,
     "last_validated": "2026-07-26T03:40:56+00:00",
@@ -70616,6 +70616,62 @@
       "data_source": "https://m.jobui.com/salary/beijing-quanzhankaifagongchengshi",
       "source_url": "https://m.jobui.com/salary/beijing-quanzhankaifagongchengshi",
       "scraped_at": "2026-06-25T17:30:32.847949+00:00"
+    },
+    {
+      "city_tier": "tier1",
+      "city": "北京",
+      "industry": "互联网/IT",
+      "occupation": "运营专员",
+      "level": "mid",
+      "salary_min": 12000,
+      "salary_max": 14000,
+      "salary_unit": "月薪",
+      "annual_note": "",
+      "data_source": "https://juejin.cn/post/7613950767188934707",
+      "source_url": "https://juejin.cn/post/7613950767188934707",
+      "scraped_at": "2026-11-03T17:30:34.267391+00:00"
+    },
+    {
+      "city_tier": "tier1",
+      "city": "北京",
+      "industry": "金融/银行/保险",
+      "occupation": "UI设计师",
+      "level": "mid",
+      "salary_min": 9000,
+      "salary_max": 13000,
+      "salary_unit": "月薪",
+      "annual_note": "",
+      "data_source": "https://jobs.zhaopin.com/CC000432190J40843687416.htm",
+      "source_url": "https://jobs.zhaopin.com/CC000432190J40843687416.htm",
+      "scraped_at": "2026-11-04T17:30:15.570594+00:00"
+    },
+    {
+      "city_tier": "tier1",
+      "city": "北京",
+      "industry": "医疗/健康",
+      "occupation": "HR专员",
+      "level": "mid",
+      "salary_min": 6000,
+      "salary_max": 10000,
+      "salary_unit": "月薪",
+      "annual_note": "",
+      "data_source": "https://www.bjmy.gov.cn/zwgk/jy1/202609/t20260916_552706.html",
+      "source_url": "https://www.bjmy.gov.cn/zwgk/jy1/202609/t20260916_552706.html",
+      "scraped_at": "2026-11-05T17:30:15.421448+00:00"
+    },
+    {
+      "city_tier": "tier1",
+      "city": "北京",
+      "industry": "教育培训",
+      "occupation": "市场专员",
+      "level": "mid",
+      "salary_min": 8000,
+      "salary_max": 15000,
+      "salary_unit": "月薪",
+      "annual_note": "",
+      "data_source": "https://www.gaoxiaojob.com/announcement/detail/267518.html",
+      "source_url": "https://www.gaoxiaojob.com/announcement/detail/267518.html",
+      "scraped_at": "2026-11-05T17:30:57.135477+00:00"
     }
   ]
 }
