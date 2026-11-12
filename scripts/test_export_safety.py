@@ -336,22 +336,57 @@ def test_parent_chain_symlink():
 
 
 def test_env_var_override():
-    """Test 11: AIERA_EXPORT_ROOT 可显式扩展允许根。"""
-    print("\nTest 11: AIERA_EXPORT_ROOT env var should extend allowed roots")
+    """Test 11: AIERA_EXPORT_ROOT 指向 ./exports/ **之外** → 必须被拒绝。
+
+    🆕 2026-11-12 整改（ClawHub SDI-3 / TP4）：环境变量语义收窄。
+    旧语义：AIERA_EXPORT_ROOT 可把**任意**绝对路径加入允许根 → 写边界形同虚设。
+    新语义：允许根集合恒为 {DEFAULT_EXPORT_ROOT}；该变量只能追加 ./exports/
+    **之内**的子目录。指向外部目录一律丢弃（并记 stderr 告警），命令必须失败，
+    且外部目录里不得产生任何报告文件。
+    """
+    print("\nTest 11: AIERA_EXPORT_ROOT pointing OUTSIDE ./exports/ must be REJECTED")
     with tempfile.TemporaryDirectory() as tmp:
         tmp_real = os.path.realpath(tmp)
         fake_skill, fake_script = _make_fake_skill(tmp)
         env_extra = {"AIERA_EXPORT_ROOT": tmp_real}
         data = '{"nickname":"env-var"}'
         r = _run(fake_script, ["--data", data, "--output-dir", tmp_real], env_extra=env_extra)
+        if r.returncode == 0:
+            print(f"  {FAIL} external env var override was ACCEPTED; stdout={r.stdout[:200]}")
+            return False
+        leaked = [f for f in os.listdir(tmp_real) if f.startswith("职业规划报告_")]
+        if leaked:
+            print(f"  {FAIL} report was written outside the export root: {leaked}")
+            return False
+        if "ignored" not in r.stderr.lower():
+            print(f"  {FAIL} rejected but no 'ignored' warning logged: {r.stderr.strip()[:200]}")
+            return False
+        print(f"  {PASS} external env var rejected (exit={r.returncode}); nothing written outside")
+        return True
+
+
+def test_env_var_subdir_inside_exports():
+    """Test 11b: AIERA_EXPORT_ROOT 指向 ./exports/ 之内的子目录 → 允许。
+
+    收窄后的正向路径：变量语义由「扩展允许根」变为「追加 ./exports/ 内的子目录」，
+    这个用法必须仍然可用（否则收窄就变成了功能阉割）。
+    """
+    print("\nTest 11b: AIERA_EXPORT_ROOT pointing INSIDE ./exports/ must be ACCEPTED")
+    with tempfile.TemporaryDirectory() as tmp:
+        fake_skill, fake_script = _make_fake_skill(tmp)
+        subdir = os.path.join(fake_skill, "exports", "sub_env")
+        os.makedirs(subdir, exist_ok=True)
+        env_extra = {"AIERA_EXPORT_ROOT": subdir}
+        data = '{"nickname":"env-subdir"}'
+        r = _run(fake_script, ["--data", data, "--output-dir", subdir], env_extra=env_extra)
         if r.returncode != 0:
-            print(f"  {FAIL} env var override not honored: exit={r.returncode} stderr={r.stderr[:200]}")
+            print(f"  {FAIL} in-root env var was REJECTED; exit={r.returncode} stderr={r.stderr[:200]}")
             return False
-        files = [f for f in os.listdir(tmp_real) if f.startswith("职业规划报告_")]
+        files = [f for f in os.listdir(subdir) if f.startswith("职业规划报告_")]
         if not files:
-            print(f"  {FAIL} no file created in env-var directory: {os.listdir(tmp_real)}")
+            print(f"  {FAIL} no report produced in the env subdir: {os.listdir(subdir)}")
             return False
-        print(f"  {PASS} env var honored; file: {files[0]}")
+        print(f"  {PASS} in-root env var accepted; file: {files[0]}")
         return True
 
 
@@ -430,26 +465,28 @@ def test_default_exports_is_symlink():
 
 
 def test_plain_absolute_dir_still_works():
-    """Test 14 [回归]: 用户显式指定普通真实绝对目录 → 仍能成功。
+    """Test 14 [回归]: 用户显式指定普通真实绝对目录 → **必须被拒绝**。
 
-    防止修复过头：收窄豁免范围之后，正常的显式目录用法不能被误拒。
+    🆕 2026-11-12 整改（ClawHub SDI-3 / TP4）：写边界收敛到 ./exports/ 之后，
+    任何 skill 目录之外的绝对路径都不再是允许根，因此 --output-dir 指向
+    外部真实目录必须失败，且不得在那里产生任何文件。
+    （旧版断言「显式普通绝对目录仍能成功」——那是收窄前的语义，现已反转。）
     """
-    print("\nTest 14 [regression]: explicit plain real absolute dir should still SUCCEED")
+    print("\nTest 14 [regression]: explicit plain real absolute dir must be REJECTED")
     with tempfile.TemporaryDirectory() as tmp:
         tmp_real = os.path.realpath(tmp)
         fake_skill, fake_script = _make_fake_skill(tmp)
         env_extra = {"AIERA_EXPORT_ROOT": tmp_real}
         data = '{"nickname":"plain-dir-regression"}'
         r = _run(fake_script, ["--data", data, "--output-dir", tmp_real], env_extra=env_extra)
-        if r.returncode != 0:
-            print(f"  {FAIL} plain absolute dir was REJECTED; exit={r.returncode} "
-                  f"stderr={r.stderr[:200]}")
+        if r.returncode == 0:
+            print(f"  {FAIL} plain absolute dir was ACCEPTED; stdout={r.stdout[:200]}")
             return False
-        files = [f for f in os.listdir(tmp_real) if f.startswith("职业规划报告_")]
-        if not files:
-            print(f"  {FAIL} no report produced in the plain dir: {os.listdir(tmp_real)}")
+        leaked = [f for f in os.listdir(tmp_real) if f.startswith("职业规划报告_")]
+        if leaked:
+            print(f"  {FAIL} report was written outside the export root: {leaked}")
             return False
-        print(f"  {PASS} plain absolute dir accepted; file: {files[0]}")
+        print(f"  {PASS} plain absolute dir rejected (exit={r.returncode}); nothing written outside")
         return True
 
 
@@ -474,10 +511,11 @@ def main():
         ("Test 8  (file mode 0600)",                test_file_permission_0600()),
         ("Test 9  (output-dir is symlink)",         test_output_dir_is_symlink()),
         ("Test 10 (parent chain symlink)",          test_parent_chain_symlink()),
-        ("Test 11 (env var override)",              test_env_var_override()),
+        ("Test 11 (env var outside exports)",       test_env_var_override()),
+        ("Test 11b (env var inside exports)",       test_env_var_subdir_inside_exports()),
         ("Test 12 (allowed root is symlink)",       test_allowed_root_is_symlink()),
         ("Test 13 (default exports symlink)",       test_default_exports_is_symlink()),
-        ("Test 14 (plain abs dir regression)",      test_plain_absolute_dir_still_works()),
+        ("Test 14 (plain abs dir rejected)",        test_plain_absolute_dir_still_works()),
     ]
 
     print("\n" + "=" * 60)

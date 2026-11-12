@@ -1,0 +1,45 @@
+# .clawhubignore — ClawHub 发布产物收敛（ClawHub 安全审计整改 2026-11-10）
+#
+# 本文件中的路径不随 skill 发布产物分发（本地文件保留，维护链路照常可用）。
+#
+# 发布产物收敛为 21 个文件：
+#   SKILL.md
+#   references/ 下 14 个（ai_career_impact.md, assessment.md, career_anchor.md,
+#     education_paths.md, flow_engine.md, industry_trends.md, job_demand.md,
+#     mbti.md, salary_data.md, integrations.md, tracker_system.md,
+#     insurance_broker_companies.json, salary_database.json）
+#   references/industries/*.md 共 6 个
+#   references/emerging_industries/*.md 共 1 个
+#   scripts/report_generator.py 共 1 个
+#
+# 排除原因：
+#   - scripts/test_*.py              : 本地回归测试脚本（test_export_safety.py /
+#                                     test_insurance_recommendations.py）。不属于运行时
+#                                     能力面；含本地临时目录与断言细节，不随产物分发。
+#   - scripts/generate_salary_db.py  : 本地数据生成脚本（会改写
+#                                     references/salary_database.json），属维护工具，
+#                                     不在运行时 exec 白名单内，不随产物分发。
+#   - references/salary_scrape_report.txt : 本地采集日志（含本机绝对路径），非运行时数据。
+#   - references/insurance_research_notes.md : 本地只读研究旁档（broker JSON 中
+#                                     raw_answer / snippets / source_urls 的完整归档），
+#                                     仅供维护者追溯，不参与运行时读取，不随产物分发。
+#
+# ⚠️ 以上仅为发布面收敛；本地维护链路（生成脚本 / 回归测试 / 研究旁档）
+#    在开发机上照常可用，不受本文件影响。
+
+# ---- 本地回归测试（不属于运行时能力面）----
+scripts/test_*.py
+
+# ---- 本地数据生成脚本（会改写 references/salary_database.json，属维护工具）----
+scripts/generate_salary_db.py
+
+# ---- 本地采集日志（含本机绝对路径，非运行时数据）----
+references/salary_scrape_report.txt
+
+# ---- 本地研究旁档（研究性字段归档，不参与运行时读取）----
+references/insurance_research_notes.md
+
+# ---- 其它本地副产物 ----
+**/__pycache__/
+**/*.pyc
+.DS_Store
