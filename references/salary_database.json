@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "2.3.13",
-    "updated_at": "2026-11-15T02:50:44.646318+00:00",
+    "version": "2.3.14",
+    "updated_at": "2026-11-15T17:31:08.891575+00:00",
     "source": "综合整理：国家统计局2024年度数据、智联招聘2024年度薪酬报告、前程无忧2024薪酬指南、猎聘2024年度薪酬报告、BOSS直聘2024薪酬数据",
     "total_records": 5389,
     "description": "中国各城市、各行业、各职业层级的薪资数据库，覆盖一线至三线城市，供职业规划参考使用",
@@ -43,8 +43,8 @@
         "scraped_at": "2026-05-04T04:00:56.457826"
       }
     ],
-    "last_refreshed_at": "2026-11-15T03:02:37.701050+00:00",
-    "refresh_count": 158,
+    "last_refreshed_at": "2026-11-15T17:42:50.269557+00:00",
+    "refresh_count": 159,
     "duplicates": [],
     "duplicate_count": 0,
     "last_validated": "2026-07-26T03:40:56+00:00",
@@ -70770,6 +70770,34 @@
       "data_source": "https://zhuanlan.zhihu.com/p/17680244986",
       "source_url": "https://zhuanlan.zhihu.com/p/17680244986",
       "scraped_at": "2026-11-15T02:49:54.265595+00:00"
+    },
+    {
+      "city_tier": "tier1",
+      "city": "广州",
+      "industry": "互联网/IT",
+      "occupation": "市场专员",
+      "level": "mid",
+      "salary_min": 18000,
+      "salary_max": 24000,
+      "salary_unit": "月薪",
+      "annual_note": "",
+      "data_source": "https://zhuanlan.zhihu.com/p/1957909144284659720",
+      "source_url": "https://zhuanlan.zhihu.com/p/1957909144284659720",
+      "scraped_at": "2026-11-15T17:30:25.878996+00:00"
+    },
+    {
+      "city_tier": "tier1",
+      "city": "广州",
+      "industry": "金融/银行/保险",
+      "occupation": "UI设计师",
+      "level": "mid",
+      "salary_min": 18000,
+      "salary_max": 30000,
+      "salary_unit": "月薪",
+      "annual_note": "",
+      "data_source": "https://ese.xmu.edu.cn/info/1250/33491.htm",
+      "source_url": "https://ese.xmu.edu.cn/info/1250/33491.htm",
+      "scraped_at": "2026-11-15T17:31:03.763216+00:00"
     }
   ]
 }
