@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "2.3.26",
-    "updated_at": "2026-11-23T17:32:02.522076+00:00",
+    "version": "2.3.27",
+    "updated_at": "2026-11-24T17:31:42.703664+00:00",
     "source": "综合整理：国家统计局2024年度数据、智联招聘2024年度薪酬报告、前程无忧2024薪酬指南、猎聘2024年度薪酬报告、BOSS直聘2024薪酬数据",
     "total_records": 5389,
     "description": "中国各城市、各行业、各职业层级的薪资数据库，覆盖一线至三线城市，供职业规划参考使用",
@@ -43,8 +43,8 @@
         "scraped_at": "2026-05-04T04:00:56.457826"
       }
     ],
-    "last_refreshed_at": "2026-11-23T17:45:21.452266+00:00",
-    "refresh_count": 170,
+    "last_refreshed_at": "2026-11-24T17:44:41.831843+00:00",
+    "refresh_count": 171,
     "duplicates": [],
     "duplicate_count": 0,
     "last_validated": "2026-07-26T03:40:56+00:00",
@@ -65409,6 +65409,34 @@
       "scraped_at": "2026-11-21T00:13:49.068778+00:00",
       "data_source_id": "s024",
       "source_id": "s024"
+    },
+    {
+      "city_tier": "tier1",
+      "city": "深圳",
+      "industry": "消费零售",
+      "occupation": "运营专员",
+      "level": "mid",
+      "salary_min": 60000,
+      "salary_max": 96000,
+      "salary_unit": "年薪",
+      "annual_note": "已折算为年薪口径",
+      "data_source": "https://www.job5156.com/salary/14020000_12030009",
+      "source_url": "https://www.job5156.com/salary/14020000_12030009",
+      "scraped_at": "2026-11-24T17:31:09.343285+00:00"
+    },
+    {
+      "city_tier": "tier1",
+      "city": "深圳",
+      "industry": "消费零售",
+      "occupation": "市场专员",
+      "level": "mid",
+      "salary_min": 60000,
+      "salary_max": 96000,
+      "salary_unit": "年薪",
+      "annual_note": "已折算为年薪口径",
+      "data_source": "https://www.job5156.com/salary/14020000_12030009",
+      "source_url": "https://www.job5156.com/salary/14020000_12030009",
+      "scraped_at": "2026-11-24T17:31:14.420843+00:00"
     }
   ],
   "source_catalog": [
