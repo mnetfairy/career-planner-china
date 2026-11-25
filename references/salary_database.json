@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "2.3.28",
-    "updated_at": "2026-11-24T17:31:42.703664+00:00",
+    "version": "2.3.29",
+    "updated_at": "2026-11-25T17:31:36.454640+00:00",
     "source": "综合整理：国家统计局2024年度数据、智联招聘2024年度薪酬报告、前程无忧2024薪酬指南、猎聘2024年度薪酬报告、BOSS直聘2024薪酬数据",
     "total_records": 5389,
     "description": "中国各城市、各行业、各职业层级的薪资数据库，覆盖一线至三线城市，供职业规划参考使用",
@@ -43,8 +43,8 @@
         "scraped_at": "2026-05-04T04:00:56.457826"
       }
     ],
-    "last_refreshed_at": "2026-11-24T17:44:41.831843+00:00",
-    "refresh_count": 171,
+    "last_refreshed_at": "2026-11-25T17:43:48.759455+00:00",
+    "refresh_count": 172,
     "duplicates": [],
     "duplicate_count": 0,
     "last_validated": "2026-07-26T03:40:56+00:00",
@@ -65437,6 +65437,20 @@
       "data_source": "https://www.job5156.com/salary/14020000_12030009",
       "source_url": "https://www.job5156.com/salary/14020000_12030009",
       "scraped_at": "2026-11-24T17:31:14.420843+00:00"
+    },
+    {
+      "city_tier": "tier1",
+      "city": "深圳",
+      "industry": "文化传媒/娱乐",
+      "occupation": "数据工程师",
+      "level": "mid",
+      "salary_min": 18000,
+      "salary_max": 24000,
+      "salary_unit": "月薪",
+      "annual_note": "",
+      "data_source": "https://zhuanlan.zhihu.com/p/1957909144284659720",
+      "source_url": "https://zhuanlan.zhihu.com/p/1957909144284659720",
+      "scraped_at": "2026-11-25T17:30:28.960789+00:00"
     }
   ],
   "source_catalog": [
